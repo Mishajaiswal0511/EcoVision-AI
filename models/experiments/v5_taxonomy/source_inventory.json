@@ -1,0 +1,536 @@
+{
+  "audit_version": "V5_PRE_MUNICIPAL",
+  "sources": {
+    "taco_v6": {
+      "total_images": 2550,
+      "total_annotations": 8152,
+      "categories": [
+        {
+          "name": "Aerosol",
+          "instances": 17,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Clean aerosol cans; empty pressurized canisters."
+        },
+        {
+          "name": "Aluminium blister pack",
+          "instances": 12,
+          "current_class": "general_trash",
+          "proposed_class": "general_trash",
+          "type": "DIRECT",
+          "notes": "Foil/plastic composite pharmaceutical blister packs."
+        },
+        {
+          "name": "Aluminium foil",
+          "instances": 106,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "CONDITIONAL",
+          "notes": "Clean foil is metal; grease-caked foil requires residual disposal."
+        },
+        {
+          "name": "Battery",
+          "instances": 4,
+          "current_class": null,
+          "proposed_class": null,
+          "type": "EXCLUDED",
+          "notes": "Hazardous e-waste; excluded from dry recyclables."
+        },
+        {
+          "name": "Broken glass",
+          "instances": 193,
+          "current_class": "glass",
+          "proposed_class": "glass",
+          "type": "DIRECT",
+          "notes": "Glass material; handled with safety warning."
+        },
+        {
+          "name": "Carded blister pack",
+          "instances": 2,
+          "current_class": null,
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Paper/plastic composite packaging."
+        },
+        {
+          "name": "Cigarette",
+          "instances": 1128,
+          "current_class": "general_trash",
+          "proposed_class": "general_trash",
+          "type": "DIRECT",
+          "notes": "Non-recyclable cellulose acetate filter + ash/paper."
+        },
+        {
+          "name": "Clear plastic bottle",
+          "instances": 484,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Clean recyclable PET beverage bottle."
+        },
+        {
+          "name": "Corrugated carton",
+          "instances": 114,
+          "current_class": "cardboard",
+          "proposed_class": "cardboard",
+          "type": "DIRECT",
+          "notes": "Clean corrugated cardboard."
+        },
+        {
+          "name": "Crisp packet",
+          "instances": 66,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Metallized plastic composite film; non-recyclable curbside."
+        },
+        {
+          "name": "Disposable food container",
+          "instances": 62,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Soiled takeout containers are non-recyclable residual waste."
+        },
+        {
+          "name": "Disposable plastic cup",
+          "instances": 176,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Single-use PP/PET drink cup."
+        },
+        {
+          "name": "Drink can",
+          "instances": 370,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Aluminium beverage can."
+        },
+        {
+          "name": "Drink carton",
+          "instances": 73,
+          "current_class": "cardboard",
+          "proposed_class": "cardboard",
+          "type": "CONDITIONAL",
+          "notes": "Tetra Pak composite carton; accepted in paperboard streams under modern hydrapulping."
+        },
+        {
+          "name": "Egg carton",
+          "instances": 21,
+          "current_class": "cardboard",
+          "proposed_class": "cardboard",
+          "type": "DIRECT",
+          "notes": "Molded pulp cardboard."
+        },
+        {
+          "name": "Foam cup",
+          "instances": 24,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Expanded polystyrene; rejected by municipal curbside recycling."
+        },
+        {
+          "name": "Foam food container",
+          "instances": 26,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Expanded polystyrene takeaway clamshell; non-recyclable."
+        },
+        {
+          "name": "Food Can",
+          "instances": 55,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Steel/tin food can."
+        },
+        {
+          "name": "Food waste",
+          "instances": 13,
+          "current_class": null,
+          "proposed_class": "organic",
+          "type": "DIRECT",
+          "notes": "Biodegradable food scraps; maps to new Organic class."
+        },
+        {
+          "name": "Garbage bag",
+          "instances": 52,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "CONDITIONAL",
+          "notes": "Empty plastic film bag."
+        },
+        {
+          "name": "Glass bottle",
+          "instances": 181,
+          "current_class": "glass",
+          "proposed_class": "glass",
+          "type": "DIRECT",
+          "notes": "Container glass bottle."
+        },
+        {
+          "name": "Glass cup",
+          "instances": 11,
+          "current_class": "glass",
+          "proposed_class": "glass",
+          "type": "DIRECT",
+          "notes": "Drinking glass."
+        },
+        {
+          "name": "Glass jar",
+          "instances": 11,
+          "current_class": "glass",
+          "proposed_class": "glass",
+          "type": "DIRECT",
+          "notes": "Food jar glass."
+        },
+        {
+          "name": "Magazine paper",
+          "instances": 14,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Glossy paper publication."
+        },
+        {
+          "name": "Meal carton",
+          "instances": 57,
+          "current_class": "cardboard",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Food-soiled takeout paperboard box; non-recyclable if greasy."
+        },
+        {
+          "name": "Metal bottle cap",
+          "instances": 133,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Bottle crown caps."
+        },
+        {
+          "name": "Metal lid",
+          "instances": 19,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Jar metal lids."
+        },
+        {
+          "name": "Normal paper",
+          "instances": 136,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Clean office paper sheets."
+        },
+        {
+          "name": "Other carton",
+          "instances": 159,
+          "current_class": "cardboard",
+          "proposed_class": "cardboard",
+          "type": "DIRECT",
+          "notes": "Dry paperboard cartons."
+        },
+        {
+          "name": "Other plastic",
+          "instances": 456,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Rigid plastic items."
+        },
+        {
+          "name": "Other plastic bottle",
+          "instances": 89,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Detergent/cleaning bottles."
+        },
+        {
+          "name": "Other plastic container",
+          "instances": 9,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Tubs and trays."
+        },
+        {
+          "name": "Other plastic cup",
+          "instances": 4,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Plastic drinking cups."
+        },
+        {
+          "name": "Other plastic wrapper",
+          "instances": 446,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "CONDITIONAL",
+          "notes": "Clean film packaging."
+        },
+        {
+          "name": "Paper bag",
+          "instances": 51,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Kraft shopping bags."
+        },
+        {
+          "name": "Paper cup",
+          "instances": 117,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Clean paper cups."
+        },
+        {
+          "name": "Paper straw",
+          "instances": 7,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Paper drinking straws."
+        },
+        {
+          "name": "Pizza box",
+          "instances": 5,
+          "current_class": "cardboard",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Greasy food-contact box; assigned to general_trash under disposal policy."
+        },
+        {
+          "name": "Plastic bottle cap",
+          "instances": 348,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Plastic screw caps."
+        },
+        {
+          "name": "Plastic film",
+          "instances": 789,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Clean packaging film."
+        },
+        {
+          "name": "Plastic glooves",
+          "instances": 6,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Sanitary protective gloves; non-recyclable."
+        },
+        {
+          "name": "Plastic lid",
+          "instances": 138,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Cup and container lids."
+        },
+        {
+          "name": "Plastic straw",
+          "instances": 280,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Single-use straws; non-recyclable curbside."
+        },
+        {
+          "name": "Plastic utensils",
+          "instances": 60,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Single-use cutlery; non-recyclable curbside."
+        },
+        {
+          "name": "Polypropylene bag",
+          "instances": 6,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Woven PP sacks."
+        },
+        {
+          "name": "Pop tab",
+          "instances": 161,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Aluminium can tabs."
+        },
+        {
+          "name": "Rope - strings",
+          "instances": 51,
+          "current_class": "general_trash",
+          "proposed_class": "general_trash",
+          "type": "DIRECT",
+          "notes": "Entangling tanglers; landfill waste."
+        },
+        {
+          "name": "Scrap metal",
+          "instances": 39,
+          "current_class": "metal",
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Small metal hardware."
+        },
+        {
+          "name": "Shoe",
+          "instances": 11,
+          "current_class": null,
+          "proposed_class": null,
+          "type": "EXCLUDED",
+          "notes": "Footwear excluded."
+        },
+        {
+          "name": "Single-use carrier bag",
+          "instances": 104,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "PE shopping bags."
+        },
+        {
+          "name": "Six pack rings",
+          "instances": 21,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "LDPE can rings."
+        },
+        {
+          "name": "Spread tub",
+          "instances": 17,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Butter tubs."
+        },
+        {
+          "name": "Squeezable tube",
+          "instances": 12,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Multi-material cosmetic/toothpaste tubes."
+        },
+        {
+          "name": "Styrofoam piece",
+          "instances": 195,
+          "current_class": "plastic",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Expanded polystyrene; non-recyclable."
+        },
+        {
+          "name": "Tissues",
+          "instances": 75,
+          "current_class": "paper",
+          "proposed_class": "general_trash",
+          "type": "CONDITIONAL",
+          "notes": "Soiled facial tissues and napkins; sanitary general waste."
+        },
+        {
+          "name": "Toilet tube",
+          "instances": 9,
+          "current_class": "cardboard",
+          "proposed_class": "cardboard",
+          "type": "DIRECT",
+          "notes": "Cardboard toilet paper roll."
+        },
+        {
+          "name": "Tupperware",
+          "instances": 7,
+          "current_class": "plastic",
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Rigid plastic food container."
+        },
+        {
+          "name": "Unlabeled litter",
+          "instances": 903,
+          "current_class": "general_trash",
+          "proposed_class": "general_trash",
+          "type": "MANUAL_REVIEW",
+          "notes": "Ambiguous litter fragments; requires review queue."
+        },
+        {
+          "name": "Wrapping paper",
+          "instances": 17,
+          "current_class": "paper",
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Decorative paper wrap."
+        }
+      ]
+    },
+    "general_waste_data_mcl2": {
+      "total_images": 10464,
+      "total_annotations": 74073,
+      "categories": [
+        {
+          "name": "BIODEGRADABLE",
+          "raw_instances": 45395,
+          "proposed_class": "organic",
+          "type": "DIRECT",
+          "notes": "Large pool of organic food scraps and fruit/vegetable waste."
+        },
+        {
+          "name": "CARDBOARD",
+          "raw_instances": 4696,
+          "proposed_class": "cardboard",
+          "type": "DIRECT",
+          "notes": "Clean cardboard boxes."
+        },
+        {
+          "name": "GLASS",
+          "raw_instances": 7809,
+          "proposed_class": "glass",
+          "type": "DIRECT",
+          "notes": "Glass bottles and containers."
+        },
+        {
+          "name": "METAL",
+          "raw_instances": 5841,
+          "proposed_class": "metal",
+          "type": "DIRECT",
+          "notes": "Clean metal cans and tins."
+        },
+        {
+          "name": "PAPER",
+          "raw_instances": 4387,
+          "proposed_class": "paper",
+          "type": "DIRECT",
+          "notes": "Clean paper sheets and packaging."
+        },
+        {
+          "name": "PLASTIC",
+          "raw_instances": 5945,
+          "proposed_class": "plastic",
+          "type": "DIRECT",
+          "notes": "Clean plastic packaging."
+        }
+      ]
+    },
+    "coco_negatives": {
+      "total_images": 800,
+      "total_annotations": 0,
+      "notes": "Verified 800 certified non-waste negative images with 0-byte labels."
+    }
+  }
+}

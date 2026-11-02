@@ -1,0 +1,120 @@
+[
+  {
+    "test_case": "1. Cardboard Piles",
+    "image": "cardboard_03.png",
+    "ground_truth_desc": "Pile of overlapping cardboard boxes on floor",
+    "count_before_standard_nms": 9,
+    "count_after_ca_nms": 8,
+    "detections_before": [
+      "cardboard:0.51",
+      "cardboard:0.31",
+      "cardboard:0.23",
+      "cardboard:0.22",
+      "cardboard:0.20",
+      "cardboard:0.20",
+      "plastic:0.18",
+      "cardboard:0.18",
+      "cardboard:0.17"
+    ],
+    "detections_after": [
+      "cardboard:0.51",
+      "cardboard:0.23",
+      "cardboard:0.22",
+      "cardboard:0.20",
+      "cardboard:0.20",
+      "plastic:0.18",
+      "cardboard:0.18",
+      "cardboard:0.17"
+    ],
+    "suppressed_boxes": [
+      {
+        "class_id": 2,
+        "class_name": "cardboard",
+        "confidence": 0.3065,
+        "bounding_box": {
+          "x1": 7.7,
+          "y1": 161.7,
+          "x2": 432.2,
+          "y2": 479.9
+        }
+      }
+    ]
+  },
+  {
+    "test_case": "2. Broken Glass Shards",
+    "image": "glass_02.webp",
+    "ground_truth_desc": "Shattered clear glass bottle with shards (0 metal)",
+    "count_before_standard_nms": 7,
+    "count_after_ca_nms": 6,
+    "detections_before": [
+      "glass:0.91",
+      "glass:0.45",
+      "glass:0.43",
+      "glass:0.42",
+      "glass:0.38",
+      "metal:0.25",
+      "glass:0.20"
+    ],
+    "detections_after": [
+      "glass:0.91",
+      "glass:0.45",
+      "glass:0.43",
+      "glass:0.42",
+      "glass:0.38",
+      "glass:0.20"
+    ],
+    "suppressed_boxes": [
+      {
+        "class_id": 1,
+        "class_name": "metal",
+        "confidence": 0.2462,
+        "bounding_box": {
+          "x1": 38.4,
+          "y1": 50.4,
+          "x2": 78.2,
+          "y2": 66.7
+        }
+      }
+    ]
+  },
+  {
+    "test_case": "3. Adjacent Metal Cans",
+    "image": "metal_03.webp",
+    "ground_truth_desc": "Two distinct beverage cans placed adjacent to each other",
+    "count_before_standard_nms": 2,
+    "count_after_ca_nms": 2,
+    "detections_before": [
+      "metal:0.92",
+      "metal:0.59"
+    ],
+    "detections_after": [
+      "metal:0.92",
+      "metal:0.59"
+    ],
+    "suppressed_boxes": []
+  },
+  {
+    "test_case": "4. Neighboring Plastic Objects",
+    "image": "plastic_01.webp",
+    "ground_truth_desc": "Multiple separate plastic cups and bottles grouped together",
+    "count_before_standard_nms": 6,
+    "count_after_ca_nms": 6,
+    "detections_before": [
+      "plastic:0.35",
+      "plastic:0.30",
+      "plastic:0.24",
+      "plastic:0.16",
+      "plastic:0.16",
+      "plastic:0.15"
+    ],
+    "detections_after": [
+      "plastic:0.35",
+      "plastic:0.30",
+      "plastic:0.24",
+      "plastic:0.16",
+      "plastic:0.16",
+      "plastic:0.15"
+    ],
+    "suppressed_boxes": []
+  }
+]

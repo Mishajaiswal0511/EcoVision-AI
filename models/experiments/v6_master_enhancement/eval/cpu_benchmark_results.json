@@ -1,0 +1,21 @@
+{
+  "hardware": "AMD Ryzen 7 7735U, 16 GB RAM (CPU Inference)",
+  "model_path": "models\\experiments\\v5_taxonomy\\training\\yolo11s_v5_best.pt",
+  "model_load_time_sec": 0.177,
+  "standard_800": {
+    "resolution": "800x800",
+    "sample_count": 100,
+    "mean_latency_ms": 183.2,
+    "median_latency_ms": 177.04,
+    "p95_latency_ms": 220.85,
+    "throughput_fps": 5.46
+  },
+  "high_detail_1024": {
+    "resolution": "1024x1024",
+    "sample_count": 100,
+    "mean_latency_ms": 267.91,
+    "median_latency_ms": 266.92,
+    "p95_latency_ms": 292.51,
+    "throughput_fps": 3.73
+  }
+}

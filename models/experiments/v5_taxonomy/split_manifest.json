@@ -1,0 +1,39 @@
+{
+  "version": "5.0",
+  "created_at": "2026-10-31",
+  "taxonomy": [
+    "plastic",
+    "metal",
+    "cardboard",
+    "glass",
+    "paper",
+    "general_trash",
+    "organic"
+  ],
+  "counts": {
+    "train_images": 8242,
+    "val_images": 3007,
+    "total_images": 11249,
+    "train_instances": 27576,
+    "val_instances": 10732,
+    "total_instances": 38308,
+    "class_instances_train": {
+      "plastic": 6362,
+      "metal": 4883,
+      "cardboard": 3563,
+      "glass": 5908,
+      "paper": 3392,
+      "general_trash": 1926,
+      "organic": 1542
+    },
+    "class_instances_val": {
+      "plastic": 2280,
+      "metal": 1662,
+      "cardboard": 1432,
+      "glass": 2234,
+      "paper": 1257,
+      "general_trash": 643,
+      "organic": 1224
+    }
+  }
+}

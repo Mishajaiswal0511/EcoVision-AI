@@ -1,0 +1,2259 @@
+{
+  "1_mixed_recyclables": {
+    "individual": {
+      "M1_V4_YOLO11s_640": {
+        "detections": [],
+        "count": 0,
+        "latency_ms": 1988.17
+      },
+      "M2_V4_YOLO11m_960": {
+        "detections": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.6617,
+            "box": [
+              94.2,
+              262.0,
+              155.3,
+              329.1
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.6544,
+            "box": [
+              236.1,
+              304.3,
+              298.3,
+              389.8
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3958,
+            "box": [
+              43.0,
+              303.5,
+              120.1,
+              395.8
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3879,
+            "box": [
+              23.8,
+              76.7,
+              130.7,
+              141.6
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3136,
+            "box": [
+              113.5,
+              253.6,
+              265.3,
+              400.0
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.2152,
+            "box": [
+              448.0,
+              117.3,
+              563.4,
+              194.7
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1833,
+            "box": [
+              9.7,
+              264.5,
+              79.3,
+              340.2
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1731,
+            "box": [
+              0.0,
+              80.4,
+              34.1,
+              158.5
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1677,
+            "box": [
+              555.4,
+              96.2,
+              600.0,
+              179.6
+            ]
+          }
+        ],
+        "count": 9,
+        "latency_ms": 542.24
+      },
+      "M3_V5_ExpA_640": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3985,
+            "box": [
+              230.2,
+              303.9,
+              298.1,
+              397.4
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.364,
+            "box": [
+              114.0,
+              251.5,
+              267.7,
+              397.9
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1722,
+            "box": [
+              247.3,
+              86.6,
+              281.8,
+              119.9
+            ]
+          }
+        ],
+        "count": 3,
+        "latency_ms": 151.1
+      },
+      "M4_V5_ExpB_800": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.665,
+            "box": [
+              233.3,
+              304.5,
+              299.1,
+              393.7
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.5143,
+            "box": [
+              95.1,
+              261.5,
+              156.0,
+              330.8
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4002,
+            "box": [
+              111.6,
+              250.8,
+              266.3,
+              398.4
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3922,
+            "box": [
+              389.0,
+              297.0,
+              536.4,
+              381.6
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3584,
+            "box": [
+              305.7,
+              71.6,
+              411.7,
+              126.9
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3254,
+            "box": [
+              55.6,
+              67.0,
+              177.2,
+              122.1
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3168,
+            "box": [
+              420.4,
+              186.6,
+              473.5,
+              236.9
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2693,
+            "box": [
+              54.9,
+              184.4,
+              153.3,
+              257.2
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2225,
+            "box": [
+              483.8,
+              249.9,
+              534.0,
+              314.2
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2182,
+            "box": [
+              293.3,
+              361.1,
+              337.4,
+              399.3
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2043,
+            "box": [
+              50.0,
+              305.2,
+              120.5,
+              396.5
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1784,
+            "box": [
+              444.2,
+              116.2,
+              568.2,
+              197.0
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1667,
+            "box": [
+              554.6,
+              97.0,
+              600.0,
+              179.4
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1663,
+            "box": [
+              0.1,
+              320.7,
+              78.1,
+              398.7
+            ]
+          }
+        ],
+        "count": 14,
+        "latency_ms": 218.33
+      }
+    },
+    "ensembles": {
+      "Majority_Voting": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.5318,
+            "box": [
+              231.8,
+              304.2,
+              298.6,
+              395.5
+            ],
+            "agreement": "2/3"
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.588,
+            "box": [
+              94.7,
+              261.8,
+              155.7,
+              330.0
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3821,
+            "box": [
+              112.8,
+              251.2,
+              267.0,
+              398.1
+            ],
+            "agreement": "2/3"
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3958,
+            "box": [
+              43.0,
+              303.5,
+              120.1,
+              395.8
+            ],
+            "agreement": "1/2"
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1968,
+            "box": [
+              446.1,
+              116.8,
+              565.8,
+              195.8
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1677,
+            "box": [
+              555.4,
+              96.2,
+              600.0,
+              179.6
+            ],
+            "agreement": "1/2"
+          }
+        ],
+        "count": 6
+      },
+      "Confidence_Weighted": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.5318,
+            "box": [
+              232.1,
+              304.3,
+              298.7,
+              395.1
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.588,
+            "box": [
+              94.6,
+              261.8,
+              155.6,
+              329.8
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3821,
+            "box": [
+              112.7,
+              251.1,
+              267.0,
+              398.2
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3958,
+            "box": [
+              43.0,
+              303.5,
+              120.1,
+              395.8
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3922,
+            "box": [
+              389.0,
+              297.0,
+              536.4,
+              381.6
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3879,
+            "box": [
+              23.8,
+              76.7,
+              130.7,
+              141.6
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3584,
+            "box": [
+              305.7,
+              71.6,
+              411.7,
+              126.9
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3254,
+            "box": [
+              55.6,
+              67.0,
+              177.2,
+              122.1
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3168,
+            "box": [
+              420.4,
+              186.6,
+              473.5,
+              236.9
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2693,
+            "box": [
+              54.9,
+              184.4,
+              153.3,
+              257.2
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2225,
+            "box": [
+              483.8,
+              249.9,
+              534.0,
+              314.2
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2182,
+            "box": [
+              293.3,
+              361.1,
+              337.4,
+              399.3
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1968,
+            "box": [
+              446.3,
+              116.8,
+              565.6,
+              195.7
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1833,
+            "box": [
+              9.7,
+              264.5,
+              79.3,
+              340.2
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1731,
+            "box": [
+              0.0,
+              80.4,
+              34.1,
+              158.5
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1722,
+            "box": [
+              247.3,
+              86.6,
+              281.8,
+              119.9
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1677,
+            "box": [
+              555.4,
+              96.2,
+              600.0,
+              179.6
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1663,
+            "box": [
+              0.1,
+              320.7,
+              78.1,
+              398.7
+            ],
+            "contributing_models": 1
+          }
+        ],
+        "count": 18
+      },
+      "Detection_Level_WBF": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.5318,
+            "box": [
+              233.6,
+              304.3,
+              298.6,
+              393.1
+            ],
+            "cluster_size": 3
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.588,
+            "box": [
+              94.6,
+              261.8,
+              155.6,
+              329.8
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3821,
+            "box": [
+              113.0,
+              251.9,
+              266.5,
+              398.7
+            ],
+            "cluster_size": 3
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3958,
+            "box": [
+              45.4,
+              304.1,
+              120.2,
+              396.0
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1968,
+            "box": [
+              446.3,
+              116.8,
+              565.6,
+              195.7
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.1677,
+            "box": [
+              555.0,
+              96.6,
+              600.0,
+              179.5
+            ],
+            "cluster_size": 2
+          }
+        ],
+        "count": 6
+      }
+    }
+  },
+  "2_garbage_pile": {
+    "individual": {
+      "M1_V4_YOLO11s_640": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3168,
+            "box": [
+              269.6,
+              397.1,
+              293.5,
+              420.0
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3112,
+            "box": [
+              378.7,
+              440.2,
+              405.6,
+              459.9
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2587,
+            "box": [
+              308.8,
+              61.0,
+              379.8,
+              116.4
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2575,
+            "box": [
+              129.0,
+              803.8,
+              164.1,
+              851.8
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2001,
+            "box": [
+              392.0,
+              463.9,
+              447.5,
+              509.6
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1816,
+            "box": [
+              354.6,
+              525.4,
+              374.3,
+              553.7
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1775,
+            "box": [
+              375.3,
+              266.7,
+              425.3,
+              308.4
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1738,
+            "box": [
+              309.7,
+              54.3,
+              550.4,
+              180.4
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1668,
+            "box": [
+              380.8,
+              267.1,
+              413.9,
+              293.3
+            ]
+          }
+        ],
+        "count": 9,
+        "latency_ms": 122.84
+      },
+      "M2_V4_YOLO11m_960": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4396,
+            "box": [
+              269.4,
+              395.8,
+              293.8,
+              417.1
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3168,
+            "box": [
+              355.2,
+              526.3,
+              373.9,
+              553.7
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2932,
+            "box": [
+              324.3,
+              793.7,
+              361.3,
+              830.1
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2697,
+            "box": [
+              160.6,
+              297.4,
+              292.8,
+              452.8
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2473,
+            "box": [
+              405.3,
+              463.0,
+              449.3,
+              511.8
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2107,
+            "box": [
+              379.2,
+              439.0,
+              406.3,
+              461.0
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1925,
+            "box": [
+              302.8,
+              492.9,
+              363.8,
+              523.9
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1826,
+            "box": [
+              266.6,
+              595.3,
+              295.5,
+              616.8
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1673,
+            "box": [
+              325.3,
+              65.8,
+              347.3,
+              91.5
+            ]
+          }
+        ],
+        "count": 9,
+        "latency_ms": 495.72
+      },
+      "M3_V5_ExpA_640": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3296,
+            "box": [
+              378.3,
+              439.9,
+              406.0,
+              460.0
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3103,
+            "box": [
+              597.7,
+              686.5,
+              660.6,
+              718.1
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2568,
+            "box": [
+              270.4,
+              397.8,
+              294.8,
+              418.0
+            ]
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.2071,
+            "box": [
+              373.2,
+              303.9,
+              485.4,
+              405.5
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1748,
+            "box": [
+              304.8,
+              491.7,
+              352.1,
+              520.9
+            ]
+          }
+        ],
+        "count": 5,
+        "latency_ms": 95.2
+      },
+      "M4_V5_ExpB_800": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4323,
+            "box": [
+              156.6,
+              304.3,
+              292.1,
+              451.6
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3719,
+            "box": [
+              268.4,
+              396.4,
+              294.6,
+              417.9
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2949,
+            "box": [
+              265.7,
+              82.7,
+              309.4,
+              104.4
+            ]
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.2388,
+            "box": [
+              463.1,
+              503.0,
+              493.2,
+              543.8
+            ]
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.2128,
+            "box": [
+              535.0,
+              542.3,
+              564.4,
+              577.0
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1809,
+            "box": [
+              379.4,
+              440.0,
+              405.6,
+              459.6
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1634,
+            "box": [
+              304.5,
+              493.0,
+              336.6,
+              518.4
+            ]
+          }
+        ],
+        "count": 7,
+        "latency_ms": 150.95
+      }
+    },
+    "ensembles": {
+      "Majority_Voting": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.3463,
+            "box": [
+              269.4,
+              396.8,
+              294.2,
+              418.2
+            ],
+            "agreement": "4/4"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.351,
+            "box": [
+              158.6,
+              300.9,
+              292.5,
+              452.2
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2581,
+            "box": [
+              378.9,
+              439.8,
+              405.9,
+              460.1
+            ],
+            "agreement": "4/4"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2492,
+            "box": [
+              354.9,
+              525.8,
+              374.1,
+              553.7
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2237,
+            "box": [
+              398.6,
+              463.4,
+              448.4,
+              510.7
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1837,
+            "box": [
+              303.8,
+              492.3,
+              358.0,
+              522.4
+            ],
+            "agreement": "2/2"
+          }
+        ],
+        "count": 6
+      },
+      "Confidence_Weighted": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.3463,
+            "box": [
+              269.4,
+              396.6,
+              294.1,
+              418.1
+            ],
+            "contributing_models": 4
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.351,
+            "box": [
+              158.1,
+              301.6,
+              292.4,
+              452.1
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2581,
+            "box": [
+              378.8,
+              439.8,
+              405.9,
+              460.1
+            ],
+            "contributing_models": 4
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2492,
+            "box": [
+              355.0,
+              526.0,
+              374.0,
+              553.7
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.3103,
+            "box": [
+              597.7,
+              686.5,
+              660.6,
+              718.1
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2949,
+            "box": [
+              265.7,
+              82.7,
+              309.4,
+              104.4
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2932,
+            "box": [
+              324.3,
+              793.7,
+              361.3,
+              830.1
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2587,
+            "box": [
+              308.8,
+              61.0,
+              379.8,
+              116.4
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2575,
+            "box": [
+              129.0,
+              803.8,
+              164.1,
+              851.8
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2237,
+            "box": [
+              399.4,
+              463.4,
+              448.5,
+              510.8
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "general_trash",
+            "confidence": 0.2388,
+            "box": [
+              463.1,
+              503.0,
+              493.2,
+              543.8
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "general_trash",
+            "confidence": 0.2128,
+            "box": [
+              535.0,
+              542.3,
+              564.4,
+              577.0
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "general_trash",
+            "confidence": 0.2071,
+            "box": [
+              373.2,
+              303.9,
+              485.4,
+              405.5
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1837,
+            "box": [
+              303.8,
+              492.3,
+              358.2,
+              522.5
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1826,
+            "box": [
+              266.6,
+              595.3,
+              295.5,
+              616.8
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1775,
+            "box": [
+              375.3,
+              266.7,
+              425.3,
+              308.4
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1738,
+            "box": [
+              309.7,
+              54.3,
+              550.4,
+              180.4
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1673,
+            "box": [
+              325.3,
+              65.8,
+              347.3,
+              91.5
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1668,
+            "box": [
+              380.8,
+              267.1,
+              413.9,
+              293.3
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1634,
+            "box": [
+              304.5,
+              493.0,
+              336.6,
+              518.4
+            ],
+            "contributing_models": 1
+          }
+        ],
+        "count": 20
+      },
+      "Detection_Level_WBF": {
+        "detections": [
+          {
+            "class_name": "plastic",
+            "confidence": 0.3463,
+            "box": [
+              269.4,
+              396.6,
+              294.1,
+              418.1
+            ],
+            "cluster_size": 4
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.351,
+            "box": [
+              158.1,
+              301.6,
+              292.4,
+              452.1
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2581,
+            "box": [
+              378.8,
+              439.8,
+              405.9,
+              460.1
+            ],
+            "cluster_size": 4
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2492,
+            "box": [
+              355.0,
+              526.0,
+              374.0,
+              553.7
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.2237,
+            "box": [
+              399.4,
+              463.4,
+              448.5,
+              510.8
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1837,
+            "box": [
+              303.8,
+              492.3,
+              358.2,
+              522.5
+            ],
+            "cluster_size": 2
+          }
+        ],
+        "count": 6
+      }
+    }
+  },
+  "3_broken_glass": {
+    "individual": {
+      "M1_V4_YOLO11s_640": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.9162,
+            "box": [
+              18.9,
+              49.9,
+              110.0,
+              402.6
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3845,
+            "box": [
+              134.2,
+              344.4,
+              183.2,
+              382.4
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3154,
+            "box": [
+              377.7,
+              312.8,
+              493.5,
+              378.5
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3086,
+            "box": [
+              203.4,
+              317.0,
+              495.2,
+              436.7
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3058,
+            "box": [
+              201.8,
+              394.8,
+              263.2,
+              452.1
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.296,
+            "box": [
+              201.1,
+              362.1,
+              245.9,
+              384.4
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2481,
+            "box": [
+              248.7,
+              321.6,
+              398.9,
+              421.6
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2058,
+            "box": [
+              196.6,
+              295.9,
+              269.5,
+              336.7
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1897,
+            "box": [
+              63.2,
+              408.6,
+              138.6,
+              434.5
+            ]
+          }
+        ],
+        "count": 9,
+        "latency_ms": 115.01
+      },
+      "M2_V4_YOLO11m_960": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.914,
+            "box": [
+              16.6,
+              59.6,
+              109.8,
+              400.6
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.4446,
+            "box": [
+              36.6,
+              50.2,
+              76.3,
+              66.9
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3847,
+            "box": [
+              201.6,
+              394.9,
+              241.7,
+              450.8
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3791,
+            "box": [
+              218.5,
+              314.8,
+              492.3,
+              436.1
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.294,
+            "box": [
+              196.5,
+              295.6,
+              269.2,
+              334.2
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.288,
+            "box": [
+              127.2,
+              310.2,
+              183.7,
+              383.1
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2676,
+            "box": [
+              237.1,
+              399.7,
+              270.2,
+              425.9
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2569,
+            "box": [
+              64.7,
+              408.7,
+              138.0,
+              434.0
+            ]
+          }
+        ],
+        "count": 8,
+        "latency_ms": 598.41
+      },
+      "M3_V5_ExpA_640": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.906,
+            "box": [
+              16.9,
+              50.5,
+              110.3,
+              404.8
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.7567,
+            "box": [
+              196.3,
+              295.5,
+              269.2,
+              339.1
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.6279,
+            "box": [
+              245.0,
+              314.8,
+              494.8,
+              425.3
+            ]
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4595,
+            "box": [
+              63.2,
+              411.1,
+              137.8,
+              434.7
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4127,
+            "box": [
+              197.8,
+              396.1,
+              267.6,
+              454.8
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3522,
+            "box": [
+              134.3,
+              345.7,
+              185.1,
+              383.8
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.287,
+            "box": [
+              201.1,
+              361.9,
+              241.1,
+              384.0
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2128,
+            "box": [
+              245.9,
+              398.2,
+              270.0,
+              424.5
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2019,
+            "box": [
+              126.4,
+              309.6,
+              186.2,
+              385.0
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1932,
+            "box": [
+              202.5,
+              408.0,
+              242.1,
+              451.2
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1766,
+            "box": [
+              241.4,
+              325.7,
+              293.6,
+              372.0
+            ]
+          }
+        ],
+        "count": 11,
+        "latency_ms": 100.98
+      },
+      "M4_V5_ExpB_800": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.9128,
+            "box": [
+              17.0,
+              50.4,
+              110.9,
+              400.7
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4537,
+            "box": [
+              127.1,
+              320.0,
+              184.8,
+              383.0
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4263,
+            "box": [
+              201.4,
+              394.1,
+              245.3,
+              449.9
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.421,
+            "box": [
+              241.9,
+              321.3,
+              396.5,
+              427.4
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3812,
+            "box": [
+              197.5,
+              295.4,
+              269.3,
+              338.5
+            ]
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.2462,
+            "box": [
+              38.4,
+              50.4,
+              78.2,
+              66.7
+            ]
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2038,
+            "box": [
+              201.3,
+              362.7,
+              237.5,
+              382.9
+            ]
+          }
+        ],
+        "count": 7,
+        "latency_ms": 201.66
+      }
+    },
+    "ensembles": {
+      "Majority_Voting": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.9123,
+            "box": [
+              17.4,
+              52.6,
+              110.2,
+              402.2
+            ],
+            "agreement": "4/4"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.4094,
+            "box": [
+              196.7,
+              295.6,
+              269.3,
+              337.1
+            ],
+            "agreement": "4/4"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3969,
+            "box": [
+              231.5,
+              317.9,
+              455.5,
+              429.4
+            ],
+            "agreement": "5/5"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2233,
+            "box": [
+              64.0,
+              408.6,
+              138.3,
+              434.2
+            ],
+            "agreement": "2/3"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3361,
+            "box": [
+              129.8,
+              326.0,
+              184.6,
+              383.5
+            ],
+            "agreement": "5/5"
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3454,
+            "box": [
+              37.5,
+              50.3,
+              77.2,
+              66.8
+            ],
+            "agreement": "2/2"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3445,
+            "box": [
+              201.0,
+              397.6,
+              252.0,
+              451.8
+            ],
+            "agreement": "5/5"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2623,
+            "box": [
+              201.2,
+              362.2,
+              241.5,
+              383.8
+            ],
+            "agreement": "3/3"
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2402,
+            "box": [
+              241.5,
+              398.9,
+              270.1,
+              425.2
+            ],
+            "agreement": "2/2"
+          }
+        ],
+        "count": 9
+      },
+      "Confidence_Weighted": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.9123,
+            "box": [
+              17.4,
+              52.6,
+              110.2,
+              402.2
+            ],
+            "contributing_models": 4
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.4094,
+            "box": [
+              196.7,
+              295.5,
+              269.3,
+              337.8
+            ],
+            "contributing_models": 4
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3969,
+            "box": [
+              233.3,
+              317.4,
+              461.5,
+              429.1
+            ],
+            "contributing_models": 5
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.4595,
+            "box": [
+              63.2,
+              411.1,
+              137.8,
+              434.7
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3361,
+            "box": [
+              130.2,
+              328.0,
+              184.5,
+              383.3
+            ],
+            "contributing_models": 5
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3454,
+            "box": [
+              37.2,
+              50.3,
+              77.0,
+              66.8
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3445,
+            "box": [
+              200.8,
+              396.4,
+              252.7,
+              451.8
+            ],
+            "contributing_models": 5
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3154,
+            "box": [
+              377.7,
+              312.8,
+              493.5,
+              378.5
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2623,
+            "box": [
+              201.2,
+              362.2,
+              242.0,
+              383.9
+            ],
+            "contributing_models": 3
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2402,
+            "box": [
+              241.0,
+              399.0,
+              270.1,
+              425.3
+            ],
+            "contributing_models": 2
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.1766,
+            "box": [
+              241.4,
+              325.7,
+              293.6,
+              372.0
+            ],
+            "contributing_models": 1
+          }
+        ],
+        "count": 11
+      },
+      "Detection_Level_WBF": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.9123,
+            "box": [
+              17.4,
+              52.6,
+              110.2,
+              402.2
+            ],
+            "cluster_size": 4
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.4094,
+            "box": [
+              196.7,
+              295.5,
+              269.3,
+              337.8
+            ],
+            "cluster_size": 4
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3969,
+            "box": [
+              233.3,
+              317.4,
+              461.5,
+              429.1
+            ],
+            "cluster_size": 5
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.4595,
+            "box": [
+              63.6,
+              409.9,
+              138.0,
+              434.5
+            ],
+            "cluster_size": 3
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3361,
+            "box": [
+              130.2,
+              328.0,
+              184.5,
+              383.3
+            ],
+            "cluster_size": 5
+          },
+          {
+            "class_name": "metal",
+            "confidence": 0.3454,
+            "box": [
+              37.2,
+              50.3,
+              77.0,
+              66.8
+            ],
+            "cluster_size": 2
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.3445,
+            "box": [
+              200.8,
+              396.4,
+              252.7,
+              451.8
+            ],
+            "cluster_size": 5
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2623,
+            "box": [
+              201.2,
+              362.2,
+              242.0,
+              383.9
+            ],
+            "cluster_size": 3
+          },
+          {
+            "class_name": "glass",
+            "confidence": 0.2402,
+            "box": [
+              241.0,
+              399.0,
+              270.1,
+              425.3
+            ],
+            "cluster_size": 2
+          }
+        ],
+        "count": 9
+      }
+    }
+  },
+  "4_banana_peel": {
+    "individual": {
+      "M1_V4_YOLO11s_640": {
+        "detections": [],
+        "count": 0,
+        "latency_ms": 109.48
+      },
+      "M2_V4_YOLO11m_960": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1827,
+            "box": [
+              242.0,
+              137.8,
+              369.1,
+              186.6
+            ]
+          }
+        ],
+        "count": 1,
+        "latency_ms": 448.53
+      },
+      "M3_V5_ExpA_640": {
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1656,
+            "box": [
+              68.5,
+              69.3,
+              238.7,
+              182.4
+            ]
+          }
+        ],
+        "count": 1,
+        "latency_ms": 70.6
+      },
+      "M4_V5_ExpB_800": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.598,
+            "box": [
+              66.4,
+              76.0,
+              239.1,
+              183.6
+            ]
+          }
+        ],
+        "count": 1,
+        "latency_ms": 135.1
+      }
+    },
+    "ensembles": {
+      "Majority_Voting": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.598,
+            "box": [
+              66.4,
+              76.0,
+              239.1,
+              183.6
+            ],
+            "agreement": "1/2"
+          }
+        ],
+        "count": 1
+      },
+      "Confidence_Weighted": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.598,
+            "box": [
+              66.4,
+              76.0,
+              239.1,
+              183.6
+            ],
+            "contributing_models": 1
+          },
+          {
+            "class_name": "plastic",
+            "confidence": 0.1827,
+            "box": [
+              242.0,
+              137.8,
+              369.1,
+              186.6
+            ],
+            "contributing_models": 1
+          }
+        ],
+        "count": 2
+      },
+      "Detection_Level_WBF": {
+        "detections": [
+          {
+            "class_name": "glass",
+            "confidence": 0.598,
+            "box": [
+              66.9,
+              74.5,
+              239.0,
+              183.3
+            ],
+            "cluster_size": 2
+          }
+        ],
+        "count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply text-slate-100 antialiased selection:bg-emerald-400 selection:text-slate-950 bg-transparent;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Make headings and paragraphs consistently luminous and readable across all dark sections */
+  h1, h2, h3, h4 {
+    @apply text-white;
+  }
+}
+
+/* Organic & Cyber HUD Keyframes */
+@keyframes cyberScan {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+@keyframes hudPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+.animate-cyber-scan {
+  animation: cyberScan 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: top, opacity;
+}
+
+.animate-hud-pulse {
+  animation: hudPulse 6s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-hud-pulse-delayed {
+  animation: hudPulse 7s ease-in-out infinite 2.5s;
+  will-change: transform, opacity;
+}
+@keyframes blobDrift1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(35px, -45px) scale(1.08);
+  }
+  66% {
+    transform: translate(-30px, 25px) scale(0.94);
+  }
+}
+
+@keyframes blobDrift2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(1.06);
+  }
+  66% {
+    transform: translate(25px, -35px) scale(0.96);
+  }
+}
+
+@keyframes blobDrift3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, 35px) scale(1.1);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-25px) translateX(15px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes floatDelayed {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-35px) translateX(-20px);
+    opacity: 0.55;
+  }
+}
+
+.animate-blob-drift-1 {
+  animation: blobDrift1 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+
+.animate-blob-drift-2 {
+  animation: blobDrift2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+
+.animate-blob-drift-3 {
+  animation: blobDrift3 28s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatDelayed 11s ease-in-out infinite 2s;
+}
+
+/* Glassmorphism Card Depth */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(6, 78, 59, 0.06), 0 4px 10px -3px rgba(0, 0, 0, 0.02);
+}
+

@@ -1,0 +1,25 @@
+{
+  "phase": "PHASE 2 \u2014 TRAINING NOTEBOOK AUDIT",
+  "kernel_id": "mishajaiswal0511/ecovision-yolo11m-training",
+  "notebook_file": "training\\kaggle\\ecovision_yolo11m_training.ipynb",
+  "total_cells": 19,
+  "gpu_enabled": true,
+  "internet_enabled": true,
+  "is_private": true,
+  "dataset_attached": "mishajaiswal0511/ecovision-train-val",
+  "hyperparameters": {
+    "imgsz": "960",
+    "epochs": "100",
+    "patience": "25",
+    "mosaic": "1.0",
+    "mixup": "0.15",
+    "copy_paste": "0.0",
+    "close_mosaic": "15",
+    "optimizer": "AdamW",
+    "seed": "42",
+    "save_period": "5"
+  },
+  "batch_fallback": "16 -> 8 -> 4",
+  "checkpoint_export": "yolo11m_best.pt to /kaggle/working/",
+  "status": "PASSED"
+}

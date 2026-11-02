@@ -1,0 +1,1858 @@
+{
+  "generated_at": "2026-10-29T00:15:23.227610",
+  "data_dir": "D:\\Projects\\ml_project\\472\\data\\raw\\garbage_taco-official-all-class_v6",
+  "phash_threshold": 10,
+  "total_images_scanned": 2550,
+  "hash_errors": [],
+  "exact_duplicates": {
+    "group_count": 0,
+    "redundant_images": 0,
+    "groups": []
+  },
+  "near_duplicates": {
+    "group_count": 120,
+    "redundant_images": 128,
+    "cross_split_contamination_groups": 5
+  },
+  "deduplication_plan": [
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000000_jpg.rf.1d051677f093973bf92f3336e269f2bc.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000000_jpg.rf.283942c7cf645372b84351e6be9dffe3.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000001_jpg.rf.0763006f9a7cfcb795604842741f1992.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000001_jpg.rf.7d2ec55b6a16af5d8fb49a71fffbea42.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000002_JPG.rf.6d681994073962f4e3789a0e160079c7.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000002_JPG.rf.93ffc2a8add35eea938c333324a60c8b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000002_JPG.rf.a0f798a799f483b602a782a3b827736c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000002_JPG.rf.afe76be02f910cca8ea7712b6b736541.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000003_jpg.rf.1b2815de8f8440eb0f4942707feea2bf.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000003_jpg.rf.4b1218eb06c78ca1d26dde5021fd3336.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000003_jpg.rf.a6a692e893bf1f519b796ac14dac032f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000003_jpg.rf.b3f3ec9232a4068106068d4acace067f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000004_jpg.rf.57007580e4a8fe98057034c2db94c2dd.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000004_jpg.rf.c116dab73dad8217dfbc199ceb6f4401.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_jpg.rf.02f41188916f6890b83b03a909df9e03.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_jpg.rf.6df61b8f6fb6d9dc9fae456207ed4a28.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": true,
+      "splits_present": [
+        "train",
+        "val"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_jpg.rf.41eb3e5de359efd2741dfcdd4cb901dd.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000000_JPG.rf.04216bd9f433d6eb121f48686d6cee32.jpg",
+          "split": "val"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_JPG.rf.a1773593f3f9bcf779b5623ba689bf34.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_JPG.rf.dcf50c8a5a4085afda11d0aefb23bc45.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": true,
+      "splits_present": [
+        "test",
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000005_JPG.rf.c346472521451f78a3a2a8826b0d838c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\test\\images\\000064_jpg.rf.17f1f7891a536096acb7ff3a8005fa45.jpg",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000006_jpg.rf.69f46ab8b76cddbb0dd077e5eb5f1b74.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000006_jpg.rf.d197c178aca9e9dd148edd543243a9d3.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000007_jpg.rf.039b924eae5a35eebf95632c27ed084c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000007_jpg.rf.9705367b77d2db78e85f2fcdeea52cfa.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000008_jpg.rf.032a352f582d6f2a063b5719a3269d7c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000008_jpg.rf.04ac345bb23d809bab418b82197f1987.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_JPG.rf.0baf7a8b9f5fcb47a9b732d168ae3fbc.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_JPG.rf.42093adbee64125ac39c40ff631c8b96.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_jpg.rf.0f1d7f30f1e1bca5b341350fba9b01f9.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_jpg.rf.ef2f7d40eb71079f1369153ed644d335.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_JPG.rf.5489c4e2abdcdf2c23a1f51c2ddf469f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000010_JPG.rf.a108680721e1cda5886a29bf9e10754c.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000011_JPG.rf.9bd697e28f5f01432c4928b83428be74.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000011_JPG.rf.a025603fc34f07d4ae017ea74c064a5f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000012_JPG.rf.7a7514204ecee7c892aaee94909c2ed8.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000012_JPG.rf.b6c0c3d757787b9468d4c862e8a26058.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000015_jpg.rf.3d92172df21dcd2e06d6170545d9e70d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000015_jpg.rf.4cede84492f1ca011ab2f175065e48d3.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000015_jpg.rf.4d43a688450703cf1e15286ecd68bd58.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000015_jpg.rf.6a661534b6aa0fcd29e59529a06ffa29.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000016_JPG.rf.d26d0f3e3047aded44c008a20fb1da2f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000016_JPG.rf.ec1811ab6850337c7b422d70119eddf4.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000018_jpg.rf.4db6a36fda4207163007b11b8a6f4001.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000018_jpg.rf.59a2b0068415d688982d763e68e70385.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": true,
+      "splits_present": [
+        "train",
+        "val"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000019_JPG.rf.0e6d107d379fbbf506827140864b0447.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000047_JPG.rf.30b6828a150ee32688709888a685df3a.jpg",
+          "split": "val"
+        }
+      ]
+    },
+    {
+      "group_size": 4,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000019_JPG.rf.54e42c1d1904a049fc59e275ca6f77ab.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000053_JPG.rf.484e705a83680fdd97a343102c1bc344.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000094_JPG.rf.6d66a6503ed6fd3db5e4f3707e0a43f7.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000019_JPG.rf.9ead2296b59b1db56df6cfb36804df67.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000019_JPG.rf.f7cbbc8f143504f8fb8d535635dbf48f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000020_JPG.rf.3ae7fc2711b9ea7130a327fe6a0ed264.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000020_JPG.rf.aa9636b3fd82a72f6a89acada785e429.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000021_jpg.rf.82eb7ad978ad2d94eaee00e84807103f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000021_jpg.rf.993671914afc2490298feac165ab0346.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000022_jpg.rf.83670e569d519c84bd7eb6615541dfa9.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000022_jpg.rf.f4dddc3d0e880a12e5a75981e4d1d395.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000022_JPG.rf.a69f8995f1563ad1fd9dc6e3714c7d96.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000022_JPG.rf.d87cc4877c6e49fe1827003760f5dadd.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000023_jpg.rf.abe043a84ca24011587784880509cbfb.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000023_jpg.rf.e81d150724920e8c628d853cdac416e1.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000025_JPG.rf.10ab891c3d5b3a448f323efd8c08d4f1.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000025_JPG.rf.5d5d0d01e2ad0585c0e63c5b39f42d5b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000025_JPG.rf.d0ec57e4356e617d4ba46c129365f6eb.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000025_JPG.rf.d9cdc3b765500d4c9e0224424badacdc.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000026_JPG.rf.6c49da957f41c8ee02ab98f5c0425cd0.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000026_JPG.rf.9b0652bc79289b5fabd962b9ec16fec7.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 7,
+      "cross_split_contamination": true,
+      "splits_present": [
+        "test",
+        "train",
+        "val"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000031_jpg.rf.64234776d9c388fb3e0c8c30b9102b9d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000031_jpg.rf.8baddb88836540718a6b2f4bb8266ac4.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000033_jpg.rf.ce117a36cc456880dbec1e1bf8affc25.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000049_JPG.rf.ca08f6e81bfbd20a8379cc8cb36f1412.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000053_JPG.rf.0fedbd2e3882b87375c049803760275e.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\test\\images\\000048_jpg.rf.98aa938012447ee4c776147f8183f79b.jpg",
+          "split": "test"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000098_JPG.rf.0ec587929c46fdabf125c9fc459c1222.jpg",
+          "split": "val"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000032_JPG.rf.05999b181d426c94e847bb7bc288fd06.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000032_JPG.rf.f52cee64d5490e82db14bd83f57d23e4.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000033_jpg.rf.0f629ed8e8a13bd965fdb032894b2ced.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000033_jpg.rf.938a5f502c58f713c1720d48f4a1af17.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 3,
+      "cross_split_contamination": true,
+      "splits_present": [
+        "train",
+        "val"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000033_jpg.rf.37d7ebab4eebaaf20ca19570025fee94.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000077_jpg.rf.c9d3374a6584047fb86bd9abcb9879f1.jpg",
+          "split": "train"
+        },
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000092_JPG.rf.4f3f52788e43188b180e4fdf44d09085.jpg",
+          "split": "val"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000036_JPG.rf.11717c53104c13b542c738b563a258a1.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000036_JPG.rf.f72fc78216cba8e74d105b29c6fec8c7.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000036_JPG.rf.493b796957bcd17a64c1136a08455472.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000036_JPG.rf.e019c23bc83767f89cf106451c734acd.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000037_jpg.rf.000b09cd25f88ea7928cd4d3c0387219.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000037_jpg.rf.31d77f406c62fa2eb25866dc42c3d404.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000038_jpg.rf.00db0ec30107b68235796a4f81d25a5e.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000038_jpg.rf.08748b284278a958ceb103e38521435d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000038_jpg.rf.ac4eda653b4d640134b8d8a9a26b8952.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000038_jpg.rf.e6288f0bc0ec95ee7835680d29c4be67.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000041_JPG.rf.2d02fedabfab5d83e30c76d3d4d54e54.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000041_JPG.rf.c45fc8630234a50aa748ed35a9292f0d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000042_jpg.rf.076ea61021c0de6d89c24d614e436942.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000042_jpg.rf.0e669bf1d4939d3d2fceaee40f4c31f8.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000042_JPG.rf.4ede3b624411191eb65a7af8e08871c5.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000042_JPG.rf.96e7ba8de9876282180be162a4d07b69.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000044_jpg.rf.11b7e4926157c8dadf4dd3218275adf6.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000044_jpg.rf.19929fe14430f535a1b229de63a55f0f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000044_jpg.rf.6a5d2e08a3274af5b86233cfb9612d89.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000044_jpg.rf.ca80820e21b645885087b59cae15aa4b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000045_jpg.rf.2dd17fa816ca765d74d79c3eb18b70fd.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000045_jpg.rf.8c25109e2b20356252504aad2e281d06.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000045_jpg.rf.a459b6ac3a37ccc80e3164ff047ff5e6.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000045_jpg.rf.e98f620d1e7f7c9764330204bd38f075.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000048_jpg.rf.1678de104ac25f899b7306b389947b63.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000048_jpg.rf.d2dbac129adc746fa591e36e54885abf.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000049_jpg.rf.1a247a614127d65cd1935b1c356a23b2.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000049_jpg.rf.d000028b0971fac83e56700079ce8657.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000050_jpg.rf.739aa90786b808cf43ae55d13960cc37.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000050_jpg.rf.73df8d6fc6ba0e872a57bb06d888a0c9.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000052_jpg.rf.5c7736f794d09976d85c2c465cc0c22d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000052_jpg.rf.89859f205663261c39b4f4420a73fb37.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000052_jpg.rf.7a20158053917324778f60b6a0da49a8.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000052_jpg.rf.d16ffc9d8952a037d089dd98735e4656.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000053_JPG.rf.58b6465b33c091f98cacf1ab1d7df0b4.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000053_JPG.rf.bf06a041e006c8b0359dc22c826abe5a.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000054_JPG.rf.5cf21a9e3a476152fad8c19a4fcf6392.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000054_JPG.rf.ab72a38cd7c3128031bf524791857981.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000055_jpg.rf.3435069c5debd69ec2ad7a68a5512b13.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000055_jpg.rf.5edcd1506a3adc12df34267eee3348fb.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000056_JPG.rf.89b6aac4ed64701e0fadfdd849e52352.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000056_JPG.rf.e3b9ce166ddaa8462606de072a6e3b27.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.1566bed814d7a7d9cfcae35cd5b93e7a.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.8716fdd084936a58d97c296272869a84.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.513ec8ae2087ab7b23cfcf55fbd89cdb.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.8449965e4d943d42315489e76aa84d66.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.7f31e37ba5fd6ff577ebfe8cc2a9341e.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.f17cecbc1b6d9832ba9ae981ede3eb6f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.87a71af766f46568b4b65e8d99b88eb8.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000057_jpg.rf.a4ccfb62320a57c6e88dec58a2e3896a.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000059_jpg.rf.1973f1d0da3845524c1342fa0e59f81d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000059_jpg.rf.6e432128b9dcaa50575d2c7d5336fd12.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000061_jpg.rf.225352de3b56f9672f317df500febb9c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000061_jpg.rf.23247e9752a03facbc3cb90754c00c4e.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000062_jpg.rf.814679ca597b3ffbc6529b81cf6e6a18.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000062_jpg.rf.cd32793ce254d37687b7a310b7cb0cd3.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000063_JPG.rf.91c9983df9259b54d905307a73e839f6.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000063_JPG.rf.9dd1cd66ba15456871291e1d929da69f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000065_jpg.rf.1d6d76fce67cab50d85dcad8a3a27ff0.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000065_jpg.rf.5a68fa5ebc0f5ebe3033024e74e786e8.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000067_JPG.rf.2c04096794ad3e828079d38d4687fc90.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000067_JPG.rf.b110046b74cb63dafc9bd176f9f7eb3c.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000067_JPG.rf.37264a4eba418382d142c5e8c1e28efe.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000067_JPG.rf.d596de7b4c85817f8cb481b28fa190d4.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000068_jpg.rf.1bea20fb540765b24e35a285b6f17f08.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000068_jpg.rf.9ecd180e2ddd30ad31da92d8b6e34e9f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000068_JPG.rf.229fec907383ac5cce81f17ddb1f1f19.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000068_JPG.rf.4ded04ad0723c96ee6eb4378e1abaec1.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000069_JPG.rf.5248fe95ef0d69b0cea44c9e41340f04.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000100_JPG.rf.2cf94f773f008f037e8b55dfcb212a5a.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000072_JPG.rf.07f987ee5be146b1ff8a530ea1aa552b.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000072_JPG.rf.11f3c82b22cb5a6dfd58b37e69a5d3b2.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000072_jpg.rf.9735ca18d31582ed7b3cd8a82585bbb7.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000072_jpg.rf.a29cb150cbde6c4aaddfa426af30b548.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000073_jpg.rf.20c27798f84d5d3e0afb7b7646d5ace1.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000073_jpg.rf.f4bf9405d33d3e504d0259227e92fb79.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000073_JPG.rf.3a264e96623be269e18990e7f406bbd3.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000073_JPG.rf.73b367944c37a54fc0418832640f4a58.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000074_JPG.rf.15b55c2933d5b77c97b172893c46c9ca.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000074_JPG.rf.9f21ac51703376656dcb3fd98e378755.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000077_JPG.rf.1e3eebeab7e44eea01935472b111109c.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000077_JPG.rf.b5de609478a980b08201dc71a730dd3d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000078_jpg.rf.c1ab828b6d326f744dbca2acf5cc63ae.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000078_jpg.rf.d50255670b1be34568cf6c6bb4c1a3ca.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000079_jpg.rf.6907027a213c90160dfcf7136d78f36e.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000079_jpg.rf.fa6dc5b37fee887c92944c735f5f4586.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000080_jpg.rf.0615f7ae49a4aec2484f61ed59133f0d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000080_jpg.rf.6c4ce40b40771e0e894be006e501b28a.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000080_jpg.rf.20ad130397f3074a5b864e6ac41146a2.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000080_jpg.rf.ea5327bd6ce744247d13cc014264a9d0.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000083_JPG.rf.4123de7593f3ff8fc8e4d877758f5dec.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000083_JPG.rf.5620300f4d5aaa5f952bca67af47c839.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000084_JPG.rf.2d01d4b6d6f94b2d75ae812756ebb8d6.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000084_JPG.rf.ef1116be79d9a511f4cf734ae58fa820.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_JPG.rf.204fbe5bdf7b581444645cb5c6083ead.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_JPG.rf.25e3ff93c5dff949e60ec1384cc4bd76.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_jpg.rf.21ebbe1f91feea43c4840b4cefe3cf08.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_jpg.rf.6fe0296d37ebc997b706345d286159b0.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_JPG.rf.3d5e56effa9318946a2b9dd5b141736d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000085_JPG.rf.8e2b093bcb3442591c0a4d5e72a6d516.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000086_jpg.rf.017457f22aceb64643863f5c69b16b75.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000086_jpg.rf.68326df08d2bec640e51cbc24752337d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000087_JPG.rf.6271d26607b2d57a371792d97ea7c1e9.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000087_JPG.rf.8a96c10acf6b80b66e69739c3fe86c41.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000087_jpg.rf.7e9be3151164cbb797a93aa6371863c6.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000087_jpg.rf.e64f652dc3fe4cd9082975aa0c9fe6f8.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000088_jpg.rf.5b8ef603627d5e30626902f785083d11.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000088_jpg.rf.86ae85018a7cb25edd3de6efb9f82505.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000089_jpg.rf.cb3beed8f8f1dffc1b842c779c683b5a.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000094_JPG.rf.cb86ffe0f64f13c6f942d9e14213d5d1.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000091_JPG.rf.4ce7d9a51de3c1d136a2824d920a1d31.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000091_JPG.rf.5a4cafbc2ff7a6f697322f72f20990b5.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_jpg.rf.2eefa21c314d1493f092ea3e62ee62e1.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_jpg.rf.c52468ef51cf418296d02953a380a772.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_JPG.rf.5103db7196bfbc246ba97135266eb16f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_JPG.rf.b5e7dc5174db9c934adf15b3a9224c04.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_jpg.rf.9ea28dc2e6cfc584544a6bb7960505ac.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000093_jpg.rf.d6a11b2d594287f9070d5c1403edc445.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000097_JPG.rf.933bca94542ca212fcc78561d5966f50.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000097_JPG.rf.abbf3d785552248a3cb26649d53ac04c.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000099_jpg.rf.71b9a1fd1891dc7fe8572a30821b261a.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000099_jpg.rf.7c0e2bf4ebef36550142a58189c481bf.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000102_JPG.rf.dab2c882304748e1c5a3f2942d8349df.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000102_JPG.rf.f0e773cab2d69c9247cbed3b296aac9b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000104_JPG.rf.2ff834a0e765cf0a75029c58cb193526.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000104_JPG.rf.653e156f10fbd21a0a5dcb160475de71.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000108_JPG.rf.4ad44f949a8eeb61b8aaf60d3c2c5ecb.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000108_JPG.rf.d986c93f34fa7005cfc4f3f9e1ea6401.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000116_JPG.rf.ed292bc4438a52ccfd451ef4c69d3764.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000116_JPG.rf.f089f402433a9b7cd48ea036cec1784d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000117_JPG.rf.11bd93f402597fe4d5098a1bef92a5d2.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000117_JPG.rf.a5c91234e0eef599d2570fcd873c7e98.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000117_JPG.rf.21e104b17c448c1216fce06e4ca0bb1d.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000117_JPG.rf.e840f7e42a3ca22cc1c43bb47777c52d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000118_JPG.rf.416495731730e63c7fb79d642b947202.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000118_JPG.rf.820d8e3a7c43ee485907f321527a78b9.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000123_JPG.rf.4507772893fbae3609667c28a2218429.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000123_JPG.rf.4ddc3e9223909ae0886213fc9ba732cf.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000127_JPG.rf.94e8b2de2a92a41070d40369349a1031.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\000127_JPG.rf.e59fa5c5e4945b23ce83727ae7f58796.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4878_JPG.rf.916e00f82293f653f08bc3654ab3fd0a.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4878_JPG.rf.dd05951c0e80beaabf5c96b40a1651e5.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4913_JPG.rf.2c38efaf9ab33a93a41e12e2ba510d5a.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4913_JPG.rf.398117fdf137872b56dc16ca4ea9c67b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4919_JPG.rf.08fbe4b842d8396bd2ffdc4d42e3c6ca.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4919_JPG.rf.ce9b4685b4ab1f1ef73c510f15a6724f.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4921_JPG.rf.951f1ebd4e82048f0dbd88c3e3f4c233.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4921_JPG.rf.e6e081fc2e976bd757816155e105977b.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4964_JPG.rf.8616f2702e08d6c6ae7dddfe867ecce4.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4964_JPG.rf.892c244f5daf6ec7a11f01e6c492abf1.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4965_JPG.rf.547421e1c1f3e5c0d616c559baea2dd3.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4965_JPG.rf.6b27a072fae2088d556839a11d5cb092.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4972_JPG.rf.c3cd0d3d3ec543841cc71f0dda03883e.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_4972_JPG.rf.e646e7521daeae20c2e44be1b92bf84c.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5053_JPG.rf.104fde1acd0581f8fef846d39afcf60f.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5053_JPG.rf.c1fb4cec47da2195ce5436314d1acc19.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5058_JPG.rf.d9b5e15386f981180f3d40de068ff6ef.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5058_JPG.rf.f2554cf3bbd2eed83478bfb56865d28e.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5061_JPG.rf.5a7d6e220177f5fe4f3f0c2501c17f98.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5061_JPG.rf.8c68c9383fe5774439526021e101cfa2.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "train"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5063_JPG.rf.dcede59b1df7b4af1e0c13c72ba2dfad.jpg",
+      "keeper_split": "train",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\train\\images\\IMG_5063_JPG.rf.fccb664438a6ddce92dca6d02463831d.jpg",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "cross_split_contamination": false,
+      "splits_present": [
+        "val"
+      ],
+      "keeper": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000029_JPG.rf.20e1fa23a5800d072b750b7103742bfc.jpg",
+      "keeper_split": "val",
+      "candidates_for_removal": [
+        {
+          "path": "data\\raw\\garbage_taco-official-all-class_v6\\valid\\images\\000097_JPG.rf.0c9723e8011c083c2ad85d25ffdbfeca.jpg",
+          "split": "val"
+        }
+      ]
+    }
+  ],
+  "action_required": "MANUAL REVIEW REQUIRED. This script has NOT deleted any files. Review dedup_plan.json, verify the keeper/removal candidates, then run a separate deletion script or remove files manually."
+}

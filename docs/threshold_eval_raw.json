@@ -1,0 +1,4014 @@
+{
+  "0.1": {
+    "threshold": 0.1,
+    "total_pos": 24,
+    "pos_detected_count": 24,
+    "pos_missed_count": 0,
+    "total_pos_detections": 169,
+    "pos_correct_match_count": 18,
+    "pos_mismatch_count": 6,
+    "total_neg": 10,
+    "neg_clean_count": 9,
+    "neg_fp_image_count": 1,
+    "total_neg_fp_boxes": 2,
+    "image_records": [
+      {
+        "filename": "gw_biodegradable1930_jpeg.rf.dabdff41713bbf57c387caa2377f1eff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.1,
+        "num_detections": 4,
+        "top_confidence": 0.8272,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8272,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.6809,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.658,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1424,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2101_jpeg.rf.c035c57a1007144b87af6813a04331c4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper"
+        ],
+        "threshold": 0.1,
+        "num_detections": 8,
+        "top_confidence": 0.5406,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.5406,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3245,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1851,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1816,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1585,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1565,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1496,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1049,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable997_jpg.rf.467c93f4eca3866cc68704d2ffc4a0c8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.1,
+        "num_detections": 11,
+        "top_confidence": 0.2341,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2341,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.213,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1773,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1687,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1662,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1658,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1546,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1524,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1288,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1223,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1161,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard561_jpg.rf.89a9327cf4dad2db58dec1991b83bbff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "cardboard"
+        ],
+        "threshold": 0.1,
+        "num_detections": 17,
+        "top_confidence": 0.4841,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4841,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4803,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3359,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3239,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3088,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3037,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3021,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2515,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2441,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2034,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2017,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2006,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1588,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1277,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1267,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1006,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1660_jpg.rf.4c4d50e26fb7f188d15b7eed89ec2819.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.1,
+        "num_detections": 3,
+        "top_confidence": 0.5315,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.5315,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2873,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1342,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1956_jpeg.rf.c69f1410bb07c8b724f5d76372185e74.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.1,
+        "num_detections": 1,
+        "top_confidence": 0.2468,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2468,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable2160_jpeg.rf.472a196ea6654cdb85f206de6812759b.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.1,
+        "num_detections": 6,
+        "top_confidence": 0.1866,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1866,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1802,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1464,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1224,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1137,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1036,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable2236_jpeg.rf.c11288fd07191decb13de86611127c6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.1,
+        "num_detections": 4,
+        "top_confidence": 0.3123,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3123,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2241,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1851,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1062,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1262_jpg.rf.d457accf66ba4793ddde81f2dd213c25.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.1,
+        "num_detections": 16,
+        "top_confidence": 0.3776,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3776,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3434,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3194,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2257,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.186,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1522,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1517,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1485,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1451,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1224,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1212,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1172,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1169,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1076,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.104,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1442_jpg.rf.8e497819442be2f71d772cf8df8a8dde.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.1,
+        "num_detections": 4,
+        "top_confidence": 0.6323,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.6323,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2887,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1445,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1374,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1703_jpg.rf.f4004e7e82210a725654a24b1bcd726a.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.1,
+        "num_detections": 14,
+        "top_confidence": 0.23,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.23,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2059,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.172,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1704,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1657,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1577,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.149,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.141,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1289,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1227,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1079,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1076,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1009,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2002_jpeg.rf.3e9d2d72c7f5172d0faf7a1d26c37a79.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.1,
+        "num_detections": 2,
+        "top_confidence": 0.3919,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3919,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1476,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable408_jpg.rf.4e1e245c15d591385d150a61b3df94cc.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.1,
+        "num_detections": 14,
+        "top_confidence": 0.6012,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.6012,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4064,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.395,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3686,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.288,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.246,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2429,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2308,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2226,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2023,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1711,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1455,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1414,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1269,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable450_jpg.rf.b118bad0298036eff28d957ef92328d8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.1,
+        "num_detections": 5,
+        "top_confidence": 0.1667,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1667,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1467,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.139,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1046,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1021,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable462_jpg.rf.4009745aa526f35fa114be80b4443a6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.1,
+        "num_detections": 6,
+        "top_confidence": 0.4653,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4653,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3543,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3436,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.2893,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1228,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable825_jpg.rf.85d9b80567aca67d708c485aba9d7838.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.1,
+        "num_detections": 9,
+        "top_confidence": 0.8993,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8993,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8056,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.5745,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4804,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.382,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1965,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.1488,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1032,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1013,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1020_jpg.rf.beead08b95a5c3075c4557a6cffaaf50.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.1,
+        "num_detections": 16,
+        "top_confidence": 0.4117,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4117,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3635,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3247,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2952,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2458,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2256,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2004,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1805,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1793,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1654,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1625,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1595,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1316,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1184,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1147,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1075,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_cardboard1232_jpg.rf.cfa2da197e230c24516927ebfb884c78.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.1,
+        "num_detections": 10,
+        "top_confidence": 0.8948,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.8948,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4317,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3252,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3039,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.201,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1426,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1263,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1031,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1008,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1337_jpg.rf.633ef7ecab2e5f6de0f19a937aeccac9.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.1,
+        "num_detections": 3,
+        "top_confidence": 0.9243,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.9243,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3772,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1077,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1604_jpeg.rf.ebe94be3242f6ec6589019d15d630d9e.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.1,
+        "num_detections": 1,
+        "top_confidence": 0.9839,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.9839,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.1,
+        "num_detections": 8,
+        "top_confidence": 0.373,
+        "predictions": [
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.373,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.302,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2573,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2343,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.2127,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2001,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1099,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.1095,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_jpg.rf.e5d45d03ed937279fcd45d5074caf8f4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.1,
+        "num_detections": 1,
+        "top_confidence": 0.9214,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.9214,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "taco_000003_JPG.rf.49b3d87f0d9520696076bb9ff3ce24a5.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "general_trash"
+        ],
+        "threshold": 0.1,
+        "num_detections": 5,
+        "top_confidence": 0.8925,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8925,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.4576,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.1626,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.145,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.1441,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000003_jpg.rf.3f690ee42d8ee0070e555bfb0fe94604.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "general_trash"
+        ],
+        "threshold": 0.1,
+        "num_detections": 1,
+        "top_confidence": 0.8466,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8466,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "neg_000000460683.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000461751.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 2,
+        "top_confidence": 0.2775,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2775,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1685,
+            "is_correct_class": false
+          }
+        ],
+        "status": "FALSE ALARM (FP: 2 boxes)"
+      },
+      {
+        "filename": "neg_000000462629.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000462643.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463199.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463522.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463618.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463730.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464251.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464358.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.1,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      }
+    ]
+  },
+  "0.15": {
+    "threshold": 0.15,
+    "total_pos": 24,
+    "pos_detected_count": 24,
+    "pos_missed_count": 0,
+    "total_pos_detections": 111,
+    "pos_correct_match_count": 17,
+    "pos_mismatch_count": 7,
+    "total_neg": 10,
+    "neg_clean_count": 9,
+    "neg_fp_image_count": 1,
+    "total_neg_fp_boxes": 2,
+    "image_records": [
+      {
+        "filename": "gw_biodegradable1930_jpeg.rf.dabdff41713bbf57c387caa2377f1eff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.15,
+        "num_detections": 3,
+        "top_confidence": 0.8272,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8272,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.6809,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.658,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2101_jpeg.rf.c035c57a1007144b87af6813a04331c4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper"
+        ],
+        "threshold": 0.15,
+        "num_detections": 6,
+        "top_confidence": 0.5406,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.5406,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3245,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1851,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1816,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1585,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1565,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable997_jpg.rf.467c93f4eca3866cc68704d2ffc4a0c8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.15,
+        "num_detections": 8,
+        "top_confidence": 0.2341,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2341,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.213,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1773,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1687,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1662,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.1658,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1546,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1524,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard561_jpg.rf.89a9327cf4dad2db58dec1991b83bbff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "cardboard"
+        ],
+        "threshold": 0.15,
+        "num_detections": 13,
+        "top_confidence": 0.4841,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4841,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4803,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3359,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3239,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3088,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3037,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3021,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2515,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2441,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2034,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2017,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2006,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1588,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1660_jpg.rf.4c4d50e26fb7f188d15b7eed89ec2819.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.15,
+        "num_detections": 2,
+        "top_confidence": 0.5315,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.5315,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2873,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1956_jpeg.rf.c69f1410bb07c8b724f5d76372185e74.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.2468,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2468,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable2160_jpeg.rf.472a196ea6654cdb85f206de6812759b.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.15,
+        "num_detections": 2,
+        "top_confidence": 0.1866,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1866,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1802,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable2236_jpeg.rf.c11288fd07191decb13de86611127c6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.15,
+        "num_detections": 3,
+        "top_confidence": 0.3123,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3123,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2241,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1851,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1262_jpg.rf.d457accf66ba4793ddde81f2dd213c25.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.15,
+        "num_detections": 8,
+        "top_confidence": 0.3776,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3776,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3434,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3194,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2257,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.186,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1522,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1517,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1442_jpg.rf.8e497819442be2f71d772cf8df8a8dde.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.15,
+        "num_detections": 2,
+        "top_confidence": 0.6323,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.6323,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2887,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1703_jpg.rf.f4004e7e82210a725654a24b1bcd726a.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.15,
+        "num_detections": 7,
+        "top_confidence": 0.23,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.23,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2059,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.172,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1704,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1657,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1577,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2002_jpeg.rf.3e9d2d72c7f5172d0faf7a1d26c37a79.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.3919,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3919,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable408_jpg.rf.4e1e245c15d591385d150a61b3df94cc.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.15,
+        "num_detections": 11,
+        "top_confidence": 0.6012,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.6012,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4064,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.395,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3686,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.288,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.246,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2429,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2308,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.2226,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2023,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1711,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable450_jpg.rf.b118bad0298036eff28d957ef92328d8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.1667,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.1667,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable462_jpg.rf.4009745aa526f35fa114be80b4443a6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.15,
+        "num_detections": 5,
+        "top_confidence": 0.4653,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4653,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3543,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3436,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.2893,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable825_jpg.rf.85d9b80567aca67d708c485aba9d7838.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.15,
+        "num_detections": 6,
+        "top_confidence": 0.8993,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8993,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8056,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.5745,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4804,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.382,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1965,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1020_jpg.rf.beead08b95a5c3075c4557a6cffaaf50.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.15,
+        "num_detections": 12,
+        "top_confidence": 0.4117,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4117,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3635,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3247,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2952,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2458,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2256,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2004,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1805,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1793,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1654,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1625,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.1595,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_cardboard1232_jpg.rf.cfa2da197e230c24516927ebfb884c78.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.15,
+        "num_detections": 6,
+        "top_confidence": 0.8948,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.8948,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4317,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3252,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3039,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.201,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1337_jpg.rf.633ef7ecab2e5f6de0f19a937aeccac9.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.15,
+        "num_detections": 2,
+        "top_confidence": 0.9243,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.9243,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3772,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1604_jpeg.rf.ebe94be3242f6ec6589019d15d630d9e.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.9839,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.9839,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.15,
+        "num_detections": 6,
+        "top_confidence": 0.373,
+        "predictions": [
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.373,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.302,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2573,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2343,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.2127,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2001,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_jpg.rf.e5d45d03ed937279fcd45d5074caf8f4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.9214,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.9214,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "taco_000003_JPG.rf.49b3d87f0d9520696076bb9ff3ce24a5.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "general_trash"
+        ],
+        "threshold": 0.15,
+        "num_detections": 3,
+        "top_confidence": 0.8925,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8925,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.4576,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.1626,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000003_jpg.rf.3f690ee42d8ee0070e555bfb0fe94604.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "general_trash"
+        ],
+        "threshold": 0.15,
+        "num_detections": 1,
+        "top_confidence": 0.8466,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8466,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "neg_000000460683.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000461751.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 2,
+        "top_confidence": 0.2775,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2775,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.1685,
+            "is_correct_class": false
+          }
+        ],
+        "status": "FALSE ALARM (FP: 2 boxes)"
+      },
+      {
+        "filename": "neg_000000462629.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000462643.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463199.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463522.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463618.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463730.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464251.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464358.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.15,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      }
+    ]
+  },
+  "0.25": {
+    "threshold": 0.25,
+    "total_pos": 24,
+    "pos_detected_count": 19,
+    "pos_missed_count": 5,
+    "total_pos_detections": 57,
+    "pos_correct_match_count": 15,
+    "pos_mismatch_count": 4,
+    "total_neg": 10,
+    "neg_clean_count": 9,
+    "neg_fp_image_count": 1,
+    "total_neg_fp_boxes": 1,
+    "image_records": [
+      {
+        "filename": "gw_biodegradable1930_jpeg.rf.dabdff41713bbf57c387caa2377f1eff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.25,
+        "num_detections": 3,
+        "top_confidence": 0.8272,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8272,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.6809,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.658,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2101_jpeg.rf.c035c57a1007144b87af6813a04331c4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper"
+        ],
+        "threshold": 0.25,
+        "num_detections": 2,
+        "top_confidence": 0.5406,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.5406,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3245,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable997_jpg.rf.467c93f4eca3866cc68704d2ffc4a0c8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_cardboard561_jpg.rf.89a9327cf4dad2db58dec1991b83bbff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "cardboard"
+        ],
+        "threshold": 0.25,
+        "num_detections": 8,
+        "top_confidence": 0.4841,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4841,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4803,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3359,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3239,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3088,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3037,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3021,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2515,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1660_jpg.rf.4c4d50e26fb7f188d15b7eed89ec2819.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.25,
+        "num_detections": 2,
+        "top_confidence": 0.5315,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.5315,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2873,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1956_jpeg.rf.c69f1410bb07c8b724f5d76372185e74.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2160_jpeg.rf.472a196ea6654cdb85f206de6812759b.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2236_jpeg.rf.c11288fd07191decb13de86611127c6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.3123,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3123,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1262_jpg.rf.d457accf66ba4793ddde81f2dd213c25.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.25,
+        "num_detections": 4,
+        "top_confidence": 0.3776,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3776,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3434,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3194,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1442_jpg.rf.8e497819442be2f71d772cf8df8a8dde.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.25,
+        "num_detections": 2,
+        "top_confidence": 0.6323,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.6323,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2887,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1703_jpg.rf.f4004e7e82210a725654a24b1bcd726a.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2002_jpeg.rf.3e9d2d72c7f5172d0faf7a1d26c37a79.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.3919,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3919,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable408_jpg.rf.4e1e245c15d591385d150a61b3df94cc.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.25,
+        "num_detections": 5,
+        "top_confidence": 0.6012,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.6012,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4064,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.395,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3686,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.288,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable450_jpg.rf.b118bad0298036eff28d957ef92328d8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable462_jpg.rf.4009745aa526f35fa114be80b4443a6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.25,
+        "num_detections": 5,
+        "top_confidence": 0.4653,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4653,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3543,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.3436,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.2893,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable825_jpg.rf.85d9b80567aca67d708c485aba9d7838.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.25,
+        "num_detections": 5,
+        "top_confidence": 0.8993,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8993,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8056,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.5745,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4804,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.382,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1020_jpg.rf.beead08b95a5c3075c4557a6cffaaf50.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.25,
+        "num_detections": 4,
+        "top_confidence": 0.4117,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4117,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3635,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3247,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.2952,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_cardboard1232_jpg.rf.cfa2da197e230c24516927ebfb884c78.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.25,
+        "num_detections": 5,
+        "top_confidence": 0.8948,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.8948,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4317,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4063,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3252,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3039,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1337_jpg.rf.633ef7ecab2e5f6de0f19a937aeccac9.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.25,
+        "num_detections": 2,
+        "top_confidence": 0.9243,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.9243,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3772,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1604_jpeg.rf.ebe94be3242f6ec6589019d15d630d9e.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.9839,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.9839,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.25,
+        "num_detections": 3,
+        "top_confidence": 0.373,
+        "predictions": [
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.373,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.302,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.2573,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_jpg.rf.e5d45d03ed937279fcd45d5074caf8f4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.9214,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.9214,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "taco_000003_JPG.rf.49b3d87f0d9520696076bb9ff3ce24a5.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "general_trash"
+        ],
+        "threshold": 0.25,
+        "num_detections": 2,
+        "top_confidence": 0.8925,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8925,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.4576,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000003_jpg.rf.3f690ee42d8ee0070e555bfb0fe94604.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "general_trash"
+        ],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.8466,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8466,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "neg_000000460683.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000461751.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 1,
+        "top_confidence": 0.2775,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.2775,
+            "is_correct_class": false
+          }
+        ],
+        "status": "FALSE ALARM (FP: 1 boxes)"
+      },
+      {
+        "filename": "neg_000000462629.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000462643.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463199.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463522.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463618.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463730.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464251.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464358.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.25,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      }
+    ]
+  },
+  "0.35": {
+    "threshold": 0.35,
+    "total_pos": 24,
+    "pos_detected_count": 18,
+    "pos_missed_count": 6,
+    "total_pos_detections": 36,
+    "pos_correct_match_count": 14,
+    "pos_mismatch_count": 4,
+    "total_neg": 10,
+    "neg_clean_count": 10,
+    "neg_fp_image_count": 0,
+    "total_neg_fp_boxes": 0,
+    "image_records": [
+      {
+        "filename": "gw_biodegradable1930_jpeg.rf.dabdff41713bbf57c387caa2377f1eff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.35,
+        "num_detections": 3,
+        "top_confidence": 0.8272,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8272,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.6809,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.658,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable2101_jpeg.rf.c035c57a1007144b87af6813a04331c4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.5406,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.5406,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable997_jpg.rf.467c93f4eca3866cc68704d2ffc4a0c8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_cardboard561_jpg.rf.89a9327cf4dad2db58dec1991b83bbff.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "cardboard"
+        ],
+        "threshold": 0.35,
+        "num_detections": 2,
+        "top_confidence": 0.4841,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4841,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4803,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1660_jpg.rf.4c4d50e26fb7f188d15b7eed89ec2819.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.5315,
+        "predictions": [
+          {
+            "class_id": 1,
+            "class_name": "metal",
+            "confidence": 0.5315,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1956_jpeg.rf.c69f1410bb07c8b724f5d76372185e74.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2160_jpeg.rf.472a196ea6654cdb85f206de6812759b.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2236_jpeg.rf.c11288fd07191decb13de86611127c6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable1262_jpg.rf.d457accf66ba4793ddde81f2dd213c25.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.35,
+        "num_detections": 2,
+        "top_confidence": 0.3776,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3776,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3612,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1442_jpg.rf.8e497819442be2f71d772cf8df8a8dde.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.6323,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.6323,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1703_jpg.rf.f4004e7e82210a725654a24b1bcd726a.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable2002_jpeg.rf.3e9d2d72c7f5172d0faf7a1d26c37a79.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.3919,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3919,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_biodegradable408_jpg.rf.4e1e245c15d591385d150a61b3df94cc.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.35,
+        "num_detections": 4,
+        "top_confidence": 0.6012,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.6012,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.4064,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.395,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.3686,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable450_jpg.rf.b118bad0298036eff28d957ef92328d8.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "MISSED (FN)"
+      },
+      {
+        "filename": "gw_biodegradable462_jpg.rf.4009745aa526f35fa114be80b4443a6f.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "glass"
+        ],
+        "threshold": 0.35,
+        "num_detections": 3,
+        "top_confidence": 0.4653,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4653,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4612,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.3543,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable825_jpg.rf.85d9b80567aca67d708c485aba9d7838.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "metal",
+          "glass"
+        ],
+        "threshold": 0.35,
+        "num_detections": 5,
+        "top_confidence": 0.8993,
+        "predictions": [
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8993,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.8056,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.5745,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.4804,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 3,
+            "class_name": "glass",
+            "confidence": 0.382,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_biodegradable1020_jpg.rf.beead08b95a5c3075c4557a6cffaaf50.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.35,
+        "num_detections": 2,
+        "top_confidence": 0.4117,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4117,
+            "is_correct_class": false
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3635,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "gw_cardboard1232_jpg.rf.cfa2da197e230c24516927ebfb884c78.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.35,
+        "num_detections": 3,
+        "top_confidence": 0.8948,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.8948,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4317,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.4063,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1337_jpg.rf.633ef7ecab2e5f6de0f19a937aeccac9.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "cardboard",
+          "paper"
+        ],
+        "threshold": 0.35,
+        "num_detections": 2,
+        "top_confidence": 0.9243,
+        "predictions": [
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.9243,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 2,
+            "class_name": "cardboard",
+            "confidence": 0.3772,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "gw_cardboard1604_jpeg.rf.ebe94be3242f6ec6589019d15d630d9e.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.9839,
+        "predictions": [
+          {
+            "class_id": 4,
+            "class_name": "paper",
+            "confidence": 0.9839,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.373,
+        "predictions": [
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.373,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000002_jpg.rf.e5d45d03ed937279fcd45d5074caf8f4.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "paper",
+          "general_trash"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.9214,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.9214,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "taco_000003_JPG.rf.49b3d87f0d9520696076bb9ff3ce24a5.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "plastic",
+          "general_trash"
+        ],
+        "threshold": 0.35,
+        "num_detections": 2,
+        "top_confidence": 0.8925,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8925,
+            "is_correct_class": true
+          },
+          {
+            "class_id": 5,
+            "class_name": "general_trash",
+            "confidence": 0.4576,
+            "is_correct_class": true
+          }
+        ],
+        "status": "CORRECT (TP)"
+      },
+      {
+        "filename": "taco_000003_jpg.rf.3f690ee42d8ee0070e555bfb0fe94604.jpg",
+        "is_negative": false,
+        "gt_class_names": [
+          "general_trash"
+        ],
+        "threshold": 0.35,
+        "num_detections": 1,
+        "top_confidence": 0.8466,
+        "predictions": [
+          {
+            "class_id": 0,
+            "class_name": "plastic",
+            "confidence": 0.8466,
+            "is_correct_class": false
+          }
+        ],
+        "status": "CLASS MISMATCH (FP)"
+      },
+      {
+        "filename": "neg_000000460683.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000461751.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000462629.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000462643.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463199.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463522.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463618.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000463730.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464251.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      },
+      {
+        "filename": "neg_000000464358.jpg",
+        "is_negative": true,
+        "gt_class_names": [],
+        "threshold": 0.35,
+        "num_detections": 0,
+        "top_confidence": 0.0,
+        "predictions": [],
+        "status": "CLEAN (TN)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "1. Health & Taxonomy Verification",
+    "passed": true,
+    "details": "Status=healthy, Classes=7, Model=yolo11s_v5_best.pt"
+  },
+  {
+    "name": "2. Plastic Object Detection",
+    "passed": true,
+    "details": "Detected classes: ['plastic'], Top conf: 0.940, Annotations present: True"
+  },
+  {
+    "name": "3. Glass Object & Safety Guidance",
+    "passed": true,
+    "details": "Bin: Glass Recycling, Warning: '\u26a0\ufe0f SAFETY REQUIREMENT: If glass is broke...'"
+  },
+  {
+    "name": "4. Organic Waste Detection & Guidance",
+    "passed": true,
+    "details": "Detected classes: ['organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'organic', 'cardboard', 'organic', 'cardboard', 'organic', 'cardboard', 'organic'], Bin: Wet Waste (Compostable) (Green)"
+  },
+  {
+    "name": "5. General Trash & Sanitary Advisory",
+    "passed": true,
+    "details": "Bin: General Waste (Landfill / RDF), Sanitary warning verified."
+  },
+  {
+    "name": "6. Multi-Object Detection",
+    "passed": true,
+    "details": "14 objects localized, BBoxes & labels populated, time: 162.65 ms"
+  },
+  {
+    "name": "7. Corrupted File Handling",
+    "passed": true,
+    "details": "HTTP 400: 'Invalid or unreadable image: Failed to decode image from bytes: cannot identify image file <_io.BytesIO object at 0x000001F4052F1350>' (Graceful recovery without crash)"
+  },
+  {
+    "name": "8. Unsupported Format Handling",
+    "passed": true,
+    "details": "HTTP 400: 'Unsupported file format: 'document.txt' with Conte...'"
+  },
+  {
+    "name": "9. Empty File Handling",
+    "passed": true,
+    "details": "HTTP 400: 'Uploaded file is empty (0 bytes).'"
+  },
+  {
+    "name": "10. Disposal API Category Queries",
+    "passed": true,
+    "details": "All 7 classes returned 200; invalid category correctly returned 404"
+  }
+]

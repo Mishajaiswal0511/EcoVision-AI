@@ -1,0 +1,8 @@
+image_path,annotation_id,source_category,proposed_class,review_reason,review_status,final_decision,reviewer_notes
+CRITERIA_PIZZA_BOX,N/A,Pizza box,general_trash,Grease staining assessment: if greasy -> general_trash; if clean dry lid -> cardboard,APPROVED_RULE,general_trash,"Under MoEFCC/CPCB SWM 2026, food-contact pizza boxes are contaminated; mapped to general_trash."
+CRITERIA_TISSUES,N/A,Tissues,general_trash,Sanitary classification: used facial tissues/napkins are non-recyclable bio-waste,APPROVED_RULE,general_trash,"Under MoEFCC/CPCB SWM 2026, tissues are Sanitary Waste requiring special care / general disposal."
+CRITERIA_FOAM_CONTAINERS,N/A,Foam food container / cup,general_trash,Expanded polystyrene is non-recyclable curbside in Indian municipalities,APPROVED_RULE,general_trash,Mapped to general_trash per MoEFCC PWM residual waste standard.
+CRITERIA_SNACK_PACKETS,N/A,Crisp packet,general_trash,Metallized BOPP multilayer composite film cannot be recycled with rigid plastics,APPROVED_RULE,general_trash,Mapped to general_trash per MoEFCC PWM residual waste standard.
+CRITERIA_MEAL_CARTON,N/A,Meal carton,general_trash,Food-soiled takeout paperboard container,APPROVED_RULE,general_trash,Takeout cartons with food grease routed to general_trash per MoEFCC SWM Rules.
+CRITERIA_DISPOSABLE_FOOD_CONTAINER,N/A,Disposable food container,general_trash,Plastic clamshell with food grease residues,APPROVED_RULE,general_trash,Food-contact takeaway containers routed to general_trash per MoEFCC SWM Rules.
+CRITERIA_UNLABELED_LITTER,N/A,Unlabeled litter,general_trash,Sub-10px outdoor debris fragments; filter degenerate boxes (<4px) before V5 packaging,APPROVED_RULE,general_trash,Retain valid litter boxes above 4x4 px; drop degenerate coordinates.

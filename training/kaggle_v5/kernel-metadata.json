@@ -1,0 +1,18 @@
+{
+  "id": "mishajaiswal0511/ecovision-v5-model-training",
+  "title": "EcoVision V5 7-Class Model Training",
+  "code_file": "ecovision_v5_training.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "mishajaiswal0511/ecovision-v5-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
+

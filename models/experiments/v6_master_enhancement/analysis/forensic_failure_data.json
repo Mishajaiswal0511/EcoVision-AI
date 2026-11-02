@@ -1,0 +1,734 @@
+{
+  "A_Cardboard_Pile": {
+    "image_size": [
+      497,
+      505
+    ],
+    "raw_detections_at_005": 21,
+    "detections_at_015_agnostic": 10,
+    "detections_at_640": 4,
+    "detections_at_1024": 9,
+    "agnostic_boxes": [
+      {
+        "cls": "cardboard",
+        "conf": 0.5103,
+        "xyxy": [
+          33.8,
+          132.4,
+          278.4,
+          280.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.3065,
+        "xyxy": [
+          7.7,
+          161.7,
+          432.2,
+          479.9
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.225,
+        "xyxy": [
+          246.8,
+          338.7,
+          441.1,
+          499.8
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.2245,
+        "xyxy": [
+          2.5,
+          225.9,
+          136.9,
+          444.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.2214,
+        "xyxy": [
+          21.9,
+          246.4,
+          409.1,
+          464.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1973,
+        "xyxy": [
+          17.4,
+          53.1,
+          113.4,
+          139.1
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1958,
+        "xyxy": [
+          434.3,
+          226.1,
+          495.3,
+          412.5
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.1789,
+        "xyxy": [
+          385.5,
+          352.7,
+          428.3,
+          423.4
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1786,
+        "xyxy": [
+          19.6,
+          161.7,
+          377.7,
+          326.4
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1739,
+        "xyxy": [
+          443.2,
+          220.7,
+          485.1,
+          269.8
+        ]
+      }
+    ],
+    "top_raw_boxes": [
+      {
+        "cls": "cardboard",
+        "conf": 0.5103,
+        "xyxy": [
+          33.8,
+          132.4,
+          278.4,
+          280.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.3065,
+        "xyxy": [
+          7.7,
+          161.7,
+          432.2,
+          479.9
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.225,
+        "xyxy": [
+          246.8,
+          338.7,
+          441.1,
+          499.8
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.2245,
+        "xyxy": [
+          2.5,
+          225.9,
+          136.9,
+          444.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.2214,
+        "xyxy": [
+          21.9,
+          246.4,
+          409.1,
+          464.3
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1973,
+        "xyxy": [
+          17.4,
+          53.1,
+          113.4,
+          139.1
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1958,
+        "xyxy": [
+          434.3,
+          226.1,
+          495.3,
+          412.5
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.1789,
+        "xyxy": [
+          385.5,
+          352.7,
+          428.3,
+          423.4
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1786,
+        "xyxy": [
+          19.6,
+          161.7,
+          377.7,
+          326.4
+        ]
+      },
+      {
+        "cls": "cardboard",
+        "conf": 0.1739,
+        "xyxy": [
+          443.2,
+          220.7,
+          485.1,
+          269.8
+        ]
+      }
+    ],
+    "significant_overlaps": [
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "cardboard:0.3065",
+        "iou": 0.204,
+        "containment_1_in_2": 0.802,
+        "containment_2_in_1": 0.215
+      },
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "cardboard:0.1786",
+        "iou": 0.439,
+        "containment_1_in_2": 0.802,
+        "containment_2_in_1": 0.492
+      },
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "cardboard:0.1454",
+        "iou": 0.239,
+        "containment_1_in_2": 1.0,
+        "containment_2_in_1": 0.239
+      },
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "cardboard:0.1052",
+        "iou": 0.307,
+        "containment_1_in_2": 0.839,
+        "containment_2_in_1": 0.326
+      },
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "cardboard:0.0895",
+        "iou": 0.414,
+        "containment_1_in_2": 1.0,
+        "containment_2_in_1": 0.414
+      },
+      {
+        "box_1": "cardboard:0.5103",
+        "box_2": "general_trash:0.0623",
+        "iou": 0.248,
+        "containment_1_in_2": 0.797,
+        "containment_2_in_1": 0.265
+      },
+      {
+        "box_1": "cardboard:0.3065",
+        "box_2": "cardboard:0.225",
+        "iou": 0.187,
+        "containment_1_in_2": 0.194,
+        "containment_2_in_1": 0.836
+      },
+      {
+        "box_1": "cardboard:0.3065",
+        "box_2": "cardboard:0.2245",
+        "iou": 0.207,
+        "containment_1_in_2": 0.209,
+        "containment_2_in_1": 0.961
+      },
+      {
+        "box_1": "cardboard:0.3065",
+        "box_2": "cardboard:0.2214",
+        "iou": 0.625,
+        "containment_1_in_2": 0.625,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "cardboard:0.3065",
+        "box_2": "plastic:0.1789",
+        "iou": 0.022,
+        "containment_1_in_2": 0.022,
+        "containment_2_in_1": 1.0
+      }
+    ]
+  },
+  "B_Broken_Glass": {
+    "image_size": [
+      500,
+      500
+    ],
+    "raw_detections_at_005": 18,
+    "detections_at_015_agnostic": 8,
+    "detections_at_640": 5,
+    "detections_at_1024": 9,
+    "agnostic_boxes": [
+      {
+        "cls": "glass",
+        "conf": 0.9128,
+        "xyxy": [
+          17.0,
+          50.4,
+          110.9,
+          400.7
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4537,
+        "xyxy": [
+          127.1,
+          320.0,
+          184.8,
+          383.0
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4263,
+        "xyxy": [
+          201.4,
+          394.1,
+          245.3,
+          449.9
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.421,
+        "xyxy": [
+          241.9,
+          321.3,
+          396.5,
+          427.4
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.3812,
+        "xyxy": [
+          197.5,
+          295.4,
+          269.3,
+          338.5
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.3097,
+        "xyxy": [
+          244.7,
+          316.4,
+          494.6,
+          439.3
+        ]
+      },
+      {
+        "cls": "metal",
+        "conf": 0.2462,
+        "xyxy": [
+          38.4,
+          50.4,
+          78.2,
+          66.7
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.2038,
+        "xyxy": [
+          201.3,
+          362.7,
+          237.5,
+          382.9
+        ]
+      }
+    ],
+    "top_raw_boxes": [
+      {
+        "cls": "glass",
+        "conf": 0.9128,
+        "xyxy": [
+          17.0,
+          50.4,
+          110.9,
+          400.7
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4537,
+        "xyxy": [
+          127.1,
+          320.0,
+          184.8,
+          383.0
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4263,
+        "xyxy": [
+          201.4,
+          394.1,
+          245.3,
+          449.9
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.421,
+        "xyxy": [
+          241.9,
+          321.3,
+          396.5,
+          427.4
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.3812,
+        "xyxy": [
+          197.5,
+          295.4,
+          269.3,
+          338.5
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.3097,
+        "xyxy": [
+          244.7,
+          316.4,
+          494.6,
+          439.3
+        ]
+      },
+      {
+        "cls": "metal",
+        "conf": 0.2462,
+        "xyxy": [
+          38.4,
+          50.4,
+          78.2,
+          66.7
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.2038,
+        "xyxy": [
+          201.3,
+          362.7,
+          237.5,
+          382.9
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.1427,
+        "xyxy": [
+          201.0,
+          393.9,
+          264.0,
+          447.7
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.1196,
+        "xyxy": [
+          195.3,
+          320.7,
+          486.0,
+          455.7
+        ]
+      }
+    ],
+    "significant_overlaps": [
+      {
+        "box_1": "glass:0.9128",
+        "box_2": "metal:0.2462",
+        "iou": 0.02,
+        "containment_1_in_2": 0.02,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.4263",
+        "box_2": "glass:0.1427",
+        "iou": 0.675,
+        "containment_1_in_2": 0.961,
+        "containment_2_in_1": 0.694
+      },
+      {
+        "box_1": "glass:0.4263",
+        "box_2": "glass:0.1196",
+        "iou": 0.062,
+        "containment_1_in_2": 1.0,
+        "containment_2_in_1": 0.062
+      },
+      {
+        "box_1": "glass:0.4263",
+        "box_2": "glass:0.0695",
+        "iou": 0.583,
+        "containment_1_in_2": 0.583,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.4263",
+        "box_2": "glass:0.0525",
+        "iou": 0.345,
+        "containment_1_in_2": 0.345,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.421",
+        "box_2": "glass:0.3097",
+        "iou": 0.519,
+        "containment_1_in_2": 0.982,
+        "containment_2_in_1": 0.524
+      },
+      {
+        "box_1": "glass:0.421",
+        "box_2": "glass:0.1196",
+        "iou": 0.418,
+        "containment_1_in_2": 1.0,
+        "containment_2_in_1": 0.418
+      },
+      {
+        "box_1": "glass:0.421",
+        "box_2": "glass:0.1154",
+        "iou": 0.054,
+        "containment_1_in_2": 0.055,
+        "containment_2_in_1": 0.816
+      },
+      {
+        "box_1": "glass:0.421",
+        "box_2": "glass:0.0847",
+        "iou": 0.131,
+        "containment_1_in_2": 0.131,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.421",
+        "box_2": "glass:0.0721",
+        "iou": 0.444,
+        "containment_1_in_2": 0.444,
+        "containment_2_in_1": 1.0
+      }
+    ]
+  },
+  "C_Green_Plastic": {
+    "image_size": [
+      612,
+      408
+    ],
+    "raw_detections_at_005": 4,
+    "detections_at_015_agnostic": 0,
+    "detections_at_640": 0,
+    "detections_at_1024": 16,
+    "agnostic_boxes": [],
+    "top_raw_boxes": [
+      {
+        "cls": "plastic",
+        "conf": 0.1217,
+        "xyxy": [
+          269.0,
+          252.3,
+          293.1,
+          266.8
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.1167,
+        "xyxy": [
+          425.8,
+          193.9,
+          442.9,
+          205.4
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.0718,
+        "xyxy": [
+          406.3,
+          232.7,
+          506.4,
+          322.4
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.0531,
+        "xyxy": [
+          403.9,
+          232.4,
+          506.1,
+          296.7
+        ]
+      }
+    ],
+    "significant_overlaps": [
+      {
+        "box_1": "plastic:0.0718",
+        "box_2": "plastic:0.0531",
+        "iou": 0.697,
+        "containment_1_in_2": 0.711,
+        "containment_2_in_1": 0.972
+      }
+    ]
+  },
+  "D_Banana_Peel": {
+    "image_size": [
+      390,
+      280
+    ],
+    "raw_detections_at_005": 4,
+    "detections_at_015_agnostic": 2,
+    "detections_at_640": 1,
+    "detections_at_1024": 1,
+    "agnostic_boxes": [
+      {
+        "cls": "glass",
+        "conf": 0.598,
+        "xyxy": [
+          66.4,
+          76.0,
+          239.1,
+          183.6
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4128,
+        "xyxy": [
+          110.9,
+          85.1,
+          237.9,
+          183.1
+        ]
+      }
+    ],
+    "top_raw_boxes": [
+      {
+        "cls": "glass",
+        "conf": 0.598,
+        "xyxy": [
+          66.4,
+          76.0,
+          239.1,
+          183.6
+        ]
+      },
+      {
+        "cls": "glass",
+        "conf": 0.4128,
+        "xyxy": [
+          110.9,
+          85.1,
+          237.9,
+          183.1
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.2841,
+        "xyxy": [
+          68.0,
+          77.8,
+          238.4,
+          181.0
+        ]
+      },
+      {
+        "cls": "plastic",
+        "conf": 0.1134,
+        "xyxy": [
+          68.2,
+          123.9,
+          236.3,
+          158.2
+        ]
+      }
+    ],
+    "significant_overlaps": [
+      {
+        "box_1": "glass:0.598",
+        "box_2": "glass:0.4128",
+        "iou": 0.67,
+        "containment_1_in_2": 0.67,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.598",
+        "box_2": "plastic:0.2841",
+        "iou": 0.946,
+        "containment_1_in_2": 0.946,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.598",
+        "box_2": "plastic:0.1134",
+        "iou": 0.31,
+        "containment_1_in_2": 0.31,
+        "containment_2_in_1": 1.0
+      },
+      {
+        "box_1": "glass:0.4128",
+        "box_2": "plastic:0.2841",
+        "iou": 0.682,
+        "containment_1_in_2": 0.979,
+        "containment_2_in_1": 0.693
+      },
+      {
+        "box_1": "glass:0.4128",
+        "box_2": "plastic:0.1134",
+        "iou": 0.309,
+        "containment_1_in_2": 0.346,
+        "containment_2_in_1": 0.746
+      },
+      {
+        "box_1": "plastic:0.2841",
+        "box_2": "plastic:0.1134",
+        "iou": 0.328,
+        "containment_1_in_2": 0.328,
+        "containment_2_in_1": 1.0
+      }
+    ]
+  }
+}

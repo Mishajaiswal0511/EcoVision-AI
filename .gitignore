@@ -1,0 +1,93 @@
+# EcoVision AI — .gitignore
+# ==========================
+
+# ---- Datasets (never upload full dataset images/labels) ----
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+
+# ---- Model weights ----
+backend/weights/
+training/weights/
+*.pt
+*.onnx
+*.engine
+*.part
+*.bin
+*.tflite
+models/weights_best.pt
+models/yolo*.pt
+models/experiments/yolo*
+models/experiments/eval*
+models/experiments/general*
+models/experiments/splits/
+
+# Include ONLY the single active 7-class production checkpoint:
+!models/experiments/v5_taxonomy/training/yolo11s_v5_best.pt
+
+# ---- Environment and secrets ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+credentials.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.spec
+.venv/
+venv/
+env/
+.Python
+
+# ---- Pytest & test cache ----
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ---- Training runs & logs ----
+runs/
+wandb/
+*.log
+
+# ---- Node / frontend ----
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/.cache/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDEs ----
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---- Evaluation output (large result images) ----
+evaluation/results/previews/
+evaluation/error_analysis/
+evaluation/results_processed/
+
+# ---- Archives, backups, scratch ----
+archive/
+backups/
+scratch/
+temp/
+tmp/
+*.tmp

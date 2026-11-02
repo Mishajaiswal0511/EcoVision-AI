@@ -1,0 +1,50 @@
+# EcoVision AI — YOLOv11 Training Configuration (v3 Dataset)
+# ==========================================================
+# Run from training/ directory in Google Colab:
+#   from ultralytics import YOLO
+#   model = YOLO('yolo11s.pt')
+#   model.train(**config)
+
+# ---- Data ----
+data: ../data/dataset_v3.yaml        # updated for v3 multi-source dataset
+
+# ---- Model ----
+model: yolo11s.pt                 # pretrained COCO checkpoint
+
+# ---- Training hyperparameters ----
+epochs: 100
+imgsz: 640
+batch: 16                         # reduce to 8 if GPU memory spikes on Colab T4
+device: 0                         # GPU 0
+patience: 20                      # early stopping after 20 epochs without improvement
+
+# ---- Optimizer ----
+optimizer: AdamW
+lr0: 0.001
+lrf: 0.01                         # final lr = lr0 * lrf
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+
+# ---- Augmentation Tuning (Tuned for Real-World Litter & Backgrounds) ----
+hsv_h: 0.015                      # hue jitter
+hsv_s: 0.7                        # saturation jitter
+hsv_v: 0.4                        # brightness jitter
+degrees: 0.0                      # standard rotation
+translate: 0.1
+scale: 0.5
+flipud: 0.0
+fliplr: 0.5
+mosaic: 0.5                       # tuned down from 1.0 to preserve small object geometry
+close_mosaic: 10                  # disable mosaic for the final 10 epochs for sharp localization
+mixup: 0.05
+
+# ---- Output ----
+project: runs/train
+name: yolov11s_waste_v3
+save: true
+save_period: 5
+
+# ---- Reproducibility ----
+seed: 42
+

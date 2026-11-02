@@ -1,0 +1,176 @@
+{
+  "version": "5.0",
+  "updated": "2026-10-31",
+  "governing_policy": "Government of India Solid Waste Management Rules, 2026 (MoEFCC / CPCB) & Punjab Municipal SWM Implementation Rules",
+  "classes": {
+    "plastic": {
+      "material": "Plastic (Clean Recyclable)",
+      "bin_color_india": "Blue",
+      "bin_label": "Dry Recyclables",
+      "preparation_steps": [
+        "Empty and rinse container thoroughly to remove food residues",
+        "Remove caps and lids (can be recycled together if clean)",
+        "Flatten bottles to conserve space",
+        "CONDITIONAL RULE FOR TAKEAWAY CONTAINERS: Rigid plastic food containers are accepted in Blue Bin ONLY if rinsed completely clean of food grease. Heavily oil-caked containers or foam clamshells must go to General Trash"
+      ],
+      "disposal_locations": [
+        "Blue bin (dry recyclables)",
+        "Material Recovery Facility (MRF)"
+      ],
+      "safety_warning": null,
+      "recyclable": true,
+      "compositable": false,
+      "hazardous": false
+    },
+    "metal": {
+      "material": "Metal (Aluminium / Steel)",
+      "bin_color_india": "Blue",
+      "bin_label": "Dry Recyclables",
+      "preparation_steps": [
+        "Rinse food tins and drink cans",
+        "Clean aluminium foil is accepted; heavily food-caked foil goes to General Trash",
+        "Aerosol cans: ensure completely depressurized before placing in bin",
+        "Do NOT place batteries in this bin — batteries are Domestic Hazardous"
+      ],
+      "disposal_locations": [
+        "Blue bin (dry recyclables)",
+        "Scrap metal collection point"
+      ],
+      "safety_warning": null,
+      "recyclable": true,
+      "compositable": false,
+      "hazardous": false
+    },
+    "cardboard": {
+      "material": "Cardboard & Paperboard",
+      "bin_color_india": "Blue",
+      "bin_label": "Dry Recyclables",
+      "preparation_steps": [
+        "Flatten corrugated shipping boxes to save space",
+        "Remove excessive shipping tape and staples",
+        "Keep dry — wet cardboard loses fiber structure",
+        "CONDITIONAL RULE FOR PIZZA BOXES & MEAL CARTONS: Clean dry cardboard lids with zero oil can be recycled in Blue Bin. Portions saturated with grease, cheese, or food oils cannot be hydrapulped and must go to General Trash (Black/Grey Bin)"
+      ],
+      "disposal_locations": [
+        "Blue bin (dry recyclables)",
+        "Cardboard recycling point"
+      ],
+      "safety_warning": null,
+      "recyclable": true,
+      "compositable": false,
+      "hazardous": false
+    },
+    "glass": {
+      "material": "Container Glass",
+      "bin_color_india": "Blue (dedicated partition) or Glass Bank",
+      "bin_label": "Glass Recycling",
+      "preparation_steps": [
+        "Empty and rinse bottles and jars",
+        "Do not mix with ceramics, mirrors, or window glass (different melting points)",
+        "Remove metal lids and recycle separately with Metal"
+      ],
+      "disposal_locations": [
+        "Glass recycling bin",
+        "Municipal glass bank"
+      ],
+      "safety_warning": "⚠️ SAFETY REQUIREMENT: If glass is broken, wrap securely in several layers of thick newspaper and label clearly before placing in collection to prevent injury to sanitation workers.",
+      "recyclable": true,
+      "compositable": false,
+      "hazardous": false
+    },
+    "paper": {
+      "material": "Paper (Clean Recyclable)",
+      "bin_color_india": "Blue",
+      "bin_label": "Dry Recyclables",
+      "preparation_steps": [
+        "Keep clean and dry — wet paper cannot be repulped",
+        "Remove plastic bindings or sleeves from documents",
+        "Do NOT include used facial tissues, soiled napkins, or thermal receipts"
+      ],
+      "disposal_locations": [
+        "Blue bin (dry recyclables)",
+        "Paper recycling drop-off"
+      ],
+      "safety_warning": null,
+      "recyclable": true,
+      "compositable": true,
+      "hazardous": false
+    },
+    "general_trash": {
+      "material": "Residual Waste (Non-Recyclable)",
+      "bin_color_india": "Black or Grey",
+      "bin_label": "General Waste (Landfill / RDF)",
+      "preparation_steps": [
+        "Includes non-recyclable composite packaging: multi-layer snack/crisp packets (metallized BOPP film), expanded polystyrene (Styrofoam cups/clamshells), and plastic straws/cutlery",
+        "Includes heavily food-contaminated packaging: greasy pizza boxes and food-soiled meal cartons where oil/grease cannot be cleaned off",
+        "Includes inert sweepings, cigarette butts, tangled ropes/strings, and outdoor non-recyclable litter fragments",
+        "For standard non-sanitary residual waste: bag securely and place into the Black or Grey Bin (Landfill / RDF)",
+        "SANITARY & SPECIAL-CARE EXCEPTION: If the detected object is a used tissue, paper napkin, disposable glove, diaper, or personal hygiene item, DO NOT dispose loose in regular general waste. Wrap securely in newspaper or paper pouch, mark with a prominent RED dot or cross, and hand over separately to municipal collectors per MoEFCC/CPCB SWM 2026 rules"
+      ],
+      "disposal_locations": [
+        "Black/Grey bin (general waste)",
+        "Municipal refuse collection point"
+      ],
+      "safety_warning": "⚠️ SANITARY & SPECIAL-CARE ADVISORY: If this detected item is a used tissue, napkin, disposable glove, or personal hygiene item, DO NOT throw loose into the general waste bin. Statutory municipal guidelines require sanitary items to be wrapped securely in newspaper or paper pouch, marked with a distinctive RED cross or dot, and handed over separately to sanitation staff for high-temperature incineration.",
+      "recyclable": false,
+      "compositable": false,
+      "hazardous": false
+    },
+    "organic": {
+      "material": "Wet Waste (Biodegradable)",
+      "bin_color_india": "Green",
+      "bin_label": "Wet Waste (Compostable)",
+      "preparation_steps": [
+        "Includes kitchen food leftovers, fruit & vegetable peels, eggshells",
+        "Includes tea leaves, coffee grounds, and garden trimmings",
+        "Do NOT bag in conventional plastic bags — use compostable bags or transfer loose",
+        "Never mix with plastic packaging, glass, or batteries"
+      ],
+      "disposal_locations": [
+        "Green bin (wet waste)",
+        "Home compost bin",
+        "Biomethanation facility"
+      ],
+      "safety_warning": null,
+      "recyclable": false,
+      "compositable": true,
+      "hazardous": false
+    },
+    "sanitary_waste": {
+      "material": "Sanitary & Bio-Medical (Special Care)",
+      "bin_color_india": "Special Paper Pouch with Red Mark",
+      "bin_label": "Sanitary Waste (Special Handling)",
+      "preparation_steps": [
+        "MANDATORY MUNICIPAL PROTOCOL: Used tissues, napkins, diapers, and sanitary pads must be wrapped securely in newspaper",
+        "Mark prominently with a RED cross or dot on the package",
+        "Hand over separately to municipal collection staff — NEVER mix into bulk recyclables"
+      ],
+      "disposal_locations": [
+        "Designated municipal sanitary collection",
+        "High-temperature incineration"
+      ],
+      "safety_warning": "⚠️ BIO-HAZARD RISK: Do not dispose sanitary waste in recycling or open bins. Always wrap securely in paper with a red marking.",
+      "recyclable": false,
+      "compositable": false,
+      "hazardous": true
+    },
+    "battery": {
+      "material": "Domestic Hazardous & E-Waste",
+      "bin_color_india": "Special Collection / Red Bin",
+      "bin_label": "Hazardous / E-Waste",
+      "preparation_steps": [
+        "Store in a dry location out of reach of children",
+        "Deliver to authorized electronics retailers, battery kiosks, or municipal hazardous waste drop-offs",
+        "NEVER incinerate or dump in regular bins — toxic heavy metals poison groundwater"
+      ],
+      "disposal_locations": [
+        "Dedicated e-waste kiosk",
+        "Authorized battery collection center"
+      ],
+      "safety_warning": "⚠️ TOXIC & FIRE HAZARD: Lithium and lead-acid batteries can cause severe fires or chemical contamination if placed in regular waste.",
+      "recyclable": true,
+      "compositable": false,
+      "hazardous": true
+    }
+  }
+}

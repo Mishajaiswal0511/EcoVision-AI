@@ -1,0 +1,17 @@
+{
+  "id": "mishajaiswal0511/ecovision-yolo11m-multi-object-training",
+  "title": "EcoVision YOLO11m Multi-Object Training",
+  "code_file": "ecovision_yolo11m_training.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "mishajaiswal0511/ecovision-train-val"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

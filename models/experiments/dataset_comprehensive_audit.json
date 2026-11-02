@@ -1,0 +1,158 @@
+{
+  "train_stats": {
+    "split": "train",
+    "total_images": 8242,
+    "total_labels": 8242,
+    "missing_labels": 0,
+    "missing_images": 0,
+    "empty_background_images": 640,
+    "total_instances": 25774,
+    "class_counts": {
+      "glass": 5722,
+      "metal": 4563,
+      "cardboard": 3692,
+      "plastic": 6958,
+      "paper": 3270,
+      "general_trash": 1569
+    },
+    "class_percentages": {
+      "plastic": 27.0,
+      "metal": 17.7,
+      "cardboard": 14.32,
+      "glass": 22.2,
+      "paper": 12.69,
+      "general_trash": 6.09
+    },
+    "source_breakdown": {
+      "general_waste": 5812,
+      "other_background": 640,
+      "taco": 1790
+    },
+    "objects_per_image": {
+      "mean": 3.13,
+      "median": 1.0,
+      "p95": 11.0,
+      "max": 229,
+      "single_object_images": 3954,
+      "multi_2_3_images": 1963,
+      "dense_4_plus_images": 1685
+    },
+    "object_size_distribution": {
+      "small_under_0_005": 5086,
+      "small_pct": 19.73,
+      "medium_0_005_to_0_05": 8188,
+      "medium_pct": 31.77,
+      "large_above_0_05": 12500,
+      "large_pct": 48.5,
+      "extreme_aspect_ratio_boxes": 1764,
+      "extreme_ar_pct": 6.84
+    },
+    "anomalies_count": 0,
+    "sample_anomalies": []
+  },
+  "val_stats": {
+    "split": "val",
+    "total_images": 3007,
+    "total_labels": 3007,
+    "missing_labels": 0,
+    "missing_images": 0,
+    "empty_background_images": 160,
+    "total_instances": 9781,
+    "class_counts": {
+      "paper": 1447,
+      "cardboard": 1357,
+      "metal": 1982,
+      "plastic": 2325,
+      "glass": 2420,
+      "general_trash": 250
+    },
+    "class_percentages": {
+      "plastic": 23.77,
+      "metal": 20.26,
+      "cardboard": 13.87,
+      "glass": 24.74,
+      "paper": 14.79,
+      "general_trash": 2.56
+    },
+    "source_breakdown": {
+      "general_waste": 2468,
+      "other_background": 160,
+      "taco": 379
+    },
+    "objects_per_image": {
+      "mean": 3.25,
+      "median": 1.0,
+      "p95": 11.0,
+      "max": 119,
+      "single_object_images": 1509,
+      "multi_2_3_images": 722,
+      "dense_4_plus_images": 616
+    },
+    "object_size_distribution": {
+      "small_under_0_005": 1367,
+      "small_pct": 13.98,
+      "medium_0_005_to_0_05": 3265,
+      "medium_pct": 33.38,
+      "large_above_0_05": 5149,
+      "large_pct": 52.64,
+      "extreme_aspect_ratio_boxes": 727,
+      "extreme_ar_pct": 7.43
+    },
+    "anomalies_count": 0,
+    "sample_anomalies": []
+  },
+  "leakage_analysis": {
+    "train_image_count": 8242,
+    "val_image_count": 3007,
+    "exact_content_duplicates": 0,
+    "sample_exact_duplicates": [],
+    "base_stem_overlap_count": 360,
+    "sample_base_stem_overlap": [
+      {
+        "val_image": "taco_000000_jpg.rf.02368088df11a1a6a4fb6cb129aabf2d.jpg",
+        "base_stem": "taco_000000",
+        "train_matches": [
+          "taco_000000_jpg.rf.01d9b88b126b535f2fbcfcbed0985b53.jpg",
+          "taco_000000_jpg.rf.02735e170838725424516efe5400c569.jpg",
+          "taco_000000_JPG.rf.04216bd9f433d6eb121f48686d6cee32.jpg"
+        ]
+      },
+      {
+        "val_image": "taco_000000_JPG.rf.b9f29dbcd04ba33a26a70a5f7077439d.jpg",
+        "base_stem": "taco_000000",
+        "train_matches": [
+          "taco_000000_jpg.rf.01d9b88b126b535f2fbcfcbed0985b53.jpg",
+          "taco_000000_jpg.rf.02735e170838725424516efe5400c569.jpg",
+          "taco_000000_JPG.rf.04216bd9f433d6eb121f48686d6cee32.jpg"
+        ]
+      },
+      {
+        "val_image": "taco_000000_JPG.rf.d89cf0c1f8d7dc0322cddf208357034a.jpg",
+        "base_stem": "taco_000000",
+        "train_matches": [
+          "taco_000000_jpg.rf.01d9b88b126b535f2fbcfcbed0985b53.jpg",
+          "taco_000000_jpg.rf.02735e170838725424516efe5400c569.jpg",
+          "taco_000000_JPG.rf.04216bd9f433d6eb121f48686d6cee32.jpg"
+        ]
+      },
+      {
+        "val_image": "taco_000001_jpg.rf.c924c8340cca476082b68a8d294a208d.jpg",
+        "base_stem": "taco_000001",
+        "train_matches": [
+          "taco_000001_jpg.rf.0763006f9a7cfcb795604842741f1992.jpg",
+          "taco_000001_jpg.rf.0a03e9ef3baf85918d574cb3296d8fbb.jpg",
+          "taco_000001_jpg.rf.2e5e44add908abb698362362649a942c.jpg"
+        ]
+      },
+      {
+        "val_image": "taco_000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.jpg",
+        "base_stem": "taco_000002",
+        "train_matches": [
+          "taco_000002_jpg.rf.15d021c1240beb993bd5a7a6fdcf5d23.jpg",
+          "taco_000002_jpg.rf.34168e4e52c628475fba45fbccfd4b8e.jpg",
+          "taco_000002_jpg.rf.37cb9344c43458f46950df906a590ebf.jpg"
+        ]
+      }
+    ]
+  }
+}

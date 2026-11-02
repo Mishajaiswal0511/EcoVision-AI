@@ -1,0 +1,2361 @@
+{
+  "train": {
+    "image_count": 1790,
+    "label_file_count": 1790,
+    "total_annotations_scanned": 5939,
+    "valid_annotations": 5939,
+    "issues": {
+      "field_count_errors": [],
+      "invalid_class_id_errors": [],
+      "non_finite_errors": [],
+      "degenerate_box_errors": [],
+      "out_of_range_errors": [],
+      "out_of_bounds_errors": [],
+      "tiny_box_warnings": [
+        {
+          "file": "000000_jpg.rf.01d9b88b126b535f2fbcfcbed0985b53.txt",
+          "line": 5,
+          "area": 8.857e-05
+        },
+        {
+          "file": "000000_jpg.rf.5f4f3ad526c184c535ea751e42877e2b.txt",
+          "line": 5,
+          "area": 8.857e-05
+        },
+        {
+          "file": "000001_jpg.rf.b8baf2e51b9c3a2eed6651e1f77d86bb.txt",
+          "line": 10,
+          "area": 5.263e-05
+        },
+        {
+          "file": "000001_jpg.rf.ba62e8d0aaacb7afc3ca47696a5b9b5a.txt",
+          "line": 10,
+          "area": 5.263e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 5,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 6,
+          "area": 9.01e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 8,
+          "area": 5.206e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 13,
+          "area": 4.255e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 14,
+          "area": 9.462e-05
+        },
+        {
+          "file": "000002_JPG.rf.610e0ec78d4d5adc82178d691606dc70.txt",
+          "line": 15,
+          "area": 4.956e-05
+        },
+        {
+          "file": "000005_jpg.rf.17f490d652096c5bfa32049fb7491028.txt",
+          "line": 2,
+          "area": 8.112e-05
+        },
+        {
+          "file": "000005_jpg.rf.41eb3e5de359efd2741dfcdd4cb901dd.txt",
+          "line": 2,
+          "area": 8.112e-05
+        },
+        {
+          "file": "000009_jpg.rf.6393ef28124911afbf37acb4268f0bdf.txt",
+          "line": 5,
+          "area": 8.202e-05
+        },
+        {
+          "file": "000009_jpg.rf.64c14219bd354f8f2c09b86089394e2f.txt",
+          "line": 5,
+          "area": 8.202e-05
+        },
+        {
+          "file": "000014_JPG.rf.7afb37ec9aee10ba1aa758b8c9a032fd.txt",
+          "line": 2,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000014_JPG.rf.b938036ed48a379aac77bc7d4ed78044.txt",
+          "line": 2,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000015_JPG.rf.2018a36c9bceb0ce0bae917e2389e580.txt",
+          "line": 8,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000015_JPG.rf.5257ac185254b62ad7275e7fb02d5aa6.txt",
+          "line": 8,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000015_jpg.rf.9ed5301f7bd3bb4835a0a5ea8f850c06.txt",
+          "line": 6,
+          "area": 4.055e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 8,
+          "area": 9.123e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 30,
+          "area": 5.957e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 33,
+          "area": 5.318e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 34,
+          "area": 7.159e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 38,
+          "area": 9.612e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 39,
+          "area": 9.274e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 40,
+          "area": 6.808e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 42,
+          "area": 7.509e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 44,
+          "area": 5.707e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 48,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000021_jpg.rf.cf038784dac10d52b6a8ddc7a8a5ffb3.txt",
+          "line": 52,
+          "area": 9.987e-05
+        },
+        {
+          "file": "000021_jpg.rf.f85adf24e2c93caa0b58690484bc4281.txt",
+          "line": 4,
+          "area": 6.693e-05
+        },
+        {
+          "file": "000023_jpg.rf.16bf962b7a7b163a03e2117f1bf18d6b.txt",
+          "line": 11,
+          "area": 9.699e-05
+        },
+        {
+          "file": "000023_jpg.rf.16bf962b7a7b163a03e2117f1bf18d6b.txt",
+          "line": 12,
+          "area": 9.912e-05
+        },
+        {
+          "file": "000023_jpg.rf.16bf962b7a7b163a03e2117f1bf18d6b.txt",
+          "line": 13,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000024_jpg.rf.3adcb5553408b6b4b40da0dbf44e6ac4.txt",
+          "line": 2,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 5,
+          "area": 9.979e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 8,
+          "area": 8.38e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 9,
+          "area": 4.498e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 10,
+          "area": 5.922e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 11,
+          "area": 5.04e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 12,
+          "area": 4.713e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 13,
+          "area": 4.587e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 14,
+          "area": 8.032e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 15,
+          "area": 8.997e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 16,
+          "area": 8.065e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 17,
+          "area": 3.534e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 18,
+          "area": 7.536e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 20,
+          "area": 6.653e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 23,
+          "area": 5.784e-05
+        },
+        {
+          "file": "000024_jpg.rf.4c64dd2d919126e8eb45eabf357fc33c.txt",
+          "line": 25,
+          "area": 4.07e-05
+        },
+        {
+          "file": "000025_jpg.rf.5385c43b156f5761f1bbead9544aec4d.txt",
+          "line": 4,
+          "area": 9.922e-05
+        },
+        {
+          "file": "000025_jpg.rf.5385c43b156f5761f1bbead9544aec4d.txt",
+          "line": 13,
+          "area": 3.856e-05
+        },
+        {
+          "file": "000025_jpg.rf.5385c43b156f5761f1bbead9544aec4d.txt",
+          "line": 14,
+          "area": 8.587e-05
+        },
+        {
+          "file": "000025_jpg.rf.5385c43b156f5761f1bbead9544aec4d.txt",
+          "line": 27,
+          "area": 8.884e-05
+        },
+        {
+          "file": "000025_jpg.rf.9d13d85e6edc066fb4ea5eadad18f78b.txt",
+          "line": 20,
+          "area": 8.683e-05
+        },
+        {
+          "file": "000025_jpg.rf.fc311eeb0898333de5d5d9b7bf5bef3a.txt",
+          "line": 20,
+          "area": 8.683e-05
+        },
+        {
+          "file": "000026_jpg.rf.03eff76a84dcb36cfd06d84f1b89e0e2.txt",
+          "line": 23,
+          "area": 8.619e-05
+        },
+        {
+          "file": "000027_jpg.rf.65f9409234befebd426dd8c738e00148.txt",
+          "line": 2,
+          "area": 3.317e-05
+        },
+        {
+          "file": "000028_jpg.rf.924467c15542a89dd69e3ba9cb78af73.txt",
+          "line": 5,
+          "area": 7.434e-05
+        },
+        {
+          "file": "000030_JPG.rf.f6038c6f67bf2cf9b71a35d1ed2bbf40.txt",
+          "line": 15,
+          "area": 4.906e-05
+        },
+        {
+          "file": "000030_JPG.rf.f6038c6f67bf2cf9b71a35d1ed2bbf40.txt",
+          "line": 16,
+          "area": 5.207e-05
+        },
+        {
+          "file": "000030_JPG.rf.f6038c6f67bf2cf9b71a35d1ed2bbf40.txt",
+          "line": 17,
+          "area": 6.307e-05
+        },
+        {
+          "file": "000033_JPG.rf.280016826dace0e4946f7906576ddd30.txt",
+          "line": 6,
+          "area": 9.912e-05
+        },
+        {
+          "file": "000033_JPG.rf.280016826dace0e4946f7906576ddd30.txt",
+          "line": 8,
+          "area": 4.256e-05
+        },
+        {
+          "file": "000034_jpg.rf.1dd151e16aa01e6e5d6efa0ed368f70d.txt",
+          "line": 3,
+          "area": 9.649e-05
+        },
+        {
+          "file": "000034_jpg.rf.1dd151e16aa01e6e5d6efa0ed368f70d.txt",
+          "line": 15,
+          "area": 6.579e-05
+        },
+        {
+          "file": "000034_jpg.rf.1dd151e16aa01e6e5d6efa0ed368f70d.txt",
+          "line": 16,
+          "area": 4.633e-05
+        },
+        {
+          "file": "000035_jpg.rf.0993a1f8cfef4b1dd8f75cde545fccea.txt",
+          "line": 7,
+          "area": 5.428e-05
+        },
+        {
+          "file": "000035_jpg.rf.394eb5086af27b4a33885e19cf6959c9.txt",
+          "line": 7,
+          "area": 5.428e-05
+        },
+        {
+          "file": "000035_JPG.rf.3d590c52dee3a284aafd696ca7eab156.txt",
+          "line": 5,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000035_jpg.rf.6eb43293abcd3a1b2a52434ac533bd28.txt",
+          "line": 9,
+          "area": 8.41e-05
+        },
+        {
+          "file": "000035_jpg.rf.be710fd64eec0dcf2b2ce5323a04b5bb.txt",
+          "line": 2,
+          "area": 8.41e-05
+        },
+        {
+          "file": "000035_JPG.rf.cddf3da28598f0fabdf32fb794656f89.txt",
+          "line": 5,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000036_JPG.rf.07e92426ee80d376711ec630bb7b35e1.txt",
+          "line": 2,
+          "area": 4.806e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 5,
+          "area": 9.153e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 6,
+          "area": 6.495e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 14,
+          "area": 4.921e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 15,
+          "area": 7.348e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 16,
+          "area": 8.857e-05
+        },
+        {
+          "file": "000036_jpg.rf.931c5afa4d2d20b4bf219db1d8fac35c.txt",
+          "line": 17,
+          "area": 4.429e-05
+        },
+        {
+          "file": "000036_jpg.rf.961a483f3cdb88c68b4687c504a2d386.txt",
+          "line": 2,
+          "area": 4.605e-05
+        },
+        {
+          "file": "000036_jpg.rf.961a483f3cdb88c68b4687c504a2d386.txt",
+          "line": 3,
+          "area": 5.564e-05
+        },
+        {
+          "file": "000036_jpg.rf.961a483f3cdb88c68b4687c504a2d386.txt",
+          "line": 14,
+          "area": 5.702e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 5,
+          "area": 9.153e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 6,
+          "area": 6.495e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 14,
+          "area": 4.921e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 15,
+          "area": 7.348e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 16,
+          "area": 8.857e-05
+        },
+        {
+          "file": "000036_jpg.rf.e17bea8f68edbd520221ac58e2cc5197.txt",
+          "line": 17,
+          "area": 4.429e-05
+        },
+        {
+          "file": "000037_jpg.rf.0eb8eeddbca392e27ab2936688e3b4ef.txt",
+          "line": 3,
+          "area": 4.098e-05
+        },
+        {
+          "file": "000037_jpg.rf.0eb8eeddbca392e27ab2936688e3b4ef.txt",
+          "line": 4,
+          "area": 3.564e-05
+        },
+        {
+          "file": "000037_jpg.rf.281f7fe8cb57a2119652fff8111ac40f.txt",
+          "line": 3,
+          "area": 4.098e-05
+        },
+        {
+          "file": "000037_jpg.rf.281f7fe8cb57a2119652fff8111ac40f.txt",
+          "line": 4,
+          "area": 3.564e-05
+        },
+        {
+          "file": "000037_JPG.rf.f8a31f81a0d306c5b138b484b45f2e93.txt",
+          "line": 11,
+          "area": 3.776e-05
+        },
+        {
+          "file": "000038_JPG.rf.375e92b47b370d1f1aef422deb74653a.txt",
+          "line": 4,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000040_JPG.rf.5a2a09860524726bc04fffb899fbe21d.txt",
+          "line": 1,
+          "area": 5.583e-05
+        },
+        {
+          "file": "000042_jpg.rf.94aca7ed52b0aafcface3cfba37a75ae.txt",
+          "line": 4,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000044_JPG.rf.ce34e1297977e2dc2b04c15005a1ee64.txt",
+          "line": 2,
+          "area": 9.011e-05
+        },
+        {
+          "file": "000044_JPG.rf.ce34e1297977e2dc2b04c15005a1ee64.txt",
+          "line": 3,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000044_JPG.rf.ef27607ca5920660a6ddf62a4ddfa492.txt",
+          "line": 2,
+          "area": 9.011e-05
+        },
+        {
+          "file": "000044_JPG.rf.ef27607ca5920660a6ddf62a4ddfa492.txt",
+          "line": 3,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 3,
+          "area": 8.811e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 5,
+          "area": 6.809e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 9,
+          "area": 8.411e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 11,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 12,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 13,
+          "area": 7.81e-05
+        },
+        {
+          "file": "000046_JPG.rf.339d2e78d7afbebe7a10cc78dd749b4d.txt",
+          "line": 18,
+          "area": 5.257e-05
+        },
+        {
+          "file": "000046_jpg.rf.98587be6503baee2143ae5cffa8a90aa.txt",
+          "line": 6,
+          "area": 9.907e-05
+        },
+        {
+          "file": "000046_jpg.rf.9fc3017d63bc81e3d11a5f60daef1ffd.txt",
+          "line": 6,
+          "area": 9.907e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 3,
+          "area": 8.811e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 5,
+          "area": 6.809e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 9,
+          "area": 8.411e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 11,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 12,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 13,
+          "area": 7.81e-05
+        },
+        {
+          "file": "000046_JPG.rf.c6780cb02a09aca76408480cd21b1bf9.txt",
+          "line": 18,
+          "area": 5.257e-05
+        },
+        {
+          "file": "000047_jpg.rf.02763016f0f7f50610e027af412fc8a4.txt",
+          "line": 4,
+          "area": 6.332e-05
+        },
+        {
+          "file": "000047_JPG.rf.6eb9297d50ec22f92a198ccee6cead66.txt",
+          "line": 4,
+          "area": 4.806e-05
+        },
+        {
+          "file": "000047_JPG.rf.6eb9297d50ec22f92a198ccee6cead66.txt",
+          "line": 5,
+          "area": 6.658e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 7,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 8,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 9,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 10,
+          "area": 7.66e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 14,
+          "area": 7.509e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 15,
+          "area": 5.507e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 16,
+          "area": 3.254e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 17,
+          "area": 7.209e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 18,
+          "area": 9.01e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 19,
+          "area": 9.361e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 20,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 22,
+          "area": 9.361e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 23,
+          "area": 8.009e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 24,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 30,
+          "area": 8.41e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 31,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 32,
+          "area": 7.509e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 33,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 34,
+          "area": 7.609e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 36,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000048_JPG.rf.1d11216b505ce179374575c5f2cfc26b.txt",
+          "line": 37,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 7,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 8,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 9,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 10,
+          "area": 7.66e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 14,
+          "area": 7.509e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 15,
+          "area": 5.507e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 16,
+          "area": 3.254e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 17,
+          "area": 7.209e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 18,
+          "area": 9.01e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 19,
+          "area": 9.361e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 20,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 22,
+          "area": 9.361e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 23,
+          "area": 8.009e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 24,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 30,
+          "area": 8.41e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 31,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 32,
+          "area": 7.509e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 33,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 34,
+          "area": 7.609e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 36,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000048_JPG.rf.f583de84ba2cbd2c9ed1f0a358c87616.txt",
+          "line": 37,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000049_JPG.rf.f9f3ff8409de7196da4149d0671c98cd.txt",
+          "line": 10,
+          "area": 6.509e-05
+        },
+        {
+          "file": "000050_JPG.rf.16367a3c05b2fb32d9079d0edcdfda4c.txt",
+          "line": 7,
+          "area": 6.658e-05
+        },
+        {
+          "file": "000050_jpg.rf.739aa90786b808cf43ae55d13960cc37.txt",
+          "line": 2,
+          "area": 7.24e-05
+        },
+        {
+          "file": "000050_jpg.rf.739aa90786b808cf43ae55d13960cc37.txt",
+          "line": 7,
+          "area": 7.487e-05
+        },
+        {
+          "file": "000050_jpg.rf.739aa90786b808cf43ae55d13960cc37.txt",
+          "line": 13,
+          "area": 8.976e-05
+        },
+        {
+          "file": "000050_jpg.rf.73df8d6fc6ba0e872a57bb06d888a0c9.txt",
+          "line": 2,
+          "area": 7.24e-05
+        },
+        {
+          "file": "000050_jpg.rf.73df8d6fc6ba0e872a57bb06d888a0c9.txt",
+          "line": 7,
+          "area": 7.487e-05
+        },
+        {
+          "file": "000050_jpg.rf.73df8d6fc6ba0e872a57bb06d888a0c9.txt",
+          "line": 13,
+          "area": 8.976e-05
+        },
+        {
+          "file": "000051_jpg.rf.009c02d9a261c8daabba2456c0fbb779.txt",
+          "line": 3,
+          "area": 4.806e-05
+        },
+        {
+          "file": "000051_JPG.rf.19ac4b6c82394e394007b35ba1234a79.txt",
+          "line": 2,
+          "area": 7.196e-05
+        },
+        {
+          "file": "000051_JPG.rf.57d5b5981020cf93ae1ee14535342f61.txt",
+          "line": 2,
+          "area": 7.196e-05
+        },
+        {
+          "file": "000051_jpg.rf.92c3f7b9c2f3e9e97bb060663f845bd6.txt",
+          "line": 6,
+          "area": 7.113e-05
+        },
+        {
+          "file": "000051_jpg.rf.92c3f7b9c2f3e9e97bb060663f845bd6.txt",
+          "line": 7,
+          "area": 7.113e-05
+        },
+        {
+          "file": "000051_jpg.rf.92c3f7b9c2f3e9e97bb060663f845bd6.txt",
+          "line": 9,
+          "area": 6.165e-05
+        },
+        {
+          "file": "000051_jpg.rf.92c3f7b9c2f3e9e97bb060663f845bd6.txt",
+          "line": 17,
+          "area": 7.613e-05
+        },
+        {
+          "file": "000051_jpg.rf.9c641429949f055db3f15833414ce248.txt",
+          "line": 3,
+          "area": 4.806e-05
+        },
+        {
+          "file": "000051_JPG.rf.f1c60dadfbb7b371fbcb7d83aff8908f.txt",
+          "line": 9,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000053_jpg.rf.334ec83e40cd0ebfeeb9c7be50385bf5.txt",
+          "line": 10,
+          "area": 8.51e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 3,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 4,
+          "area": 8.411e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 5,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 7,
+          "area": 6.896e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 12,
+          "area": 5.694e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 14,
+          "area": 7.133e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 18,
+          "area": 9.035e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 21,
+          "area": 5.407e-05
+        },
+        {
+          "file": "000053_jpg.rf.879169d64abec1b3e1f1653c461a0404.txt",
+          "line": 22,
+          "area": 7.885e-05
+        },
+        {
+          "file": "000054_jpg.rf.75e07abd3d976b72eb950a318cc31529.txt",
+          "line": 18,
+          "area": 9.384e-05
+        },
+        {
+          "file": "000054_jpg.rf.75e07abd3d976b72eb950a318cc31529.txt",
+          "line": 20,
+          "area": 8.413e-05
+        },
+        {
+          "file": "000054_jpg.rf.a5b6c951a0eeac5ed692340b091d0b4c.txt",
+          "line": 2,
+          "area": 5.825e-05
+        },
+        {
+          "file": "000058_JPG.rf.a648c86c715a8da44ccea8e737037807.txt",
+          "line": 5,
+          "area": 3.204e-05
+        },
+        {
+          "file": "000058_JPG.rf.a648c86c715a8da44ccea8e737037807.txt",
+          "line": 6,
+          "area": 1.752e-05
+        },
+        {
+          "file": "000058_JPG.rf.a648c86c715a8da44ccea8e737037807.txt",
+          "line": 7,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000058_JPG.rf.a648c86c715a8da44ccea8e737037807.txt",
+          "line": 8,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000058_JPG.rf.a648c86c715a8da44ccea8e737037807.txt",
+          "line": 9,
+          "area": 5.207e-05
+        },
+        {
+          "file": "000058_JPG.rf.e7378016e971c34f8453d3a7f34cf18b.txt",
+          "line": 5,
+          "area": 3.204e-05
+        },
+        {
+          "file": "000058_JPG.rf.e7378016e971c34f8453d3a7f34cf18b.txt",
+          "line": 6,
+          "area": 1.752e-05
+        },
+        {
+          "file": "000058_JPG.rf.e7378016e971c34f8453d3a7f34cf18b.txt",
+          "line": 7,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000058_JPG.rf.e7378016e971c34f8453d3a7f34cf18b.txt",
+          "line": 8,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000058_JPG.rf.e7378016e971c34f8453d3a7f34cf18b.txt",
+          "line": 9,
+          "area": 5.207e-05
+        },
+        {
+          "file": "000065_JPG.rf.42ab9f3c628b0681eeced4a9216dcf41.txt",
+          "line": 3,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000065_jpg.rf.f0e46a9d9b611d17b188b9201cdf0e6c.txt",
+          "line": 8,
+          "area": 5.506e-05
+        },
+        {
+          "file": "000065_jpg.rf.f0e46a9d9b611d17b188b9201cdf0e6c.txt",
+          "line": 11,
+          "area": 7.209e-05
+        },
+        {
+          "file": "000065_jpg.rf.f0e46a9d9b611d17b188b9201cdf0e6c.txt",
+          "line": 23,
+          "area": 6.019e-05
+        },
+        {
+          "file": "000066_jpg.rf.06e33850196aae875f233891dbf9aa21.txt",
+          "line": 4,
+          "area": 9.406e-05
+        },
+        {
+          "file": "000066_jpg.rf.06e33850196aae875f233891dbf9aa21.txt",
+          "line": 6,
+          "area": 7.118e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 3,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 4,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 5,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 6,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 7,
+          "area": 3.254e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 8,
+          "area": 2.253e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 9,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 10,
+          "area": 2.203e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 11,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 12,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 13,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 14,
+          "area": 1.752e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 15,
+          "area": 2.002e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 16,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 17,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 18,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 19,
+          "area": 3.605e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 20,
+          "area": 1.001e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 21,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 22,
+          "area": 8.01e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 25,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 26,
+          "area": 6.408e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 29,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.40769f20fa370859f8869b2150042445.txt",
+          "line": 30,
+          "area": 1.502e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 3,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 4,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 5,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 6,
+          "area": 2.803e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 7,
+          "area": 3.254e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 8,
+          "area": 2.253e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 9,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 10,
+          "area": 2.203e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 11,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 12,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 13,
+          "area": 2.603e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 14,
+          "area": 1.752e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 15,
+          "area": 2.002e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 16,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 17,
+          "area": 3.855e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 18,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 19,
+          "area": 3.605e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 20,
+          "area": 1.001e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 21,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 22,
+          "area": 8.01e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 25,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 26,
+          "area": 6.408e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 29,
+          "area": 2.403e-05
+        },
+        {
+          "file": "000066_JPG.rf.88314df82c1942ad61d183b84c216eb3.txt",
+          "line": 30,
+          "area": 1.502e-05
+        },
+        {
+          "file": "000070_JPG.rf.128670dc72f3c38b0ff91e16bac32a75.txt",
+          "line": 2,
+          "area": 6.307e-05
+        },
+        {
+          "file": "000070_JPG.rf.128670dc72f3c38b0ff91e16bac32a75.txt",
+          "line": 3,
+          "area": 4.005e-05
+        },
+        {
+          "file": "000070_jpg.rf.ad66ad97a2ecffbf02ff1792594dfbaa.txt",
+          "line": 3,
+          "area": 8.635e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 18,
+          "area": 7.096e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 19,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 21,
+          "area": 5.757e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 25,
+          "area": 4.03e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 31,
+          "area": 5.257e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 36,
+          "area": 3.154e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 41,
+          "area": 9.749e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 50,
+          "area": 7.81e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 51,
+          "area": 5.207e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 52,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 55,
+          "area": 6.382e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 56,
+          "area": 9.073e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 58,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 78,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 84,
+          "area": 5.782e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 85,
+          "area": 3.204e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 86,
+          "area": 4.993e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 87,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 88,
+          "area": 4.468e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 89,
+          "area": 4.28e-05
+        },
+        {
+          "file": "000072_JPG.rf.e984a793efc0035daf94a7cd3f0613b0.txt",
+          "line": 90,
+          "area": 3.091e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 18,
+          "area": 7.096e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 19,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 21,
+          "area": 5.757e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 25,
+          "area": 4.03e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 31,
+          "area": 5.257e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 36,
+          "area": 3.154e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 41,
+          "area": 9.749e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 50,
+          "area": 7.81e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 51,
+          "area": 5.207e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 52,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 55,
+          "area": 6.382e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 56,
+          "area": 9.073e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 58,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 78,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 84,
+          "area": 5.782e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 85,
+          "area": 3.204e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 86,
+          "area": 4.993e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 87,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 88,
+          "area": 4.468e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 89,
+          "area": 4.28e-05
+        },
+        {
+          "file": "000072_JPG.rf.f88b008712118b04313a398fe303729d.txt",
+          "line": 90,
+          "area": 3.091e-05
+        },
+        {
+          "file": "000073_JPG.rf.25ba34cce7b54615e93fe73262042001.txt",
+          "line": 5,
+          "area": 7.159e-05
+        },
+        {
+          "file": "000073_JPG.rf.c86f3b524152be6b4feb514fc9282363.txt",
+          "line": 5,
+          "area": 7.159e-05
+        },
+        {
+          "file": "000074_jpg.rf.fe83dc3977d851e2bdc5676bb609ddea.txt",
+          "line": 4,
+          "area": 6.43e-05
+        },
+        {
+          "file": "000075_JPG.rf.0f8df864c34da1cdf316bf440fc5be24.txt",
+          "line": 3,
+          "area": 8.811e-05
+        },
+        {
+          "file": "000075_JPG.rf.0f8df864c34da1cdf316bf440fc5be24.txt",
+          "line": 6,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000076_jpg.rf.26fc2b03ddc93e5726df4da10dee1a16.txt",
+          "line": 4,
+          "area": 3.317e-05
+        },
+        {
+          "file": "000076_jpg.rf.3afcb1cdb22f36eb5b8153274c639042.txt",
+          "line": 4,
+          "area": 3.317e-05
+        },
+        {
+          "file": "000076_jpg.rf.9c24aff1b36331cd26669f82db02b1f2.txt",
+          "line": 3,
+          "area": 8.365e-05
+        },
+        {
+          "file": "000077_JPG.rf.94b959346c5f8f04259df1f94dd52463.txt",
+          "line": 3,
+          "area": 6.658e-05
+        },
+        {
+          "file": "000077_JPG.rf.e6091c151b638709f7ad0e387e11edb4.txt",
+          "line": 2,
+          "area": 6.617e-05
+        },
+        {
+          "file": "000079_jpg.rf.5ef2146438e47b3874e1f391c583d4e7.txt",
+          "line": 1,
+          "area": 7.196e-05
+        },
+        {
+          "file": "000079_JPG.rf.cfb6930e1355cf5b8ce5bde55875a72d.txt",
+          "line": 3,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000080_JPG.rf.9352fca3f5cb695a3eefb339692fa090.txt",
+          "line": 4,
+          "area": 6.758e-05
+        },
+        {
+          "file": "000080_JPG.rf.f7660e0a78bda90993330c8a745bfa93.txt",
+          "line": 4,
+          "area": 6.758e-05
+        },
+        {
+          "file": "000082_JPG.rf.994096e1c76458b854ddb18a7025383b.txt",
+          "line": 9,
+          "area": 5.706e-05
+        },
+        {
+          "file": "000082_JPG.rf.994096e1c76458b854ddb18a7025383b.txt",
+          "line": 10,
+          "area": 8.11e-05
+        },
+        {
+          "file": "000083_jpg.rf.92f7752640adb666287f8aa6e92c23f2.txt",
+          "line": 5,
+          "area": 8.388e-05
+        },
+        {
+          "file": "000083_jpg.rf.e4dda1e637441c75e240c4bb7c144819.txt",
+          "line": 5,
+          "area": 8.388e-05
+        },
+        {
+          "file": "000084_JPG.rf.b5a6cfca46612c77cdfa5bdaff091edc.txt",
+          "line": 3,
+          "area": 9.078e-05
+        },
+        {
+          "file": "000085_JPG.rf.ca04fc1c866503c680136c87a59f3fd9.txt",
+          "line": 13,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000085_JPG.rf.ca04fc1c866503c680136c87a59f3fd9.txt",
+          "line": 14,
+          "area": 9.011e-05
+        },
+        {
+          "file": "000086_jpg.rf.2e88913e8d09615c9cb3c978f0d468ba.txt",
+          "line": 4,
+          "area": 5.167e-05
+        },
+        {
+          "file": "000086_jpg.rf.2e88913e8d09615c9cb3c978f0d468ba.txt",
+          "line": 5,
+          "area": 5.263e-05
+        },
+        {
+          "file": "000086_jpg.rf.2e88913e8d09615c9cb3c978f0d468ba.txt",
+          "line": 6,
+          "area": 8.635e-05
+        },
+        {
+          "file": "000086_jpg.rf.2e88913e8d09615c9cb3c978f0d468ba.txt",
+          "line": 9,
+          "area": 4.633e-05
+        },
+        {
+          "file": "000086_jpg.rf.e365ad4b4a8b20bebe30cdeb2a3422be.txt",
+          "line": 6,
+          "area": 9.594e-05
+        },
+        {
+          "file": "000088_jpg.rf.500768ed03e5b86b9dcb44ad91d3a15f.txt",
+          "line": 9,
+          "area": 9.896e-05
+        },
+        {
+          "file": "000094_JPG.rf.348cf942ed251dcc33e25176f14acc45.txt",
+          "line": 2,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000094_JPG.rf.a75d0f6a43cd23c6f65db9fa401e80e1.txt",
+          "line": 2,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000097_JPG.rf.87c1e73d03d1e031adeae19d16df8de1.txt",
+          "line": 4,
+          "area": 9.273e-05
+        },
+        {
+          "file": "000097_JPG.rf.87c1e73d03d1e031adeae19d16df8de1.txt",
+          "line": 7,
+          "area": 8.51e-05
+        },
+        {
+          "file": "000097_JPG.rf.f60ef8d36636d4cf98b667eb5daa541d.txt",
+          "line": 4,
+          "area": 9.273e-05
+        },
+        {
+          "file": "000097_JPG.rf.f60ef8d36636d4cf98b667eb5daa541d.txt",
+          "line": 7,
+          "area": 8.51e-05
+        },
+        {
+          "file": "000098_JPG.rf.4b73e7a6df924b0190ccfad7675e8ec1.txt",
+          "line": 2,
+          "area": 8.01e-05
+        },
+        {
+          "file": "000098_JPG.rf.4b73e7a6df924b0190ccfad7675e8ec1.txt",
+          "line": 3,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000098_JPG.rf.4b73e7a6df924b0190ccfad7675e8ec1.txt",
+          "line": 4,
+          "area": 7.159e-05
+        },
+        {
+          "file": "000098_JPG.rf.4b73e7a6df924b0190ccfad7675e8ec1.txt",
+          "line": 6,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000098_JPG.rf.4b73e7a6df924b0190ccfad7675e8ec1.txt",
+          "line": 8,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000098_JPG.rf.5c1608576a12f7cd4399f0b3b9181e0f.txt",
+          "line": 2,
+          "area": 8.01e-05
+        },
+        {
+          "file": "000098_JPG.rf.5c1608576a12f7cd4399f0b3b9181e0f.txt",
+          "line": 3,
+          "area": 3.504e-05
+        },
+        {
+          "file": "000098_JPG.rf.5c1608576a12f7cd4399f0b3b9181e0f.txt",
+          "line": 4,
+          "area": 7.159e-05
+        },
+        {
+          "file": "000098_JPG.rf.5c1608576a12f7cd4399f0b3b9181e0f.txt",
+          "line": 6,
+          "area": 4.205e-05
+        },
+        {
+          "file": "000098_JPG.rf.5c1608576a12f7cd4399f0b3b9181e0f.txt",
+          "line": 8,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000103_JPG.rf.0126e02bd9f702e00c7e62ad81a25c12.txt",
+          "line": 2,
+          "area": 4.755e-05
+        },
+        {
+          "file": "000103_JPG.rf.9d9e74fa7dc9a8d9448817ecdc4b2b9c.txt",
+          "line": 2,
+          "area": 4.755e-05
+        },
+        {
+          "file": "000107_JPG.rf.ac0099f3be243b8cccfc2bcb6b06835b.txt",
+          "line": 2,
+          "area": 8.673e-05
+        },
+        {
+          "file": "000114_JPG.rf.82ba56aef7a63f8dd0268db47e08a211.txt",
+          "line": 4,
+          "area": 6.057e-05
+        },
+        {
+          "file": "000119_JPG.rf.060a04cc9364e539cb8c509f38003d4e.txt",
+          "line": 2,
+          "area": 9.612e-05
+        },
+        {
+          "file": "IMG_4862_JPG.rf.4c0b663808a3d65feba75ce8c8dec95c.txt",
+          "line": 7,
+          "area": 6.408e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.eb845064cdfb7e8b5c1d5a135ae8d18b.txt",
+          "line": 6,
+          "area": 9.799e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.eb845064cdfb7e8b5c1d5a135ae8d18b.txt",
+          "line": 9,
+          "area": 6.757e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.eb845064cdfb7e8b5c1d5a135ae8d18b.txt",
+          "line": 10,
+          "area": 5.957e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.eb845064cdfb7e8b5c1d5a135ae8d18b.txt",
+          "line": 15,
+          "area": 4.38e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.eb845064cdfb7e8b5c1d5a135ae8d18b.txt",
+          "line": 19,
+          "area": 6.607e-05
+        },
+        {
+          "file": "IMG_4948_JPG.rf.84a6fa95e62a3918a7352bd6614ffedb.txt",
+          "line": 16,
+          "area": 4.73e-05
+        },
+        {
+          "file": "IMG_4948_JPG.rf.84a6fa95e62a3918a7352bd6614ffedb.txt",
+          "line": 17,
+          "area": 4.3e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.e4ce77d672f51224f4ecddfc6d2011c3.txt",
+          "line": 2,
+          "area": 5.369e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.e4ce77d672f51224f4ecddfc6d2011c3.txt",
+          "line": 3,
+          "area": 3.504e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.e4ce77d672f51224f4ecddfc6d2011c3.txt",
+          "line": 4,
+          "area": 1.051e-05
+        },
+        {
+          "file": "IMG_4969_JPG.rf.16d4ed3f82c4fab626480649fc33fedd.txt",
+          "line": 8,
+          "area": 8.924e-05
+        },
+        {
+          "file": "IMG_4969_JPG.rf.16d4ed3f82c4fab626480649fc33fedd.txt",
+          "line": 10,
+          "area": 3.742e-05
+        },
+        {
+          "file": "IMG_4969_JPG.rf.48ba6fe883ede8e8a9124e8eacdff8e2.txt",
+          "line": 8,
+          "area": 8.924e-05
+        },
+        {
+          "file": "IMG_4969_JPG.rf.48ba6fe883ede8e8a9124e8eacdff8e2.txt",
+          "line": 10,
+          "area": 3.742e-05
+        },
+        {
+          "file": "IMG_5054_JPG.rf.02bef62633d943ba64eae2ae6dfe7f0b.txt",
+          "line": 6,
+          "area": 2.327e-05
+        },
+        {
+          "file": "IMG_5054_JPG.rf.c4dd1406c04befd1467948345431372e.txt",
+          "line": 6,
+          "area": 2.327e-05
+        }
+      ],
+      "large_box_warnings": [],
+      "duplicate_annotation_warnings": [],
+      "images_without_labels": [],
+      "labels_without_images": []
+    },
+    "issue_counts": {
+      "field_count_errors": 0,
+      "invalid_class_id_errors": 0,
+      "non_finite_errors": 0,
+      "degenerate_box_errors": 0,
+      "out_of_range_errors": 0,
+      "out_of_bounds_errors": 0,
+      "tiny_box_warnings": 366,
+      "large_box_warnings": 0,
+      "duplicate_annotation_warnings": 0,
+      "images_without_labels": 0,
+      "labels_without_images": 0
+    }
+  },
+  "val": {
+    "image_count": 379,
+    "label_file_count": 379,
+    "total_annotations_scanned": 1077,
+    "valid_annotations": 1077,
+    "issues": {
+      "field_count_errors": [],
+      "invalid_class_id_errors": [],
+      "non_finite_errors": [],
+      "degenerate_box_errors": [],
+      "out_of_range_errors": [],
+      "out_of_bounds_errors": [],
+      "tiny_box_warnings": [
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 5,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 6,
+          "area": 9.01e-05
+        },
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 8,
+          "area": 5.206e-05
+        },
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 13,
+          "area": 4.255e-05
+        },
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 14,
+          "area": 9.462e-05
+        },
+        {
+          "file": "000002_JPG.rf.e0a28580310b55e0d065bf9eb5fc5442.txt",
+          "line": 15,
+          "area": 4.956e-05
+        },
+        {
+          "file": "000024_jpg.rf.b18a912d684f797d656b892eb4b0c05e.txt",
+          "line": 2,
+          "area": 5.607e-05
+        },
+        {
+          "file": "000033_jpg.rf.4b14f2b385f1def8a55765a7fbf75248.txt",
+          "line": 2,
+          "area": 9.362e-05
+        },
+        {
+          "file": "000035_jpg.rf.78feccc6bc6863df976f598c2b6099e4.txt",
+          "line": 9,
+          "area": 8.41e-05
+        },
+        {
+          "file": "000036_JPG.rf.5ab56dfbb42ce9d09f619f33c96d9d28.txt",
+          "line": 2,
+          "area": 4.806e-05
+        },
+        {
+          "file": "000036_jpg.rf.d15b94e7f0fd9cae8629a4bbf654f6c3.txt",
+          "line": 2,
+          "area": 4.605e-05
+        },
+        {
+          "file": "000036_jpg.rf.d15b94e7f0fd9cae8629a4bbf654f6c3.txt",
+          "line": 3,
+          "area": 5.564e-05
+        },
+        {
+          "file": "000036_jpg.rf.d15b94e7f0fd9cae8629a4bbf654f6c3.txt",
+          "line": 14,
+          "area": 5.702e-05
+        },
+        {
+          "file": "000038_JPG.rf.660386f4189bee850d33bdb4fc8d2847.txt",
+          "line": 4,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000047_jpg.rf.246fbdcd121e67b7f1991587ce9b36dd.txt",
+          "line": 4,
+          "area": 4.869e-05
+        },
+        {
+          "file": "000047_jpg.rf.246fbdcd121e67b7f1991587ce9b36dd.txt",
+          "line": 5,
+          "area": 4.979e-05
+        },
+        {
+          "file": "000047_jpg.rf.246fbdcd121e67b7f1991587ce9b36dd.txt",
+          "line": 6,
+          "area": 3.201e-05
+        },
+        {
+          "file": "000047_jpg.rf.64af491484efa6d7e1ea24a1c279cc73.txt",
+          "line": 4,
+          "area": 4.869e-05
+        },
+        {
+          "file": "000047_jpg.rf.64af491484efa6d7e1ea24a1c279cc73.txt",
+          "line": 5,
+          "area": 4.979e-05
+        },
+        {
+          "file": "000047_jpg.rf.64af491484efa6d7e1ea24a1c279cc73.txt",
+          "line": 6,
+          "area": 3.201e-05
+        },
+        {
+          "file": "000049_JPG.rf.4aa16a3f7a18939de539c0d67c86bc4c.txt",
+          "line": 17,
+          "area": 3.166e-05
+        },
+        {
+          "file": "000050_JPG.rf.a7b0ae027051e54f00880726a188a539.txt",
+          "line": 7,
+          "area": 6.658e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 3,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 4,
+          "area": 8.411e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 5,
+          "area": 4.505e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 7,
+          "area": 6.896e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 12,
+          "area": 5.694e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 14,
+          "area": 7.133e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 18,
+          "area": 9.035e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 21,
+          "area": 5.407e-05
+        },
+        {
+          "file": "000053_jpg.rf.4743dbd1d0ad629ac8953912288a72dd.txt",
+          "line": 22,
+          "area": 7.885e-05
+        },
+        {
+          "file": "000065_jpg.rf.0480aba1f399afbf68a31214939276a1.txt",
+          "line": 8,
+          "area": 5.506e-05
+        },
+        {
+          "file": "000065_jpg.rf.0480aba1f399afbf68a31214939276a1.txt",
+          "line": 11,
+          "area": 7.209e-05
+        },
+        {
+          "file": "000065_jpg.rf.0480aba1f399afbf68a31214939276a1.txt",
+          "line": 23,
+          "area": 6.019e-05
+        },
+        {
+          "file": "000065_JPG.rf.f8edfc6b191aa08f20ede645015abd8a.txt",
+          "line": 3,
+          "area": 6.608e-05
+        },
+        {
+          "file": "000070_jpg.rf.735aafc783b7b2c7a0852d8d8fac2bf9.txt",
+          "line": 3,
+          "area": 8.635e-05
+        },
+        {
+          "file": "000072_JPG.rf.3fb21e64ad7f39902fe7dbe1cb18b4b1.txt",
+          "line": 2,
+          "area": 8.01e-05
+        },
+        {
+          "file": "000079_JPG.rf.c4171d52f5b0fcb118f7618f96e587c0.txt",
+          "line": 10,
+          "area": 9.512e-05
+        },
+        {
+          "file": "000079_JPG.rf.e72fe13961e8e84cfd4059028493f4f2.txt",
+          "line": 3,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000082_JPG.rf.289ffe720eaa2259f2812239df7e965a.txt",
+          "line": 2,
+          "area": 9.762e-05
+        },
+        {
+          "file": "000104_JPG.rf.1fdd92b5d40924e01e4cc73fac987d4f.txt",
+          "line": 4,
+          "area": 7.709e-05
+        },
+        {
+          "file": "000112_JPG.rf.ec511e91c19c6f6eaf517b6320baeb1f.txt",
+          "line": 2,
+          "area": 3.191e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.7e872ee9ed6cab14eb1a7804ecbdb8c5.txt",
+          "line": 2,
+          "area": 5.369e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.7e872ee9ed6cab14eb1a7804ecbdb8c5.txt",
+          "line": 3,
+          "area": 3.504e-05
+        },
+        {
+          "file": "IMG_4966_JPG.rf.7e872ee9ed6cab14eb1a7804ecbdb8c5.txt",
+          "line": 4,
+          "area": 1.051e-05
+        },
+        {
+          "file": "IMG_5003_JPG.rf.8dc9f697a9e6b50ce3c8418d9c711535.txt",
+          "line": 16,
+          "area": 7.709e-05
+        },
+        {
+          "file": "IMG_5003_JPG.rf.df3054f722ca645e5bbeac56d1acd4c0.txt",
+          "line": 16,
+          "area": 7.709e-05
+        }
+      ],
+      "large_box_warnings": [],
+      "duplicate_annotation_warnings": [],
+      "images_without_labels": [],
+      "labels_without_images": []
+    },
+    "issue_counts": {
+      "field_count_errors": 0,
+      "invalid_class_id_errors": 0,
+      "non_finite_errors": 0,
+      "degenerate_box_errors": 0,
+      "out_of_range_errors": 0,
+      "out_of_bounds_errors": 0,
+      "tiny_box_warnings": 47,
+      "large_box_warnings": 0,
+      "duplicate_annotation_warnings": 0,
+      "images_without_labels": 0,
+      "labels_without_images": 0
+    }
+  },
+  "test": {
+    "image_count": 374,
+    "label_file_count": 374,
+    "total_annotations_scanned": 1106,
+    "valid_annotations": 1106,
+    "issues": {
+      "field_count_errors": [],
+      "invalid_class_id_errors": [],
+      "non_finite_errors": [],
+      "degenerate_box_errors": [],
+      "out_of_range_errors": [],
+      "out_of_bounds_errors": [],
+      "tiny_box_warnings": [
+        {
+          "file": "000014_jpg.rf.724d956c14d3471e9ee7a64050631fea.txt",
+          "line": 19,
+          "area": 7.009e-05
+        },
+        {
+          "file": "000015_jpg.rf.e451ae5896a23d7df68bf12be160dca8.txt",
+          "line": 6,
+          "area": 4.055e-05
+        },
+        {
+          "file": "000021_jpg.rf.cc2b702e2b680b06fc333a3dd3f0ee56.txt",
+          "line": 4,
+          "area": 6.693e-05
+        },
+        {
+          "file": "000023_jpg.rf.3b7271734f1fbdd046b193e9824b270b.txt",
+          "line": 11,
+          "area": 9.699e-05
+        },
+        {
+          "file": "000023_jpg.rf.3b7271734f1fbdd046b193e9824b270b.txt",
+          "line": 12,
+          "area": 9.912e-05
+        },
+        {
+          "file": "000023_jpg.rf.3b7271734f1fbdd046b193e9824b270b.txt",
+          "line": 13,
+          "area": 8.26e-05
+        },
+        {
+          "file": "000026_jpg.rf.48ac6ffd8ff6153dc2d33e65d07ba90c.txt",
+          "line": 23,
+          "area": 8.619e-05
+        },
+        {
+          "file": "000031_jpg.rf.8c2260c79cb6c3229c1e669ffe0fedf1.txt",
+          "line": 3,
+          "area": 7.676e-05
+        },
+        {
+          "file": "000040_JPG.rf.1e6c813488ea3b48c352ff5c3bad301c.txt",
+          "line": 1,
+          "area": 5.583e-05
+        },
+        {
+          "file": "000042_jpg.rf.fc2c217ee4e977d8f0db65dc2cc06325.txt",
+          "line": 4,
+          "area": 9.812e-05
+        },
+        {
+          "file": "000049_JPG.rf.46d1606a0b3876089880d42e226488d2.txt",
+          "line": 10,
+          "area": 6.509e-05
+        },
+        {
+          "file": "000051_JPG.rf.fad1e9354bf2cbf3f368c3eb75ef24b4.txt",
+          "line": 9,
+          "area": 6.007e-05
+        },
+        {
+          "file": "000054_jpg.rf.775508117376459457b5a95371b6ae34.txt",
+          "line": 2,
+          "area": 5.825e-05
+        },
+        {
+          "file": "000074_JPG.rf.15b55c2933d5b77c97b172893c46c9ca.txt",
+          "line": 2,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000074_JPG.rf.9f21ac51703376656dcb3fd98e378755.txt",
+          "line": 2,
+          "area": 4.756e-05
+        },
+        {
+          "file": "000075_JPG.rf.ed9899771ad9d1d2c9e36fb01e72e91e.txt",
+          "line": 3,
+          "area": 8.811e-05
+        },
+        {
+          "file": "000075_JPG.rf.ed9899771ad9d1d2c9e36fb01e72e91e.txt",
+          "line": 6,
+          "area": 4.555e-05
+        },
+        {
+          "file": "000076_jpg.rf.ec0225328c0400ce446a0cb159f82823.txt",
+          "line": 3,
+          "area": 8.365e-05
+        },
+        {
+          "file": "000077_JPG.rf.684b041490ce66833c40a0ea50626e07.txt",
+          "line": 2,
+          "area": 6.617e-05
+        },
+        {
+          "file": "000078_JPG.rf.dffc4334f62b684813f66126c639e6c3.txt",
+          "line": 16,
+          "area": 7.847e-05
+        },
+        {
+          "file": "000080_jpg.rf.20ad130397f3074a5b864e6ac41146a2.txt",
+          "line": 6,
+          "area": 8.142e-05
+        },
+        {
+          "file": "000080_jpg.rf.20ad130397f3074a5b864e6ac41146a2.txt",
+          "line": 8,
+          "area": 4.893e-05
+        },
+        {
+          "file": "000080_jpg.rf.ea5327bd6ce744247d13cc014264a9d0.txt",
+          "line": 6,
+          "area": 8.142e-05
+        },
+        {
+          "file": "000080_jpg.rf.ea5327bd6ce744247d13cc014264a9d0.txt",
+          "line": 8,
+          "area": 4.893e-05
+        },
+        {
+          "file": "000085_JPG.rf.4b63f6376840e45c516fbf455781af52.txt",
+          "line": 13,
+          "area": 5.256e-05
+        },
+        {
+          "file": "000085_JPG.rf.4b63f6376840e45c516fbf455781af52.txt",
+          "line": 14,
+          "area": 9.011e-05
+        },
+        {
+          "file": "000086_jpg.rf.9111ac040d7920f26cc4d721648bdfd9.txt",
+          "line": 4,
+          "area": 5.167e-05
+        },
+        {
+          "file": "000086_jpg.rf.9111ac040d7920f26cc4d721648bdfd9.txt",
+          "line": 5,
+          "area": 5.263e-05
+        },
+        {
+          "file": "000086_jpg.rf.9111ac040d7920f26cc4d721648bdfd9.txt",
+          "line": 6,
+          "area": 8.635e-05
+        },
+        {
+          "file": "000086_jpg.rf.9111ac040d7920f26cc4d721648bdfd9.txt",
+          "line": 9,
+          "area": 4.633e-05
+        },
+        {
+          "file": "000087_jpg.rf.e03b6feed651c505cffeb9780f0b95df.txt",
+          "line": 2,
+          "area": 3.769e-05
+        },
+        {
+          "file": "000087_jpg.rf.e03b6feed651c505cffeb9780f0b95df.txt",
+          "line": 3,
+          "area": 4.523e-05
+        },
+        {
+          "file": "000106_JPG.rf.8be6c1eea9ca32c0f3d15b2a593bd0ef.txt",
+          "line": 3,
+          "area": 9.462e-05
+        },
+        {
+          "file": "000115_JPG.rf.3aafac7d7578a0ace835d71d3802823f.txt",
+          "line": 10,
+          "area": 8.56e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.bde08a0e58c7a39e2ecf814cbbcc4cc4.txt",
+          "line": 6,
+          "area": 9.799e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.bde08a0e58c7a39e2ecf814cbbcc4cc4.txt",
+          "line": 9,
+          "area": 6.757e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.bde08a0e58c7a39e2ecf814cbbcc4cc4.txt",
+          "line": 10,
+          "area": 5.957e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.bde08a0e58c7a39e2ecf814cbbcc4cc4.txt",
+          "line": 15,
+          "area": 4.38e-05
+        },
+        {
+          "file": "IMG_4941_JPG.rf.bde08a0e58c7a39e2ecf814cbbcc4cc4.txt",
+          "line": 19,
+          "area": 6.607e-05
+        }
+      ],
+      "large_box_warnings": [],
+      "duplicate_annotation_warnings": [],
+      "images_without_labels": [],
+      "labels_without_images": []
+    },
+    "issue_counts": {
+      "field_count_errors": 0,
+      "invalid_class_id_errors": 0,
+      "non_finite_errors": 0,
+      "degenerate_box_errors": 0,
+      "out_of_range_errors": 0,
+      "out_of_bounds_errors": 0,
+      "tiny_box_warnings": 39,
+      "large_box_warnings": 0,
+      "duplicate_annotation_warnings": 0,
+      "images_without_labels": 0,
+      "labels_without_images": 0
+    }
+  }
+}

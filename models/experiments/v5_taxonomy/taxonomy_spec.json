@@ -1,0 +1,98 @@
+{
+  "taxonomy_version": "5.0",
+  "created_at": "2026-10-31",
+  "classification_paradigm": "Disposal-Oriented Waste Segregation",
+  "classes_count": 7,
+  "classes": [
+    {
+      "id": 0,
+      "name": "plastic",
+      "label": "Plastic",
+      "disposal_stream": "Dry Recyclable",
+      "bin_color": "Blue",
+      "description": "Clean, recyclable plastic containers and packaging accepted under municipal policy.",
+      "accepted_examples": ["Clean PET beverage bottles", "Clean HDPE milk/detergent jugs", "Clean plastic tubs", "Clean plastic caps", "Clean PE film/carrier bags"],
+      "rejected_examples": ["Food-soiled plastic containers", "Multilayer snack/crisp packets", "Expanded polystyrene/Styrofoam", "Plastic straws & cutlery", "Disposable plastic/nitrile gloves"],
+      "contamination_rule": "Food-soiled or un-rinsed plastics must be routed to general_trash under residual disposal policy."
+    },
+    {
+      "id": 1,
+      "name": "metal",
+      "label": "Metal",
+      "disposal_stream": "Dry Recyclable",
+      "bin_color": "Blue",
+      "description": "Clean, recyclable metal packaging accepted under municipal policy.",
+      "accepted_examples": ["Aluminium beverage cans", "Steel/tin food cans", "Metal bottle crowns", "Clean jar lids", "Pop tabs", "Clean aluminium foil"],
+      "rejected_examples": ["Batteries (Hazardous)", "Pressurized gas cylinders", "Heavily grease-caked foil", "Electronic components"],
+      "contamination_rule": "Rinse empty cans. Empty aerosols are accepted; pressurized or hazardous metal is excluded."
+    },
+    {
+      "id": 2,
+      "name": "cardboard",
+      "label": "Cardboard",
+      "disposal_stream": "Dry Recyclable",
+      "bin_color": "Blue",
+      "description": "Clean, dry corrugated cardboard and paperboard packaging.",
+      "accepted_examples": ["Clean corrugated delivery boxes", "Clean dry cereal boxes", "Clean egg cartons (molded pulp)", "Clean paperboard cartons", "Clean unsoiled pizza box lids"],
+      "rejected_examples": ["Grease-soaked pizza boxes", "Wax-coated or silicone-lined boxes", "Wet cardboard", "Food-encrusted meal cartons"],
+      "contamination_rule": "Oil and grease prevent repulping. Greasy food-contact cardboard must be routed to general_trash."
+    },
+    {
+      "id": 3,
+      "name": "glass",
+      "label": "Glass",
+      "disposal_stream": "Glass Recyclable",
+      "bin_color": "Blue (Dedicated glass partition)",
+      "description": "Clean container glass (bottles and jars).",
+      "accepted_examples": ["Glass beverage bottles", "Glass food jars", "Clean cosmetic glass jars", "Broken container glass (wrapped safely)"],
+      "rejected_examples": ["Window pane glass", "Mirrors", "Ceramic mugs & plates", "Light bulbs", "Pyrex/cookware glass"],
+      "contamination_rule": "Rinse containers. Non-container glass (different melting point) goes to general_trash or specialized drop-off."
+    },
+    {
+      "id": 4,
+      "name": "paper",
+      "label": "Paper",
+      "disposal_stream": "Dry Recyclable",
+      "bin_color": "Blue",
+      "description": "Clean, dry recyclable paper sheets, bags, and publications.",
+      "accepted_examples": ["Office copy paper", "Newspapers", "Clean paper bags", "Magazines", "Notebooks (spiral removed)", "Envelopes"],
+      "rejected_examples": ["Used facial tissues & paper napkins", "Thermal receipts (BPA/BPS)", "Greaseproof/baking paper", "Polyethylene-lined disposable paper coffee cups"],
+      "contamination_rule": "Keep dry. Wet paper loses fiber integrity. Bio-soiled tissues must be routed to general_trash."
+    },
+    {
+      "id": 5,
+      "name": "general_trash",
+      "label": "General Trash / Residual Waste",
+      "disposal_stream": "Residual Waste (Non-Recyclable)",
+      "bin_color": "Black or Grey",
+      "description": "Residual, composite, contaminated, and non-recyclable solid waste destined for landfill or waste-to-energy.",
+      "accepted_examples": [
+        "Multilayer metallized plastic snack/crisp packets",
+        "Expanded polystyrene (Styrofoam) cups and food clamshells",
+        "Greasy pizza boxes and soiled food packaging",
+        "Used facial tissues and soiled paper towels",
+        "Single-use plastic straws and plastic cutlery",
+        "Toothpaste and cosmetic composite squeeze tubes",
+        "Aluminium blister packs (pharmaceutical)",
+        "Single-use latex/nitrile cleaning gloves",
+        "Cigarette butts and outdoor litter fragments",
+        "Nylon/plastic ropes, cords, and tanglers"
+      ],
+      "rejected_examples": ["Clean recyclables", "Hazardous e-waste / batteries", "Organic food scraps"],
+      "contamination_rule": "Default destination for all non-recyclable composites and contaminated dry waste."
+    },
+    {
+      "id": 6,
+      "name": "organic",
+      "label": "Organic / Food Waste",
+      "disposal_stream": "Wet Waste (Compostable)",
+      "bin_color": "Green",
+      "description": "Biodegradable food scraps and organic waste accepted for municipal composting or biomethanation.",
+      "accepted_examples": ["Fruit peels & cores", "Vegetable trimmings", "Food leftovers", "Eggshells", "Coffee grounds & tea leaves", "Garden leaves & plant clippings"],
+      "rejected_examples": ["Plastic bags/wrappers", "Metal foil/cans", "Glass fragments", "Animal feces / diapers", "Plastic packaging"],
+      "contamination_rule": "Do not bag in non-biodegradable plastic. Keep separate from dry recyclables."
+    }
+  ],
+  "policy_status": "PENDING_USER_CONFIRMATION"
+}
+

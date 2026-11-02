@@ -1,0 +1,94 @@
+{
+  "policy_authority": "Ministry of Environment, Forest and Climate Change (MoEFCC), Govt. of India",
+  "regulatory_framework": "Solid Waste Management Rules, 2026 (MoEFCC / CPCB)",
+  "local_body_alignment": "Department of Local Government, Punjab Municipal SWM Implementation Rules",
+  "segregation_streams": {
+    "wet_waste": {
+      "stream_id": "wet",
+      "target_class": "organic",
+      "target_class_id": 6,
+      "bin_color": "Green",
+      "bin_name": "Wet Waste (Biodegradable)",
+      "is_recyclable": false,
+      "is_compostable": true,
+      "is_hazardous": false,
+      "accepted_items": ["Fruit and vegetable peels", "Cooked food leftovers", "Eggshells", "Tea leaves and coffee grounds", "Garden waste and leaves"],
+      "rejected_items": ["Plastic packaging", "Plastic carry bags", "Metal foil", "Sanitary waste", "Glass fragments"],
+      "treatment_route": "Composting / Biomethanation (Bio-CNG)"
+    },
+    "dry_recyclables": {
+      "stream_id": "dry",
+      "bin_color": "Blue",
+      "bin_name": "Dry Waste (Recyclable)",
+      "is_recyclable": true,
+      "is_compostable": false,
+      "is_hazardous": false,
+      "sub_classes": {
+        "plastic": {
+          "target_class_id": 0,
+          "accepted_items": ["Clean PET bottles", "Clean HDPE containers", "Clean PP containers", "Clean polyethylene plastic bags/film"],
+          "rejected_items": ["Multilayer snack/crisp packets", "Styrofoam food containers", "Food-soiled plastic containers", "Plastic cutlery/straws"]
+        },
+        "metal": {
+          "target_class_id": 1,
+          "accepted_items": ["Aluminium beverage cans", "Tin/steel food cans", "Metal jar lids", "Bottle caps", "Clean aluminium foil"],
+          "rejected_items": ["Batteries", "Pressurized gas cylinders", "Paint cans with residues"]
+        },
+        "cardboard": {
+          "target_class_id": 2,
+          "accepted_items": ["Clean corrugated delivery boxes", "Dry cereal boxes", "Clean egg cartons", "Clean cardboard packaging"],
+          "rejected_items": ["Greasy pizza boxes", "Oil-soaked food cartons", "Wax-coated boxes"]
+        },
+        "glass": {
+          "target_class_id": 3,
+          "accepted_items": ["Glass beverage bottles", "Glass food jars", "Clean cosmetic glass"],
+          "rejected_items": ["Window panes", "Mirrors", "Ceramic mugs", "Light bulbs"],
+          "special_handling": "Wrap broken glass securely in paper before disposal to protect sanitation workers."
+        },
+        "paper": {
+          "target_class_id": 4,
+          "accepted_items": ["Office copy paper", "Newspapers", "Clean paper bags", "Magazines", "Notebooks"],
+          "rejected_items": ["Used facial tissues", "Soiled paper napkins", "BPA thermal receipts", "Poly-coated coffee cups"]
+        }
+      },
+      "treatment_route": "Material Recovery Facility (MRF) -> Authorized Recyclers"
+    },
+    "general_trash": {
+      "stream_id": "residual",
+      "target_class": "general_trash",
+      "target_class_id": 5,
+      "bin_color": "Black or Grey",
+      "bin_name": "Residual Waste (General Trash)",
+      "is_recyclable": false,
+      "is_compostable": false,
+      "is_hazardous": false,
+      "accepted_items": [
+        "Multilayer metallized snack packets (chips/biscuits)",
+        "Styrofoam/Thermocol food containers and cups",
+        "Greasy pizza boxes and soiled food packaging",
+        "Single-use plastic straws and cutlery",
+        "Toothpaste and cosmetic composite squeeze tubes",
+        "Non-recyclable composite packaging",
+        "Cigarette butts and small litter fragments",
+        "Ropes, strings, and synthetic tanglers"
+      ],
+      "rejected_items": ["Clean recyclables", "Wet organic food waste", "Sanitary waste", "Hazardous e-waste / batteries"],
+      "treatment_route": "Refuse Derived Fuel (RDF) / Waste-to-Energy / Engineered Sanitary Landfill"
+    },
+    "sanitary_waste": {
+      "stream_id": "sanitary_special_care",
+      "special_category": true,
+      "handling_protocol": "MANDATORY SPECIAL CARE: Wrap securely in paper/newspaper, mark with a prominent RED cross/dot, and hand over separately to municipal collectors. DO NOT mix with dry recycling or wet waste.",
+      "items": ["Used facial tissues", "Soiled paper napkins", "Disposable diapers", "Sanitary napkins", "Bandages", "Single-use medical/cleaning gloves"],
+      "treatment_route": "Common Bio-medical Waste Treatment Facility (CBWTF) / High-temperature Incineration"
+    },
+    "domestic_hazardous": {
+      "stream_id": "hazardous_special_care",
+      "special_category": true,
+      "handling_protocol": "MANDATORY SPECIAL CARE: Store safely in dry container. Deliver to designated municipal e-waste kiosk, authorized battery drop-off center, or periodic hazardous waste drive. NEVER place in household bins.",
+      "items": ["Dry cell batteries", "Lithium-ion batteries", "Fluorescent tubes/CFLs", "Discarded paints/solvents", "Expired medicines"],
+      "treatment_route": "Authorized Hazardous Waste Treatment, Storage, and Disposal Facility (TSDF)"
+    }
+  }
+}
+

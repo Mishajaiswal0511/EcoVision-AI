@@ -1,0 +1,118 @@
+{
+  "hardware": {
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "total_ram_gb": 15.19,
+    "device": "CPU"
+  },
+  "model": {
+    "checkpoint": "models\\experiments\\v5_taxonomy\\training\\yolo11s_v5_best.pt",
+    "size_bytes": 19186202,
+    "classes": {
+      "0": "plastic",
+      "1": "metal",
+      "2": "cardboard",
+      "3": "glass",
+      "4": "paper",
+      "5": "general_trash",
+      "6": "organic"
+    },
+    "load_time_ms": 128.23,
+    "model_ram_delta_mb": 46.59
+  },
+  "config": {
+    "conf": 0.15,
+    "iou": 0.45,
+    "device": "cpu",
+    "sample_size": 100
+  },
+  "runs": {
+    "640": {
+      "resolution": "640x640",
+      "fps_total": 7.3,
+      "fps_pure_inference": 9.11,
+      "preprocess_ms": {
+        "mean": 1.86,
+        "median": 1.75,
+        "p95": 2.43,
+        "min": 0.77,
+        "max": 7.49,
+        "std": 0.67
+      },
+      "inference_ms": {
+        "mean": 109.79,
+        "median": 107.98,
+        "p95": 126.64,
+        "min": 84.05,
+        "max": 144.3,
+        "std": 8.85
+      },
+      "postprocess_ms": {
+        "mean": 0.95,
+        "median": 0.91,
+        "p95": 1.44,
+        "min": 0.42,
+        "max": 2.3,
+        "std": 0.26
+      },
+      "wall_clock_total_ms": {
+        "mean": 137.02,
+        "median": 138.39,
+        "p95": 158.73,
+        "min": 97.67,
+        "max": 175.66,
+        "std": 13.2
+      },
+      "ram_rss_mb": {
+        "initial": 214.14,
+        "peak": 518.0,
+        "end": 514.48
+      }
+    },
+    "800": {
+      "resolution": "800x800",
+      "fps_total": 5.82,
+      "fps_pure_inference": 6.12,
+      "preprocess_ms": {
+        "mean": 4.38,
+        "median": 4.39,
+        "p95": 5.15,
+        "min": 1.99,
+        "max": 5.86,
+        "std": 0.62
+      },
+      "inference_ms": {
+        "mean": 163.51,
+        "median": 162.63,
+        "p95": 177.78,
+        "min": 121.07,
+        "max": 236.17,
+        "std": 12.83
+      },
+      "postprocess_ms": {
+        "mean": 0.93,
+        "median": 0.94,
+        "p95": 1.23,
+        "min": 0.4,
+        "max": 1.39,
+        "std": 0.18
+      },
+      "wall_clock_total_ms": {
+        "mean": 171.93,
+        "median": 170.77,
+        "p95": 186.22,
+        "min": 128.78,
+        "max": 244.68,
+        "std": 12.99
+      },
+      "ram_rss_mb": {
+        "initial": 214.14,
+        "peak": 593.96,
+        "end": 555.82
+      }
+    }
+  }
+}

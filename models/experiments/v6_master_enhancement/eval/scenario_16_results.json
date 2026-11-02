@@ -1,0 +1,308 @@
+[
+  {
+    "scenario_id": 1,
+    "name": "Single plastic object",
+    "asset": "gw_plastic1002_jpg.rf.2cbd88cb12a6e39bde86b3760f226118.jpg",
+    "latency_ms": 2164.17,
+    "detections_count": 1,
+    "classes": [
+      "plastic"
+    ],
+    "top_confidence": 0.9395,
+    "verdict": "PASS",
+    "notes": "Detected 1 items: ['plastic'] (Top Conf: 0.94)"
+  },
+  {
+    "scenario_id": 2,
+    "name": "Small plastic object",
+    "asset": "plastic_04.jpg",
+    "latency_ms": 248.73,
+    "detections_count": 13,
+    "classes": [
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic"
+    ],
+    "top_confidence": 0.4703,
+    "verdict": "PASS",
+    "notes": "Detected 13 items: ['plastic', 'plastic', 'plastic', 'plastic', 'plastic'] (Top Conf: 0.47)"
+  },
+  {
+    "scenario_id": 3,
+    "name": "Multiple plastic objects",
+    "asset": "plastic_01.webp",
+    "latency_ms": 168.93,
+    "detections_count": 6,
+    "classes": [
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic"
+    ],
+    "top_confidence": 0.3505,
+    "verdict": "PASS",
+    "notes": "Detected 6 items: ['plastic', 'plastic', 'plastic', 'plastic', 'plastic'] (Top Conf: 0.35)"
+  },
+  {
+    "scenario_id": 4,
+    "name": "Metal cans and bottle caps",
+    "asset": "metal_03.webp",
+    "latency_ms": 166.77,
+    "detections_count": 2,
+    "classes": [
+      "metal",
+      "metal"
+    ],
+    "top_confidence": 0.9212,
+    "verdict": "PASS",
+    "notes": "Detected 2 items: ['metal', 'metal'] (Top Conf: 0.92)"
+  },
+  {
+    "scenario_id": 5,
+    "name": "Cardboard piles",
+    "asset": "cardboard_03.png",
+    "latency_ms": 185.2,
+    "detections_count": 8,
+    "classes": [
+      "cardboard",
+      "cardboard",
+      "cardboard",
+      "cardboard",
+      "cardboard",
+      "plastic",
+      "cardboard",
+      "cardboard"
+    ],
+    "top_confidence": 0.5103,
+    "verdict": "PASS",
+    "notes": "Detected 8 items: ['cardboard', 'cardboard', 'cardboard', 'cardboard', 'cardboard'] (Top Conf: 0.51)"
+  },
+  {
+    "scenario_id": 6,
+    "name": "Paper and packaging",
+    "asset": "paper_01.webp",
+    "latency_ms": 127.67,
+    "detections_count": 3,
+    "classes": [
+      "general_trash",
+      "plastic",
+      "general_trash"
+    ],
+    "top_confidence": 0.3311,
+    "verdict": "PASS",
+    "notes": "Detected 3 items: ['general_trash', 'plastic', 'general_trash'] (Top Conf: 0.33)"
+  },
+  {
+    "scenario_id": 7,
+    "name": "Intact glass bottle",
+    "asset": "glass_01.webp",
+    "latency_ms": 131.53,
+    "detections_count": 4,
+    "classes": [
+      "glass",
+      "plastic",
+      "plastic",
+      "plastic"
+    ],
+    "top_confidence": 0.8217,
+    "verdict": "PASS",
+    "notes": "Detected 4 items: ['glass', 'plastic', 'plastic', 'plastic'] (Top Conf: 0.82)"
+  },
+  {
+    "scenario_id": 8,
+    "name": "Broken glass and shards",
+    "asset": "glass_02.webp",
+    "latency_ms": 186.83,
+    "detections_count": 6,
+    "classes": [
+      "glass",
+      "glass",
+      "glass",
+      "glass",
+      "glass",
+      "glass"
+    ],
+    "top_confidence": 0.9128,
+    "verdict": "PASS",
+    "notes": "Detected 6 items: ['glass', 'glass', 'glass', 'glass', 'glass'] (Top Conf: 0.91)"
+  },
+  {
+    "scenario_id": 9,
+    "name": "Banana peel",
+    "asset": "organic_01.webp",
+    "latency_ms": 164.22,
+    "detections_count": 1,
+    "classes": [
+      "glass"
+    ],
+    "top_confidence": 0.598,
+    "verdict": "DOCUMENTED_LIMITATION",
+    "notes": "Model predicted ['glass'] (top conf: 0.60) instead of Organic. Documented data blind spot."
+  },
+  {
+    "scenario_id": 10,
+    "name": "Mixed organic scraps",
+    "asset": "gw_biodegradable1225_jpg.rf.62c0de814da542600b8d18bbf282448c.jpg",
+    "latency_ms": 176.45,
+    "detections_count": 43,
+    "classes": [
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "cardboard",
+      "organic",
+      "cardboard",
+      "organic",
+      "cardboard",
+      "organic"
+    ],
+    "top_confidence": 0.909,
+    "verdict": "PASS",
+    "notes": "Detected 43 items: ['organic', 'organic', 'organic', 'organic', 'organic'] (Top Conf: 0.91)"
+  },
+  {
+    "scenario_id": 11,
+    "name": "Garbage pile",
+    "asset": "taco_000000_jpg.rf.1d051677f093973bf92f3336e269f2bc.jpg",
+    "latency_ms": 181.19,
+    "detections_count": 1,
+    "classes": [
+      "general_trash"
+    ],
+    "top_confidence": 0.7319,
+    "verdict": "PASS",
+    "notes": "Detected 1 items: ['general_trash'] (Top Conf: 0.73)"
+  },
+  {
+    "scenario_id": 12,
+    "name": "Mixed recyclable scene",
+    "asset": "household-recyclable-waste-plastic-glass-600nw-2476551811.webp",
+    "latency_ms": 135.51,
+    "detections_count": 14,
+    "classes": [
+      "plastic",
+      "metal",
+      "plastic",
+      "metal",
+      "plastic",
+      "plastic",
+      "metal",
+      "plastic",
+      "plastic",
+      "plastic",
+      "plastic",
+      "metal",
+      "plastic",
+      "plastic"
+    ],
+    "top_confidence": 0.665,
+    "verdict": "PASS",
+    "notes": "Detected 14 items: ['plastic', 'metal', 'plastic', 'metal', 'plastic'] (Top Conf: 0.67)"
+  },
+  {
+    "scenario_id": 13,
+    "name": "Low-light scene",
+    "asset": "gw_metal1005_jpg.rf.c2579ac46cc776d0c27d4056a8f24c88.jpg",
+    "latency_ms": 184.18,
+    "detections_count": 1,
+    "classes": [
+      "metal"
+    ],
+    "top_confidence": 0.7193,
+    "verdict": "PASS",
+    "notes": "Detected 1 items: ['metal'] (Top Conf: 0.72)"
+  },
+  {
+    "scenario_id": 14,
+    "name": "Cluttered background",
+    "asset": "gw_biodegradable1194_jpg.rf.268c14469221eafa41137461b9fc23c5.jpg",
+    "latency_ms": 164.71,
+    "detections_count": 14,
+    "classes": [
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "organic",
+      "cardboard",
+      "cardboard",
+      "cardboard",
+      "cardboard"
+    ],
+    "top_confidence": 0.9193,
+    "verdict": "PASS",
+    "notes": "Detected 14 items: ['organic', 'organic', 'organic', 'organic', 'organic'] (Top Conf: 0.92)"
+  },
+  {
+    "scenario_id": 15,
+    "name": "Empty background",
+    "asset": "neg_000000001503.jpg",
+    "latency_ms": 176.61,
+    "detections_count": 0,
+    "classes": [],
+    "top_confidence": 0.0,
+    "verdict": "PASS",
+    "notes": "Produced 0 false positives on clean negative background."
+  },
+  {
+    "scenario_id": 16,
+    "name": "Unsupported and corrupt files",
+    "passed": true,
+    "latency_ms": 0.0,
+    "detections_count": 0,
+    "classes": [],
+    "verdict": "PASS",
+    "notes": "Gracefully caught InvalidImageError (HTTP 400 ready)"
+  }
+]

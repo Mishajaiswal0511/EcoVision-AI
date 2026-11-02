@@ -1,0 +1,183 @@
+{
+  "Cardboard_Pile": {
+    "standard_800": {
+      "count": 9,
+      "summary": [
+        "cardboard:0.51",
+        "cardboard:0.306",
+        "cardboard:0.225",
+        "cardboard:0.224",
+        "cardboard:0.197",
+        "cardboard:0.196",
+        "plastic:0.179",
+        "cardboard:0.179",
+        "cardboard:0.174"
+      ]
+    },
+    "ca_nms_800": {
+      "count": 8,
+      "summary": [
+        "cardboard:0.51",
+        "cardboard:0.225",
+        "cardboard:0.224",
+        "cardboard:0.197",
+        "cardboard:0.196",
+        "plastic:0.179",
+        "cardboard:0.179",
+        "cardboard:0.174"
+      ]
+    },
+    "standard_1024": {
+      "count": 8,
+      "summary": [
+        "cardboard:0.631",
+        "cardboard:0.478",
+        "cardboard:0.322",
+        "cardboard:0.254",
+        "cardboard:0.21",
+        "cardboard:0.203",
+        "cardboard:0.198",
+        "cardboard:0.187"
+      ]
+    },
+    "ca_nms_1024": {
+      "count": 8,
+      "summary": [
+        "cardboard:0.631",
+        "cardboard:0.478",
+        "cardboard:0.322",
+        "cardboard:0.254",
+        "cardboard:0.21",
+        "cardboard:0.203",
+        "cardboard:0.198",
+        "cardboard:0.187"
+      ]
+    }
+  },
+  "Broken_Glass": {
+    "standard_800": {
+      "count": 7,
+      "summary": [
+        "glass:0.913",
+        "glass:0.454",
+        "glass:0.426",
+        "glass:0.421",
+        "glass:0.381",
+        "metal:0.246",
+        "glass:0.204"
+      ]
+    },
+    "ca_nms_800": {
+      "count": 6,
+      "summary": [
+        "glass:0.913",
+        "glass:0.454",
+        "glass:0.426",
+        "glass:0.421",
+        "glass:0.381",
+        "glass:0.204"
+      ]
+    },
+    "standard_1024": {
+      "count": 9,
+      "summary": [
+        "glass:0.907",
+        "glass:0.698",
+        "glass:0.612",
+        "glass:0.405",
+        "glass:0.359",
+        "metal:0.294",
+        "glass:0.282",
+        "glass:0.275",
+        "glass:0.164"
+      ]
+    },
+    "ca_nms_1024": {
+      "count": 8,
+      "summary": [
+        "glass:0.907",
+        "glass:0.698",
+        "glass:0.612",
+        "glass:0.405",
+        "glass:0.359",
+        "glass:0.282",
+        "glass:0.275",
+        "glass:0.164"
+      ]
+    }
+  },
+  "Green_Plastic": {
+    "standard_800": {
+      "count": 0,
+      "summary": []
+    },
+    "ca_nms_800": {
+      "count": 0,
+      "summary": []
+    },
+    "standard_1024": {
+      "count": 15,
+      "summary": [
+        "plastic:0.47",
+        "plastic:0.319",
+        "plastic:0.288",
+        "plastic:0.266",
+        "plastic:0.264",
+        "plastic:0.252",
+        "plastic:0.209",
+        "plastic:0.197",
+        "plastic:0.186",
+        "plastic:0.186",
+        "plastic:0.185",
+        "plastic:0.163",
+        "plastic:0.161",
+        "plastic:0.156",
+        "plastic:0.152"
+      ]
+    },
+    "ca_nms_1024": {
+      "count": 13,
+      "summary": [
+        "plastic:0.47",
+        "plastic:0.319",
+        "plastic:0.288",
+        "plastic:0.266",
+        "plastic:0.264",
+        "plastic:0.252",
+        "plastic:0.209",
+        "plastic:0.197",
+        "plastic:0.186",
+        "plastic:0.186",
+        "plastic:0.163",
+        "plastic:0.161",
+        "plastic:0.152"
+      ]
+    }
+  },
+  "Banana_Peel": {
+    "standard_800": {
+      "count": 1,
+      "summary": [
+        "glass:0.598"
+      ]
+    },
+    "ca_nms_800": {
+      "count": 1,
+      "summary": [
+        "glass:0.598"
+      ]
+    },
+    "standard_1024": {
+      "count": 1,
+      "summary": [
+        "glass:0.379"
+      ]
+    },
+    "ca_nms_1024": {
+      "count": 1,
+      "summary": [
+        "glass:0.379"
+      ]
+    }
+  }
+}

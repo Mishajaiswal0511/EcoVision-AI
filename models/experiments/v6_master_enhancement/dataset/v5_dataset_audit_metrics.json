@@ -1,0 +1,138 @@
+{
+  "dataset": "processed_v5",
+  "total_images": 11249,
+  "total_instances": 38308,
+  "train_val_breakdown": {
+    "train": {
+      "total_images": 8242,
+      "total_labeled_images": 7657,
+      "empty_background_images": 585,
+      "total_boxes": 27576,
+      "class_boxes": {
+        "plastic": 6362,
+        "metal": 4883,
+        "cardboard": 3563,
+        "glass": 5908,
+        "paper": 3392,
+        "general_trash": 1926,
+        "organic": 1542
+      },
+      "class_images": {
+        "plastic": 2129,
+        "metal": 1673,
+        "cardboard": 1261,
+        "glass": 2038,
+        "paper": 1442,
+        "general_trash": 760,
+        "organic": 92
+      },
+      "size_distribution": {
+        "plastic": {
+          "small": 683,
+          "medium": 2087,
+          "large": 3592
+        },
+        "metal": {
+          "small": 328,
+          "medium": 1378,
+          "large": 3177
+        },
+        "cardboard": {
+          "small": 44,
+          "medium": 380,
+          "large": 3139
+        },
+        "glass": {
+          "small": 265,
+          "medium": 1085,
+          "large": 4558
+        },
+        "paper": {
+          "small": 49,
+          "medium": 477,
+          "large": 2866
+        },
+        "general_trash": {
+          "small": 1202,
+          "medium": 425,
+          "large": 299
+        },
+        "organic": {
+          "small": 231,
+          "medium": 728,
+          "large": 583
+        }
+      }
+    },
+    "val": {
+      "total_images": 3007,
+      "total_labeled_images": 2792,
+      "empty_background_images": 215,
+      "total_boxes": 10732,
+      "class_boxes": {
+        "plastic": 2280,
+        "metal": 1662,
+        "cardboard": 1432,
+        "glass": 2234,
+        "paper": 1257,
+        "general_trash": 643,
+        "organic": 1224
+      },
+      "class_images": {
+        "plastic": 730,
+        "metal": 593,
+        "cardboard": 472,
+        "glass": 761,
+        "paper": 525,
+        "general_trash": 246,
+        "organic": 41
+      },
+      "size_distribution": {
+        "plastic": {
+          "small": 163,
+          "medium": 789,
+          "large": 1328
+        },
+        "metal": {
+          "small": 66,
+          "medium": 372,
+          "large": 1224
+        },
+        "cardboard": {
+          "small": 44,
+          "medium": 166,
+          "large": 1222
+        },
+        "glass": {
+          "small": 98,
+          "medium": 372,
+          "large": 1764
+        },
+        "paper": {
+          "small": 7,
+          "medium": 145,
+          "large": 1105
+        },
+        "general_trash": {
+          "small": 437,
+          "medium": 110,
+          "large": 96
+        },
+        "organic": {
+          "small": 258,
+          "medium": 634,
+          "large": 332
+        }
+      }
+    }
+  },
+  "combined_class_instances": {
+    "plastic": 8642,
+    "metal": 6545,
+    "cardboard": 4995,
+    "glass": 8142,
+    "paper": 4649,
+    "general_trash": 2569,
+    "organic": 2766
+  }
+}

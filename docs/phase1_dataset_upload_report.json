@@ -1,0 +1,15 @@
+{
+  "phase": "PHASE 1 \u2014 PRIVATE DATASET UPLOAD",
+  "dataset_id": "mishajaiswal0511/ecovision-train-val",
+  "dataset_url": "https://www.kaggle.com/datasets/mishajaiswal0511/ecovision-train-val",
+  "archive_size_bytes": 614684399,
+  "archive_size_mb": 586.21,
+  "sha256": "3595e44a1791fac2684ace09c8e24b3d20936a68f8fd2377217ab9140cae8d29",
+  "visibility": "private",
+  "train_images": 8242,
+  "val_images": 3007,
+  "test_images_excluded": true,
+  "real_world_eval_excluded": true,
+  "upload_status": "READY",
+  "timestamp": "2026-10-30 20:44:46"
+}

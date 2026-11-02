@@ -1,0 +1,10 @@
+{
+  "specification_version": "V5-INDIA-SWM-2026",
+  "policy_name": "Government of India Solid Waste Management Rules, 2026 (MoEFCC/CPCB)",
+  "state_adaptation": "Punjab Municipal Solid Waste Management Guidelines (Dept. of Local Govt., Punjab)",
+  "date_adopted": "2026-10-31",
+  "status": "FROZEN_FOR_V5_DATASET_AND_APPLICATION",
+  "active_streams": ["Wet Waste (Organic)", "Dry Recyclable (5 materials)", "Residual Waste (General Trash)", "Sanitary Special Care", "Domestic Hazardous Special Care"],
+  "model_target_classes": 7
+}
+
