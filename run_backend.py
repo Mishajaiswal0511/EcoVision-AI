@@ -1,8 +1,9 @@
 """
-EcoVision AI — Unified Backend Entrypoint
+EcoVision AI — Unified Production Backend Entrypoint
 Mounts the active 7-class YOLO11s + Gemini Vision AI application.
 """
 
+import os
 import sys
 from pathlib import Path
 
@@ -15,4 +16,10 @@ from main import app  # noqa: F401
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("run_backend:app", host="0.0.0.0", port=8000, reload=False)
+    port_str = os.getenv("PORT", "10000")
+    try:
+        port = int(port_str)
+    except ValueError:
+        port = 10000
+    print(f"Starting EcoVision AI backend on port {port}...")
+    uvicorn.run("run_backend:app", host="0.0.0.0", port=port, reload=False)
