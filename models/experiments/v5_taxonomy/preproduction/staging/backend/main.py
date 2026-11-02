@@ -97,24 +97,10 @@ def _image_to_base64_data_url(image: Image.Image, format: str = "PNG") -> str:
 
 @app.get("/api/health", summary="Health and Model Readiness Check")
 async def health_check() -> Dict[str, Any]:
-    model_loaded = False
-    model_classes = []
     model_load_error = getattr(app.state, "model_load_error", None)
-
-    try:
-        service = get_staging_inference_service(model_path=MODEL_PATH, device="cpu")
-        model_loaded = True
-        model_classes = list(CLASS_MAPPING.values())
-    except Exception as e:
-        model_load_error = str(e)
-
-    disposal_loaded = False
+    model_loaded = (model_load_error is None)
     disposal_load_error = getattr(app.state, "disposal_load_error", None)
-    try:
-        d_service = get_staging_disposal_service()
-        disposal_loaded = True
-    except Exception as e:
-        disposal_load_error = str(e)
+    disposal_loaded = (disposal_load_error is None)
 
     overall_status = "healthy" if (model_loaded and disposal_loaded) else "degraded"
 
@@ -125,8 +111,8 @@ async def health_check() -> Dict[str, Any]:
         "model_loaded": model_loaded,
         "model_path": str(MODEL_PATH),
         "target_resolution": 800,
-        "classes_count": len(model_classes),
-        "classes": model_classes,
+        "classes_count": len(CLASS_MAPPING),
+        "classes": list(CLASS_MAPPING.values()),
         "disposal_service_loaded": disposal_loaded,
         "model_load_error": model_load_error,
         "disposal_load_error": disposal_load_error,

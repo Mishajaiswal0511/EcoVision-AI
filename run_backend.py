@@ -7,6 +7,13 @@ import os
 import sys
 from pathlib import Path
 
+# Limit PyTorch CPU threads to avoid CPU thrashing on shared containers
+try:
+    import torch
+    torch.set_num_threads(1)
+except Exception:
+    pass
+
 # Add staging backend directory to path
 staging_dir = Path(__file__).resolve().parent / "models" / "experiments" / "v5_taxonomy" / "preproduction" / "staging" / "backend"
 if str(staging_dir) not in sys.path:
