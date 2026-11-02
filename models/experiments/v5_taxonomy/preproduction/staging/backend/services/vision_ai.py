@@ -98,7 +98,7 @@ class VisionAIService:
                 img.thumbnail((1200, 1200))
 
             # Try primary fast high-quota model with fallback
-            models_to_try = ["gemini-3.5-flash-lite", "gemini-flash-latest", "gemini-2.5-flash"]
+            models_to_try = ["gemini-2.5-flash"]
             response = None
             last_err = None
 
