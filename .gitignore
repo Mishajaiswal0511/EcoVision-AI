@@ -2,11 +2,15 @@
 # ==========================
 
 # ---- Datasets (never upload full dataset images/labels) ----
-data/
-datasets/
+/data/
+/datasets/
 *.zip
 *.tar
 *.tar.gz
+
+# Include backend disposal guides
+!models/experiments/v5_taxonomy/preproduction/staging/backend/data/
+!models/experiments/v5_taxonomy/preproduction/staging/backend/data/**
 
 # ---- Model weights ----
 backend/weights/
