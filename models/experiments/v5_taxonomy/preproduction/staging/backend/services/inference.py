@@ -249,12 +249,13 @@ class StagingYOLOInferenceService:
         # Image Quality Assessment (Sharpness & Lighting)
         quality_info = self._assess_image_quality(image)
 
+        conf_probe = min(conf, 0.05)
         try:
             import torch
             with torch.inference_mode():
                 results = self.model.predict(
                     source=image,
-                    conf=conf,
+                    conf=conf_probe,
                     iou=iou,
                     imgsz=imgsz,
                     agnostic_nms=agnostic_nms,
@@ -270,29 +271,46 @@ class StagingYOLOInferenceService:
         num_raw = len(raw_boxes)
 
         detections: List[Dict[str, Any]] = []
+        candidates_below_thresh: List[Dict[str, Any]] = []
+
         if num_raw > 0:
             for box in raw_boxes:
-                xyxy = box.xyxy[0].cpu().numpy()
-                x1 = max(0.0, min(float(xyxy[0]), float(width)))
-                y1 = max(0.0, min(float(xyxy[1]), float(height)))
-                x2 = max(0.0, min(float(xyxy[2]), float(width)))
-                y2 = max(0.0, min(float(xyxy[3]), float(height)))
-
                 confidence = round(float(box.conf[0].cpu().numpy()), 4)
                 class_id = int(box.cls[0].cpu().numpy())
                 class_name = CLASS_MAPPING.get(class_id, self.model.names.get(class_id, f"class_{class_id}"))
 
-                detections.append({
-                    "class_id": class_id,
-                    "class_name": class_name,
-                    "confidence": confidence,
-                    "bounding_box": {
-                        "x1": round(x1, 1),
-                        "y1": round(y1, 1),
-                        "x2": round(x2, 1),
-                        "y2": round(y2, 1),
-                    },
-                })
+                if confidence >= conf:
+                    xyxy = box.xyxy[0].cpu().numpy()
+                    x1 = max(0.0, min(float(xyxy[0]), float(width)))
+                    y1 = max(0.0, min(float(xyxy[1]), float(height)))
+                    x2 = max(0.0, min(float(xyxy[2]), float(width)))
+                    y2 = max(0.0, min(float(xyxy[3]), float(height)))
+
+                    detections.append({
+                        "class_id": class_id,
+                        "class_name": class_name,
+                        "confidence": confidence,
+                        "bounding_box": {
+                            "x1": round(x1, 1),
+                            "y1": round(y1, 1),
+                            "x2": round(x2, 1),
+                            "y2": round(y2, 1),
+                        },
+                    })
+                else:
+                    candidates_below_thresh.append({
+                        "class_name": class_name,
+                        "confidence": confidence,
+                    })
+
+        # Immediately free YOLO intermediate result tensors
+        del results
+        try:
+            import gc, ctypes
+            gc.collect()
+            ctypes.CDLL("libc.so.6").malloc_trim(0)
+        except Exception:
+            pass
 
         detections_before_containment = len(detections)
         if containment_suppression and len(detections) > 1:
@@ -327,6 +345,7 @@ class StagingYOLOInferenceService:
             final_detections=detections,
             detections_before_containment=detections_before_containment,
             quality_info=quality_info,
+            candidates_below_thresh=candidates_below_thresh,
         )
 
         try:
@@ -354,7 +373,12 @@ class StagingYOLOInferenceService:
         - Sharpness (Laplacian variance of grayscale image)
         """
         try:
-            gray = np.array(pil_image.convert("L"), dtype=np.float32)
+            if max(pil_image.size) > 400:
+                thumb = pil_image.copy()
+                thumb.thumbnail((400, 400))
+            else:
+                thumb = pil_image
+            gray = np.array(thumb.convert("L"), dtype=np.float32)
             brightness = float(np.mean(gray))
             if gray.shape[0] > 2 and gray.shape[1] > 2:
                 lap = gray[:-2, 1:-1] + gray[2:, 1:-1] + gray[1:-1, :-2] + gray[1:-1, 2:] - 4 * gray[1:-1, 1:-1]
@@ -388,6 +412,7 @@ class StagingYOLOInferenceService:
         final_detections: List[Dict[str, Any]],
         detections_before_containment: int,
         quality_info: Dict[str, Any],
+        candidates_below_thresh: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         """
         Generates evidence-based Smart Assistant explanations:
@@ -502,28 +527,8 @@ class StagingYOLOInferenceService:
                 ],
             }
 
-        # Priority 2: Probe for sub-threshold candidate proposals (conf=0.03)
-        sub_candidates = []
-        try:
-            probe_results = self.model.predict(
-                source=image,
-                conf=0.03,
-                iou=iou_threshold,
-                imgsz=imgsz,
-                agnostic_nms=True,
-                device=self.device,
-                verbose=False,
-            )
-            if len(probe_results) > 0 and probe_results[0].boxes is not None:
-                for b in probe_results[0].boxes:
-                    sub_candidates.append({
-                        "class_name": CLASS_MAPPING.get(int(b.cls[0]), "unknown"),
-                        "confidence": round(float(b.conf[0]), 3),
-                    })
-        except Exception as e:
-            logger.warning(f"Low-confidence probe failed: {e}")
-
-        candidates_below_thresh = [c for c in sub_candidates if c["confidence"] < conf_threshold]
+        # Priority 2: Probe for sub-threshold candidate proposals
+        candidates_below_thresh = candidates_below_thresh or []
         if candidates_below_thresh:
             top_candidate = max(candidates_below_thresh, key=lambda x: x["confidence"])
             cand_name = top_candidate["class_name"].replace("_", " ").title()
