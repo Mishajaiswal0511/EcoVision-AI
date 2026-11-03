@@ -88,11 +88,21 @@ app.add_middleware(
 )
 
 
-def _image_to_base64_data_url(image: Image.Image, format: str = "PNG") -> str:
+def _image_to_base64_data_url(image: Image.Image, format: str = "JPEG") -> str:
+    img = image.copy()
+    if max(img.size) > 800:
+        img.thumbnail((800, 800))
     buffer = io.BytesIO()
-    image.save(buffer, format=format)
+    if format.upper() == "PNG":
+        img.save(buffer, format="PNG", optimize=True)
+        fmt = "png"
+    else:
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        img.save(buffer, format="JPEG", quality=80, optimize=True)
+        fmt = "jpeg"
     encoded = base64.b64encode(buffer.getvalue()).decode("utf-8")
-    return f"data:image/{format.lower()};base64,{encoded}"
+    return f"data:image/{fmt};base64,{encoded}"
 
 
 @app.get("/api/health", summary="Health and Model Readiness Check")
@@ -238,7 +248,7 @@ async def detect_waste(
             image_input=image_bytes,
             detections=detections,
         )
-        annotated_data_url = _image_to_base64_data_url(annotated_pil, format="PNG")
+        annotated_data_url = _image_to_base64_data_url(annotated_pil, format="JPEG")
     except Exception:
         annotated_data_url = ""
 

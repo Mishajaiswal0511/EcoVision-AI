@@ -250,15 +250,17 @@ class StagingYOLOInferenceService:
         quality_info = self._assess_image_quality(image)
 
         try:
-            results = self.model.predict(
-                source=image,
-                conf=conf,
-                iou=iou,
-                imgsz=imgsz,
-                agnostic_nms=agnostic_nms,
-                device=self.device,
-                verbose=False,
-            )
+            import torch
+            with torch.inference_mode():
+                results = self.model.predict(
+                    source=image,
+                    conf=conf,
+                    iou=iou,
+                    imgsz=imgsz,
+                    agnostic_nms=agnostic_nms,
+                    device=self.device,
+                    verbose=False,
+                )
         except Exception as e:
             raise InferenceError(f"YOLO inference failed: {e}") from e
 
@@ -327,6 +329,13 @@ class StagingYOLOInferenceService:
             quality_info=quality_info,
         )
 
+        try:
+            import gc, ctypes
+            gc.collect()
+            ctypes.CDLL("libc.so.6").malloc_trim(0)
+        except Exception:
+            pass
+
         return {
             "success": True,
             "image_width": width,
@@ -345,15 +354,13 @@ class StagingYOLOInferenceService:
         - Sharpness (Laplacian variance of grayscale image)
         """
         try:
-            import cv2
-            np_img = np.array(pil_image)
-            if len(np_img.shape) == 3:
-                gray = cv2.cvtColor(np_img, cv2.COLOR_RGB2GRAY)
-            else:
-                gray = np_img
-
+            gray = np.array(pil_image.convert("L"), dtype=np.float32)
             brightness = float(np.mean(gray))
-            laplacian_var = float(cv2.Laplacian(gray, cv2.CV_64F).var())
+            if gray.shape[0] > 2 and gray.shape[1] > 2:
+                lap = gray[:-2, 1:-1] + gray[2:, 1:-1] + gray[1:-1, :-2] + gray[1:-1, 2:] - 4 * gray[1:-1, 1:-1]
+                laplacian_var = float(lap.var())
+            else:
+                laplacian_var = 100.0
 
             return {
                 "brightness": round(brightness, 1),
