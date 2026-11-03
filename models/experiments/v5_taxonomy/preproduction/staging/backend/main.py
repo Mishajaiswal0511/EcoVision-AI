@@ -55,20 +55,22 @@ SUPPORTED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tiff"}
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    try:
-        get_staging_inference_service(model_path=MODEL_PATH, device="cpu")
-    except Exception as e:
-        app.state.model_load_error = str(e)
-    else:
-        app.state.model_load_error = None
+    app.state.model_load_error = None
+    app.state.disposal_load_error = None
 
     try:
         get_staging_disposal_service()
     except Exception as e:
         app.state.disposal_load_error = str(e)
-    else:
-        app.state.disposal_load_error = None
 
+    # Preload model in background thread so uvicorn binds to PORT in <100ms
+    async def _preload_model():
+        try:
+            await asyncio.to_thread(get_staging_inference_service, model_path=MODEL_PATH, device="cpu")
+        except Exception as e:
+            app.state.model_load_error = str(e)
+
+    asyncio.create_task(_preload_model())
     yield
 
 
