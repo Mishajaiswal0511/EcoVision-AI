@@ -224,6 +224,7 @@ async def detect_waste(
             iou=iou,
             imgsz=imgsz,
             agnostic_nms=agnostic_nms,
+            containment_suppression=agnostic_nms,
         )
     except InvalidImageError as exc:
         raise HTTPException(
