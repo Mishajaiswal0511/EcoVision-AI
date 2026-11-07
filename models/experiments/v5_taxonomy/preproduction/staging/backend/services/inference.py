@@ -249,7 +249,8 @@ class StagingYOLOInferenceService:
         # Image Quality Assessment (Sharpness & Lighting)
         quality_info = self._assess_image_quality(image)
 
-        conf_probe = min(conf, 0.05)
+        # Direct confidence threshold: avoid heavy low-conf candidate decoding that causes CPU thread thrashing
+        conf_probe = conf
         try:
             import torch
             with torch.inference_mode():
@@ -317,13 +318,9 @@ class StagingYOLOInferenceService:
             detections = self._apply_containment_suppression(detections)
 
         # Hybrid Vision Fallback:
-        # Run fallback only when 0 detections are found, or when only 1 marginal detection exists (conf < 0.30).
-        # When multiple distinct objects are detected (len(detections) > 1), preserve all individual boxes!
-        max_conf = max([d["confidence"] for d in detections], default=0.0)
-        needs_vision_fallback = (
-            len(detections) == 0 or
-            (len(detections) == 1 and max_conf < 0.30)
-        )
+        # Run fallback ONLY when YOLO finds 0 detections.
+        # If YOLO detects ANY object, preserve YOLO boxes and skip external vision API calls for instant response!
+        needs_vision_fallback = (len(detections) == 0)
 
         if needs_vision_fallback:
             try:
