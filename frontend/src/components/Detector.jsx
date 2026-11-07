@@ -418,7 +418,7 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                   id="conf-slider"
                   type="range"
                   min="0.05"
-                  max="0.50"
+                  max="0.95"
                   step="0.01"
                   value={conf}
                   onChange={(e) => setConf(parseFloat(e.target.value))}
@@ -426,12 +426,12 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                 />
 
                 <div className="flex justify-between text-[11px] font-medium text-slate-400 mt-1">
-                  <span>5% (More detections in piles)</span>
-                  <span>50% (High confidence)</span>
+                  <span>5% (Dense piles / more items)</span>
+                  <span>95% (Strict / high certainty)</span>
                 </div>
 
                 <div className="mt-3 p-2.5 rounded-xl bg-white border border-slate-200 text-[11px] text-slate-500 leading-normal">
-                  <span className="font-semibold text-slate-700">Trade-off note:</span> Lower thresholds (5%–15%) detect smaller or partial items in cluttered piles. Higher thresholds (30%+) demand high certainty.
+                  <span className="font-semibold text-slate-700">Trade-off note:</span> Lower thresholds (5%–20%) help detect multiple partial or crushed items in cluttered piles. Higher thresholds (50%–95%) demand high certainty for clear, isolated items.
                 </div>
               </div>
 
