@@ -73,8 +73,8 @@ class VisionAIService:
         if self.api_key:
             try:
                 from google import genai
-                self.client = genai.Client(api_key=self.api_key)
-                logger.info("Google Gemini Vision AI client initialized successfully.")
+                self.client = genai.Client(api_key=self.api_key, http_options={"timeout": 12000})
+                logger.info("Google Gemini Vision AI client initialized with 12s timeout.")
             except Exception as e:
                 logger.error(f"Failed to initialize Gemini client: {e}")
                 self.client = None
@@ -92,13 +92,13 @@ class VisionAIService:
             return None
 
         try:
-            # Resize image if excessively large to keep request fast (< 1024px)
+            # Resize image to max 512px for sub-second network transfer and ultra-fast inference
             img = pil_image.copy()
-            if max(img.size) > 1200:
-                img.thumbnail((1200, 1200))
+            if max(img.size) > 512:
+                img.thumbnail((512, 512))
 
-            # Try primary fast high-quota model with fallback
-            models_to_try = ["gemini-2.5-flash"]
+            # Try ultra-fast gemini-3.5-flash-lite, then fallback to gemini-2.5-flash
+            models_to_try = ["gemini-3.5-flash-lite", "gemini-2.5-flash"]
             response = None
             last_err = None
 

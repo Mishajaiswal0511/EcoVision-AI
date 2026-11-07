@@ -28,7 +28,7 @@ from backend.services.inference import (
 API_TITLE = "EcoVision AI API"
 API_VERSION = "5.0.0-user-testing"
 MODEL_PATH = os.getenv("MODEL_PATH", "models/experiments/v5_taxonomy/training/yolo11s_v5_best.pt")
-DEFAULT_IMGSZ = int(os.getenv("DEFAULT_IMGSZ", "800"))
+DEFAULT_IMGSZ = int(os.getenv("DEFAULT_IMGSZ", "640"))
 MAX_IMAGE_SIZE_MB = int(os.getenv("MAX_IMAGE_SIZE_MB", "15"))
 MAX_IMAGE_SIZE_BYTES = MAX_IMAGE_SIZE_MB * 1024 * 1024
 

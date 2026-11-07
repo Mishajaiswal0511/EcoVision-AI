@@ -153,7 +153,7 @@ async def detect_waste(
     file: UploadFile = File(..., description="Image file to analyze"),
     conf: float = Form(0.15, description="Confidence threshold (0.0 to 1.0, default 0.15)"),
     iou: float = Form(0.45, description="IoU threshold for NMS (0.0 to 1.0, default 0.45)"),
-    imgsz: int = Form(800, description="Input inference image size (default 800)"),
+    imgsz: int = Form(640, description="Input inference image size (default 640)"),
     agnostic_nms: bool = Form(True, description="Whether to use class-agnostic NMS (default True)"),
 ) -> Dict[str, Any]:
     if not (0.0 < conf <= 1.0):

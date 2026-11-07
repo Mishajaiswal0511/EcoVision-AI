@@ -29,8 +29,8 @@ export default function App() {
 
   useEffect(() => {
     fetchHealth();
-    // Refresh health status every 30 seconds
-    const interval = setInterval(fetchHealth, 30000);
+    // Refresh health status every 3 minutes (prevents Render rate-limiting)
+    const interval = setInterval(fetchHealth, 180000);
     return () => clearInterval(interval);
   }, [fetchHealth]);
 

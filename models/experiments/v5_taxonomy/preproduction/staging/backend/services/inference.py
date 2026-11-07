@@ -237,7 +237,7 @@ class StagingYOLOInferenceService:
         image_input: Union[str, Path, bytes, Image.Image, np.ndarray],
         conf: float = 0.15,
         iou: float = 0.45,
-        imgsz: int = 800,
+        imgsz: int = 640,
         agnostic_nms: bool = True,
         containment_suppression: bool = True,
     ) -> Dict[str, Any]:
@@ -316,12 +316,12 @@ class StagingYOLOInferenceService:
         if containment_suppression and len(detections) > 1:
             detections = self._apply_containment_suppression(detections)
 
-        # Hybrid Vision Fallback & Arbiter: If 0 detections or ambiguous/uncertain detection (conf < 0.72),
-        # consult Multimodal Vision Intelligence to accurately recognize unseen real-world waste and eliminate false classifications
+        # Hybrid Vision Fallback: If 0 detections or very low confidence (< 0.35),
+        # consult Multimodal Vision Intelligence to accurately recognize unseen organic waste
         max_conf = max([d["confidence"] for d in detections], default=0.0)
         needs_vision_fallback = (
             len(detections) == 0 or
-            max_conf < 0.72
+            max_conf < 0.35
         )
 
         if needs_vision_fallback:
