@@ -316,12 +316,13 @@ class StagingYOLOInferenceService:
         if containment_suppression and len(detections) > 1:
             detections = self._apply_containment_suppression(detections)
 
-        # Hybrid Vision Fallback: If 0 detections or very low confidence (< 0.35),
-        # consult Multimodal Vision Intelligence to accurately recognize unseen organic waste
+        # Hybrid Vision Fallback:
+        # Run fallback only when 0 detections are found, or when only 1 marginal detection exists (conf < 0.30).
+        # When multiple distinct objects are detected (len(detections) > 1), preserve all individual boxes!
         max_conf = max([d["confidence"] for d in detections], default=0.0)
         needs_vision_fallback = (
             len(detections) == 0 or
-            max_conf < 0.35
+            (len(detections) == 1 and max_conf < 0.30)
         )
 
         if needs_vision_fallback:
