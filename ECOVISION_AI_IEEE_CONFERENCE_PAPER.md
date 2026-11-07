@@ -229,3 +229,4 @@ The author expresses sincere gratitude to the project evaluators, academic mento
 6. M. Everingham, L. Van Gool, C. K. I. Williams, J. Winn, and A. Zisserman, “The PASCAL Visual Object Classes (VOC) challenge,” *Int. J. Comput. Vis.*, vol. 88, no. 2, pp. 303–338, 2010.
 7. T. Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollár, “Focal loss for dense object detection,” in *Proc. IEEE Int. Conf. Comput. Vis. (ICCV)*, 2017, pp. 2980–2988.
 8. M. Young, *The Technical Writer’s Handbook*. Mill Valley, CA: University Science, 1989.
+
