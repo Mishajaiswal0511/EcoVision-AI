@@ -29,7 +29,7 @@ VALID_CLASSES = {
 
 PROMPT_TEMPLATE = """
 You are the AI Vision Core of the EcoVision AI waste segregation system.
-Detect ALL distinct individual waste objects visible in the image.
+Detect up to 8 prominent distinct waste objects visible in the image.
 For each individual object, provide a tight bounding box and assign it to exactly one of these 7 taxonomy classes:
 [plastic, metal, cardboard, glass, paper, general_trash, organic].
 
@@ -75,8 +75,8 @@ class VisionAIService:
         if self.api_key:
             try:
                 from google import genai
-                self.client = genai.Client(api_key=self.api_key, http_options={"timeout": 12000})
-                logger.info("Google Gemini Vision AI client initialized with 12s timeout.")
+                self.client = genai.Client(api_key=self.api_key, http_options={"timeout": 25000})
+                logger.info("Google Gemini Vision AI client initialized with 25s timeout.")
             except Exception as e:
                 logger.error(f"Failed to initialize Gemini client: {e}")
                 self.client = None
@@ -160,7 +160,12 @@ class VisionAIService:
             if max(img.size) > 640:
                 img.thumbnail((640, 640))
 
-            models_to_try = ["gemini-2.5-flash", "gemini-3.5-flash-lite"]
+            models_to_try = [
+                "gemini-3.5-flash-lite",
+                "gemini-2.5-flash-lite",
+                "gemini-3.5-flash",
+                "gemini-2.5-flash",
+            ]
             response = None
             last_err = None
 
