@@ -417,7 +417,7 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                 <input
                   id="conf-slider"
                   type="range"
-                  min="0.10"
+                  min="0.05"
                   max="0.50"
                   step="0.01"
                   value={conf}
@@ -426,12 +426,12 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                 />
 
                 <div className="flex justify-between text-[11px] font-medium text-slate-400 mt-1">
-                  <span>10% (More detections)</span>
+                  <span>5% (More detections in piles)</span>
                   <span>50% (High confidence)</span>
                 </div>
 
                 <div className="mt-3 p-2.5 rounded-xl bg-white border border-slate-200 text-[11px] text-slate-500 leading-normal">
-                  <span className="font-semibold text-slate-700">Trade-off note:</span> Lower thresholds detect smaller or partial items (including potential false positives). Higher thresholds demand higher certainty but may omit partially visible objects.
+                  <span className="font-semibold text-slate-700">Trade-off note:</span> Lower thresholds (5%–15%) detect smaller or partial items in cluttered piles. Higher thresholds (30%+) demand high certainty.
                 </div>
               </div>
 
@@ -463,10 +463,19 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                     Input Resolution
                   </div>
                   <div className="text-[11px] text-slate-500 mt-0.5">
-                    1024px resolves fine objects (e.g. small plastic/caps); 800px is faster.
+                    640px runs 10x faster; 800px resolves distant details.
                   </div>
                 </div>
                 <div className="inline-flex p-1 bg-slate-200 rounded-xl">
+                  <button
+                    type="button"
+                    onClick={() => setImgsz(640)}
+                    className={`px-3 py-1 text-xs font-bold rounded-lg transition-all ${
+                      imgsz === 640 ? 'bg-white text-emerald-700 shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                  >
+                    640px (Fast)
+                  </button>
                   <button
                     type="button"
                     onClick={() => setImgsz(800)}
@@ -475,15 +484,6 @@ export default function Detector({ onDetectionComplete, isBackendReady }) {
                     }`}
                   >
                     800px
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setImgsz(1024)}
-                    className={`px-3 py-1 text-xs font-bold rounded-lg transition-all ${
-                      imgsz === 1024 ? 'bg-white text-emerald-700 shadow-xs' : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    1024px
                   </button>
                 </div>
               </div>
