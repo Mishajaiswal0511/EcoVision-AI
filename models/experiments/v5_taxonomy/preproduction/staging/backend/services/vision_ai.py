@@ -29,28 +29,30 @@ VALID_CLASSES = {
 
 PROMPT_TEMPLATE = """
 You are the AI Vision Core of the EcoVision AI waste segregation system.
-Analyze the provided waste image.
-Classify the waste into exactly one of these 7 taxonomy classes:
+Detect ALL distinct individual waste objects visible in the image.
+For each individual object, provide a tight bounding box and assign it to exactly one of these 7 taxonomy classes:
 [plastic, metal, cardboard, glass, paper, general_trash, organic].
 
 Guidelines:
-1. "organic": Raw food trimmings, fruit/vegetable peels, eggshells, coffee grounds, cooked food leftovers, garden leaves, bread, bones.
-2. "plastic": Bottles, tubs, caps, clean containers, films.
-3. "metal": Beverage cans, food tins, clean aluminium foil, metal caps.
-4. "cardboard": Corrugated shipping boxes, clean paperboard cartons.
+1. "organic": Food scraps, fruit/vegetable peels, eggshells, leftovers, leaves.
+2. "plastic": Bottles, cups, tubs, caps, clean containers, film wrappers.
+3. "metal": Beverage cans, food tins, clean foil, metal caps.
+4. "cardboard": Corrugated shipping boxes, paperboard cartons, cup sleeves.
 5. "glass": Beverage bottles, jars, intact container glass.
-6. "paper": Office paper, newspapers, magazines, paper bags.
-7. "general_trash": Greasy pizza boxes, used napkins/tissues, chip packets (multilayer plastics), styrofoam, non-recyclable composites.
+6. "paper": Disposable paper coffee cups, office paper, newspapers, paper bags.
+7. "general_trash": Greasy pizza boxes, used napkins/tissues, chip packets, styrofoam.
 
-Return ONLY a valid JSON object matching this exact schema:
-{
-  "class_name": "organic",
-  "confidence": 0.98,
-  "detected_items": ["eggshells", "citrus peel"],
-  "explanation": "Food preparation scraps and eggshells are compostable wet organic waste.",
-  "box_2d": [ymin, xmin, ymax, xmax]
-}
-Where box_2d is [ymin, xmin, ymax, xmax] as 0 to 1000 integer coordinates tightly bounding the waste object (e.g. [150, 100, 850, 600]).
+Return ONLY a valid JSON list of objects:
+[
+  {
+    "class_name": "plastic",
+    "confidence": 0.95,
+    "item_name": "clear plastic cup",
+    "box_2d": [ymin, xmin, ymax, xmax]
+  }
+]
+Where box_2d is [ymin, xmin, ymax, xmax] as 0 to 1000 integer coordinates tightly bounding that individual object.
+Never return a single box around the entire scene if individual items can be localized.
 """
 
 
@@ -84,21 +86,81 @@ class VisionAIService:
     def is_available(self) -> bool:
         return self.client is not None
 
-    def analyze_waste_image(self, pil_image: Image.Image) -> Optional[Dict[str, Any]]:
-        """
-        Analyzes image using Gemini 2.5 Flash and returns structured waste classification.
-        """
-        if not self.is_available():
+    def _parse_item(self, item: Dict[str, Any], width: int, height: int) -> Optional[Dict[str, Any]]:
+        try:
+            class_name = item.get("class_name", "").lower().strip()
+            if class_name not in VALID_CLASSES:
+                for valid in VALID_CLASSES:
+                    if valid in class_name:
+                        class_name = valid
+                        break
+                else:
+                    class_name = "general_trash"
+
+            class_id = VALID_CLASSES[class_name]
+            confidence = float(item.get("confidence", 0.95))
+            item_name = item.get("item_name", item.get("detected_items", [class_name]))
+            box_2d = item.get("box_2d", [100, 100, 900, 900])
+
+            ymin, xmin, ymax, xmax = [float(v) for v in box_2d]
+            max_coord = max(abs(ymin), abs(xmin), abs(ymax), abs(xmax))
+
+            if max_coord <= 1.05 and max_coord > 0:
+                x1 = round(xmin * width, 1)
+                y1 = round(ymin * height, 1)
+                x2 = round(xmax * width, 1)
+                y2 = round(ymax * height, 1)
+            elif max_coord <= 1005:
+                x1 = round((xmin / 1000.0) * width, 1)
+                y1 = round((ymin / 1000.0) * height, 1)
+                x2 = round((xmax / 1000.0) * width, 1)
+                y2 = round((ymax / 1000.0) * height, 1)
+            else:
+                x1, y1, x2, y2 = round(xmin, 1), round(ymin, 1), round(xmax, 1), round(ymax, 1)
+
+            if x1 > x2:
+                x1, x2 = x2, x1
+            if y1 > y2:
+                y1, y2 = y2, y1
+
+            x1 = max(0.0, min(float(width), x1))
+            y1 = max(0.0, min(float(height), y1))
+            x2 = max(0.0, min(float(width), x2))
+            y2 = max(0.0, min(float(height), y2))
+
+            if (x2 - x1) < 10 or (y2 - y1) < 10:
+                return None
+
+            return {
+                "class_id": class_id,
+                "class_name": class_name,
+                "confidence": confidence,
+                "bounding_box": {
+                    "x1": x1,
+                    "y1": y1,
+                    "x2": x2,
+                    "y2": y2,
+                },
+                "item_name": item_name,
+                "source": "Gemini-Vision-Intelligence",
+            }
+        except Exception as e:
+            logger.warning(f"Failed to parse item: {e}")
             return None
 
-        try:
-            # Resize image to max 512px for sub-second network transfer and ultra-fast inference
-            img = pil_image.copy()
-            if max(img.size) > 512:
-                img.thumbnail((512, 512))
+    def analyze_waste_image(self, pil_image: Image.Image) -> List[Dict[str, Any]]:
+        """
+        Analyzes image using Gemini 2.5 Flash and returns a list of localized waste items.
+        """
+        if not self.is_available():
+            return []
 
-            # Try ultra-fast gemini-3.5-flash-lite, then fallback to gemini-2.5-flash
-            models_to_try = ["gemini-3.5-flash-lite", "gemini-2.5-flash"]
+        try:
+            img = pil_image.copy()
+            if max(img.size) > 640:
+                img.thumbnail((640, 640))
+
+            models_to_try = ["gemini-2.5-flash", "gemini-3.5-flash-lite"]
             response = None
             last_err = None
 
@@ -116,10 +178,9 @@ class VisionAIService:
 
             if response is None or not response.text:
                 logger.error(f"All vision AI models failed: {last_err}")
-                return None
+                return []
 
             raw_text = response.text.strip()
-            # Clean possible markdown block wrappers
             if raw_text.startswith("```json"):
                 raw_text = raw_text[7:]
             if raw_text.startswith("```"):
@@ -128,87 +189,25 @@ class VisionAIService:
                 raw_text = raw_text[:-3]
 
             data = json.loads(raw_text.strip())
-
-            class_name = data.get("class_name", "").lower().strip()
-            if class_name not in VALID_CLASSES:
-                # Fallback to closest match
-                for valid in VALID_CLASSES:
-                    if valid in class_name:
-                        class_name = valid
-                        break
-                else:
-                    class_name = "general_trash"
-
-            class_id = VALID_CLASSES[class_name]
-            confidence = float(data.get("confidence", 0.95))
-            detected_items = data.get("detected_items", [])
-            explanation = data.get("explanation", "")
-            box_2d = data.get("box_2d", [100, 100, 900, 900])
-
-            # Convert bounding box coordinates to actual image pixel space
             width, height = pil_image.size
-            try:
-                ymin, xmin, ymax, xmax = [float(v) for v in box_2d]
-                max_coord = max(abs(ymin), abs(xmin), abs(ymax), abs(xmax))
+            results = []
 
-                if max_coord <= 1.05 and max_coord > 0:
-                    # Normalized 0.0 - 1.0 coordinates
-                    x1 = round(xmin * width, 1)
-                    y1 = round(ymin * height, 1)
-                    x2 = round(xmax * width, 1)
-                    y2 = round(ymax * height, 1)
-                elif max_coord <= 1005:
-                    # 0 - 1000 integer coordinates
-                    x1 = round((xmin / 1000.0) * width, 1)
-                    y1 = round((ymin / 1000.0) * height, 1)
-                    x2 = round((xmax / 1000.0) * width, 1)
-                    y2 = round((ymax / 1000.0) * height, 1)
-                else:
-                    # Direct pixel coordinates
-                    x1, y1, x2, y2 = round(xmin, 1), round(ymin, 1), round(xmax, 1), round(ymax, 1)
+            if isinstance(data, list):
+                for item in data:
+                    parsed = self._parse_item(item, width, height)
+                    if parsed:
+                        results.append(parsed)
+            elif isinstance(data, dict):
+                items = data.get("detections", [data])
+                for item in items:
+                    parsed = self._parse_item(item, width, height)
+                    if parsed:
+                        results.append(parsed)
 
-                # Ensure x1 < x2 and y1 < y2
-                if x1 > x2:
-                    x1, x2 = x2, x1
-                if y1 > y2:
-                    y1, y2 = y2, y1
-
-                # Clamp strictly within image bounds
-                x1 = max(0.0, min(float(width), x1))
-                y1 = max(0.0, min(float(height), y1))
-                x2 = max(0.0, min(float(width), x2))
-                y2 = max(0.0, min(float(height), y2))
-
-                # If box is too tight or degenerated, provide a tight center-object envelope
-                if (x2 - x1) < 15 or (y2 - y1) < 15:
-                    x1 = round(width * 0.15, 1)
-                    y1 = round(height * 0.15, 1)
-                    x2 = round(width * 0.85, 1)
-                    y2 = round(height * 0.85, 1)
-            except Exception as box_err:
-                logger.warning(f"Error parsing box_2d {box_2d}: {box_err}")
-                x1 = round(width * 0.15, 1)
-                y1 = round(height * 0.15, 1)
-                x2 = round(width * 0.85, 1)
-                y2 = round(height * 0.85, 1)
-
-            return {
-                "class_id": class_id,
-                "class_name": class_name,
-                "confidence": confidence,
-                "bounding_box": {
-                    "x1": x1,
-                    "y1": y1,
-                    "x2": x2,
-                    "y2": y2,
-                },
-                "detected_items": detected_items,
-                "explanation": explanation,
-                "source": "Gemini-Vision-Intelligence",
-            }
+            return results
         except Exception as e:
             logger.error(f"Gemini Vision analysis error: {e}")
-            return None
+            return []
 
 
 def get_vision_ai_service() -> VisionAIService:

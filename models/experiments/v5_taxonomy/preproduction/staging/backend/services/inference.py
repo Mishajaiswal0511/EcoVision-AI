@@ -249,7 +249,6 @@ class StagingYOLOInferenceService:
         # Image Quality Assessment (Sharpness & Lighting)
         quality_info = self._assess_image_quality(image)
 
-        # Direct confidence threshold: avoid heavy low-conf candidate decoding that causes CPU thread thrashing
         conf_probe = conf
         try:
             import torch
@@ -318,8 +317,8 @@ class StagingYOLOInferenceService:
             detections = self._apply_containment_suppression(detections)
 
         # Hybrid Vision Fallback:
-        # Run fallback ONLY when YOLO finds 0 detections.
-        # If YOLO detects ANY object, preserve YOLO boxes and skip external vision API calls for instant response!
+        # Fallback to Gemini Multimodal ONLY when YOLO finds 0 detections.
+        # If YOLO finds any items, trust YOLO and do not call external API.
         needs_vision_fallback = (len(detections) == 0)
 
         if needs_vision_fallback:
@@ -327,10 +326,10 @@ class StagingYOLOInferenceService:
                 from services.vision_ai import get_vision_ai_service
                 vision_service = get_vision_ai_service()
                 if vision_service.is_available():
-                    vision_result = vision_service.analyze_waste_image(image)
-                    if vision_result:
-                        logger.info(f"Vision AI recovered waste detection: {vision_result['class_name']} ({vision_result['confidence']})")
-                        detections = [vision_result]
+                    vision_results = vision_service.analyze_waste_image(image)
+                    if vision_results and len(vision_results) > 0:
+                        logger.info(f"Vision AI recovered {len(vision_results)} localized waste items")
+                        detections = vision_results
             except Exception as e:
                 logger.warning(f"Vision fallback failed: {e}")
 
