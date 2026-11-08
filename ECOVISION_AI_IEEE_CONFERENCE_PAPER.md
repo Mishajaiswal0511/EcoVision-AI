@@ -1,9 +1,12 @@
 # EcoVision AI: Real-Time Multimodal Waste Localization and Municipal Segregation Using Lightweight YOLO11s and Containment-Aware Adaptive Inference
 
-**Misha Jaiswal**  
-Department of Computer Science and Engineering  
-*mishajaiswal2007@gmail.com*  
-GitHub: *https://github.com/Mishajaiswal0511/EcoVision-AI*
+| **Misha Kumari** | **Ashish Kumar** |
+| :---: | :---: |
+| Dept. of Computer Science and Engineering | Dept. of Computer Science and Engineering |
+| Lovely Professional University, Phagwara, Punjab | Lovely Professional University, Phagwara, Punjab |
+| *mishajaiswal2007@gmail.com* | *ashish.kumar.cse@lpu.in* |
+
+GitHub: *https://github.com/Mishajaiswal0511/EcoVision-AI* | Live Deployment: *https://ecovision-ai-frontend.onrender.com*
 
 ---
 

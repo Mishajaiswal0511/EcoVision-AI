@@ -37,31 +37,76 @@ def create_ieee_paper():
         shading = parse_xml(f'<w:shd {nsdecls("w")} w:fill="{color_hex}"/>')
         cell._tc.get_or_add_tcPr().append(shading)
 
+    def remove_table_borders(table):
+        borders = parse_xml(
+            f'<w:tblBorders {nsdecls("w")}>'
+            f'<w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'<w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'<w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'<w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'<w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'<w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+            f'</w:tblBorders>'
+        )
+        table._tbl.tblPr.append(borders)
+
     # 1. PAPER TITLE
     title_p = doc.add_paragraph()
     title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     title_p.paragraph_format.space_before = Pt(0)
-    title_p.paragraph_format.space_after = Pt(10)
+    title_p.paragraph_format.space_after = Pt(12)
     title_run = title_p.add_run("EcoVision AI: Real-Time Multimodal Waste Localization and Municipal Segregation Using Lightweight YOLO11s and Containment-Aware Adaptive Inference")
     title_run.font.name = 'Times New Roman'
     title_run.font.size = Pt(20)
     title_run.font.bold = True
 
-    # 2. AUTHORS & AFFILIATION
-    author_p = doc.add_paragraph()
-    author_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    author_p.paragraph_format.space_after = Pt(2)
-    author_run = author_p.add_run("Misha Jaiswal\n")
-    author_run.font.size = Pt(11)
-    author_run.font.bold = True
-    affil_run = author_p.add_run("Department of Computer Science and Engineering\n")
-    affil_run.font.size = Pt(10)
-    affil_run.font.italic = True
-    meta_run = author_p.add_run("Email: mishajaiswal2007@gmail.com | GitHub: https://github.com/Mishajaiswal0511/EcoVision-AI\nLive Application: https://ecovision-ai-frontend.onrender.com")
+    # 2. AUTHORS & AFFILIATION (Official IEEE 2-Column Author Table)
+    author_table = doc.add_table(rows=1, cols=2)
+    author_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    remove_table_borders(author_table)
+
+    # Author 1
+    cell1 = author_table.cell(0, 0)
+    cell1.width = Inches(3.2)
+    set_cell_margins(cell1, 40, 40, 40, 40)
+    p1 = cell1.paragraphs[0]
+    p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r1_name = p1.add_run("Misha Kumari\n")
+    r1_name.font.size = Pt(11)
+    r1_name.font.bold = True
+    r1_affil = p1.add_run(
+        "Dept. of Computer Science and Engineering\n"
+        "Lovely Professional University\n"
+        "Phagwara, Punjab, India\n"
+        "mishajaiswal2007@gmail.com"
+    )
+    r1_affil.font.size = Pt(9.5)
+
+    # Author 2
+    cell2 = author_table.cell(0, 1)
+    cell2.width = Inches(3.2)
+    set_cell_margins(cell2, 40, 40, 40, 40)
+    p2 = cell2.paragraphs[0]
+    p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r2_name = p2.add_run("Ashish Kumar\n")
+    r2_name.font.size = Pt(11)
+    r2_name.font.bold = True
+    r2_affil = p2.add_run(
+        "Dept. of Computer Science and Engineering\n"
+        "Lovely Professional University\n"
+        "Phagwara, Punjab, India\n"
+        "ashish.kumar.cse@lpu.in"
+    )
+    r2_affil.font.size = Pt(9.5)
+
+    # Project Links
+    meta_p = doc.add_paragraph()
+    meta_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    meta_p.paragraph_format.space_before = Pt(8)
+    meta_p.paragraph_format.space_after = Pt(10)
+    meta_run = meta_p.add_run("GitHub: https://github.com/Mishajaiswal0511/EcoVision-AI | Live Deployment: https://ecovision-ai-frontend.onrender.com")
     meta_run.font.size = Pt(9)
     meta_run.font.color.rgb = RGBColor(60, 60, 60)
-
-    doc.add_paragraph().paragraph_format.space_after = Pt(8)
 
     # 3. ABSTRACT & KEYWORDS
     abs_p = doc.add_paragraph()
@@ -419,8 +464,9 @@ def create_ieee_paper():
     # ACKNOWLEDGMENT
     add_heading_1("Acknowledgment")
     add_body_p(
-        "The author expresses sincere gratitude to the project evaluators, academic mentors, and open-source contributors of Ultralytics YOLO, "
-        "PyTorch, and the Central Pollution Control Board (CPCB) documentation teams for foundational benchmarks and policy frameworks."
+        "The authors express sincere gratitude to the faculty mentors and project evaluators at the Department of Computer Science "
+        "and Engineering, Lovely Professional University, Phagwara, for their invaluable guidance. Gratitude is also extended to the open-source "
+        "contributors of Ultralytics YOLO, PyTorch, and the Central Pollution Control Board (CPCB) documentation teams for foundational benchmarks and policy frameworks."
     )
 
     # REFERENCES
@@ -445,8 +491,13 @@ def create_ieee_paper():
         run.font.size = Pt(8.5)
 
     out_path = r'D:\Projects\ml_project\472\EcoVision_AI_Conference_Paper.docx'
-    doc.save(out_path)
-    print(f"SUCCESS: Document created at {out_path} (size: {os.path.getsize(out_path)} bytes)")
+    try:
+        doc.save(out_path)
+        print(f"SUCCESS: Document created at {out_path} (size: {os.path.getsize(out_path)} bytes)")
+    except PermissionError:
+        alt_path = r'D:\Projects\ml_project\472\EcoVision_AI_Conference_Paper_Updated.docx'
+        doc.save(alt_path)
+        print(f"NOTICE: {out_path} is currently open in Word. Saved updated file to {alt_path} (size: {os.path.getsize(alt_path)} bytes)")
 
 if __name__ == "__main__":
     create_ieee_paper()
