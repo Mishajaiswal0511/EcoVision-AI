@@ -233,6 +233,74 @@ class YOLOInferenceService:
         except Exception as e:
             raise InvalidImageError(f"Unexpected error loading image: {e}") from e
 
+    def _apply_containment_suppression(
+        self,
+        detections: List[Dict[str, Any]],
+        containment_thresh: float = 0.80,
+    ) -> List[Dict[str, Any]]:
+        """
+        Suppresses redundant aggregate bounding boxes and cross-class ghost proposals
+        using geometric containment (CA-NMS).
+
+        Formula: IoC(B_dom, B_cand) = Area(B_dom ∩ B_cand) / Area(B_cand) >= 0.80
+        """
+        if len(detections) <= 1:
+            return detections
+
+        def b_area(bbox: Dict[str, float]) -> float:
+            return max(0.0, bbox["x2"] - bbox["x1"]) * max(0.0, bbox["y2"] - bbox["y1"])
+
+        def b_inter(b1: Dict[str, float], b2: Dict[str, float]) -> float:
+            x1 = max(b1["x1"], b2["x1"])
+            y1 = max(b1["y1"], b2["y1"])
+            x2 = min(b1["x2"], b2["x2"])
+            y2 = min(b1["y2"], b2["y2"])
+            return max(0.0, x2 - x1) * max(0.0, y2 - y1)
+
+        # Sort descending by confidence
+        sorted_dets = sorted(detections, key=lambda d: d["confidence"], reverse=True)
+        keep = [True] * len(sorted_dets)
+
+        # 1. Suppress small cross-class ghost proposals inside high-confidence dominant containers
+        for i in range(len(sorted_dets)):
+            if not keep[i]:
+                continue
+            d_dom = sorted_dets[i]
+            if d_dom["confidence"] >= 0.70:
+                a_dom = b_area(d_dom["bounding_box"])
+                for j in range(len(sorted_dets)):
+                    if i == j or not keep[j]:
+                        continue
+                    d_cand = sorted_dets[j]
+                    if d_cand["confidence"] < 0.40 and d_cand["class_name"] != d_dom["class_name"]:
+                        a_cand = b_area(d_cand["bounding_box"])
+                        inter = b_inter(d_dom["bounding_box"], d_cand["bounding_box"])
+                        if a_cand > 0 and (inter / a_cand) >= containment_thresh and (a_cand / a_dom) < 0.20:
+                            keep[j] = False
+
+        # 2. Suppress redundant aggregate envelope boxes of same class when multiple sub-boxes exist
+        for i in range(len(sorted_dets)):
+            if not keep[i]:
+                continue
+            di = sorted_dets[i]
+            ai = b_area(di["bounding_box"])
+            contained_sub_boxes = 0
+            for j in range(len(sorted_dets)):
+                if i == j or not keep[j]:
+                    continue
+                dj = sorted_dets[j]
+                if di["class_name"] == dj["class_name"]:
+                    aj = b_area(dj["bounding_box"])
+                    if aj < ai:
+                        inter = b_inter(di["bounding_box"], dj["bounding_box"])
+                        if aj > 0 and (inter / aj) >= containment_thresh:
+                            contained_sub_boxes += 1
+
+            if contained_sub_boxes >= 2 and di["confidence"] < 0.45:
+                keep[i] = False
+
+        return [sorted_dets[i] for i in range(len(sorted_dets)) if keep[i]]
+
     def predict(
         self,
         image_input: Union[str, Path, bytes, Image.Image, np.ndarray],
@@ -240,6 +308,7 @@ class YOLOInferenceService:
         iou: float = 0.45,
         imgsz: int = 800,
         agnostic_nms: bool = False,
+        containment_suppression: bool = True,
     ) -> Dict[str, Any]:
         """
         Runs object detection inference on an input image.
@@ -248,8 +317,9 @@ class YOLOInferenceService:
             image_input: File path, bytes, PIL Image, or numpy array.
             conf: Minimum confidence threshold (default 0.15).
             iou: IoU threshold for NMS (default 0.45).
-            imgsz: Input inference resolution (default 640).
+            imgsz: Input inference resolution (default 800).
             agnostic_nms: Whether to use class-agnostic NMS (default False).
+            containment_suppression: Whether to apply Containment-Aware NMS (CA-NMS, default True).
 
         Returns:
             Structured dictionary matching the EcoVision detection schema.
@@ -304,6 +374,10 @@ class YOLOInferenceService:
                         "y2": round(y2, 1),
                     },
                 })
+
+        # Apply Containment-Aware Suppression (CA-NMS) to eliminate nested redundant boxes and cross-class ghosts
+        if containment_suppression and len(detections) > 1:
+            detections = self._apply_containment_suppression(detections)
 
         # Diagnostic logging
         conf_scores = [d["confidence"] for d in detections]

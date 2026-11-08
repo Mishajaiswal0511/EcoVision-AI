@@ -217,17 +217,18 @@ def create_ieee_paper():
     t1_run.font.size = Pt(9)
     t1_run.bold = True
 
-    t1 = doc.add_table(rows=8, cols=6)
+    t1 = doc.add_table(rows=9, cols=6)
     t1.alignment = WD_TABLE_ALIGNMENT.CENTER
     headers = ["Class ID", "Class Name", "Total", "Train", "Validation", "Statutory Municipal Bin"]
     data_t1 = [
-        ["0", "Plastic", "13,103", "9,458", "3,645", "Blue Bin (Dry Recyclable)"],
-        ["1", "Metal", "5,189", "3,745", "1,444", "Blue Bin (Dry Recyclable)"],
-        ["2", "Cardboard", "4,498", "3,245", "1,253", "Blue Bin (Dry Recyclable)"],
-        ["3", "Glass", "4,411", "3,182", "1,229", "Blue Bin (Dry Recyclable)"],
-        ["4", "Paper", "4,528", "3,268", "1,260", "Blue Bin (Dry Recyclable)"],
-        ["5", "General Trash", "3,813", "2,752", "1,061", "Black/Grey Bin (Non-Recyclable)"],
+        ["0", "Plastic", "8,642", "6,362", "2,280", "Blue Bin (Dry Recyclable)"],
+        ["1", "Metal", "6,545", "4,883", "1,662", "Blue Bin (Dry Recyclable)"],
+        ["2", "Cardboard", "4,995", "3,563", "1,432", "Blue Bin (Dry Recyclable)"],
+        ["3", "Glass", "8,142", "5,908", "2,234", "Blue Bin (Dry Recyclable)"],
+        ["4", "Paper", "4,649", "3,392", "1,257", "Blue Bin (Dry Recyclable)"],
+        ["5", "General Trash", "2,569", "1,926", "643", "Black/Grey Bin (Non-Recyclable)"],
         ["6", "Organic", "2,766", "1,542", "1,224", "Green Bin (Wet Compostable)"],
+        ["Total", "All Classes", "38,308", "27,576", "10,732", "3-Stream Segregation"],
     ]
 
     for col_idx, h in enumerate(headers):
@@ -245,6 +246,9 @@ def create_ieee_paper():
             cell.text = val
             p = cell.paragraphs[0]
             p.runs[0].font.size = Pt(8.5)
+            if row_idx == len(data_t1) - 1:
+                p.runs[0].font.bold = True
+                set_cell_shading(cell, "F2F2F2")
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col_idx in [0, 2, 3, 4] else WD_ALIGN_PARAGRAPH.LEFT
             set_cell_margins(cell, 60, 60, 80, 80)
 
@@ -446,3 +450,4 @@ def create_ieee_paper():
 
 if __name__ == "__main__":
     create_ieee_paper()
+

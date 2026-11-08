@@ -94,14 +94,14 @@ To eliminate data leakage, perceptual scene hashing was applied across all raw c
 TABLE I: EcoVision AI V5 Dataset Instance Distribution
 | Class ID | Class Name | Total Instances | Training Instances | Validation Instances | Statutory Bin Alignment |
 | :---: | :--- | :---: | :---: | :---: | :--- |
-| 0 | Plastic | 13,103 | 9,458 | 3,645 | Blue Bin (Dry Recyclable) |
-| 1 | Metal | 5,189 | 3,745 | 1,444 | Blue Bin (Dry Recyclable) |
-| 2 | Cardboard | 4,498 | 3,245 | 1,253 | Blue Bin (Dry Recyclable) |
-| 3 | Glass | 4,411 | 3,182 | 1,229 | Blue Bin (Dry Recyclable) |
-| 4 | Paper | 4,528 | 3,268 | 1,260 | Blue Bin (Dry Recyclable) |
-| 5 | General Trash | 3,813 | 2,752 | 1,061 | Black/Grey Bin (Non-Recyclable) |
+| 0 | Plastic | 8,642 | 6,362 | 2,280 | Blue Bin (Dry Recyclable) |
+| 1 | Metal | 6,545 | 4,883 | 1,662 | Blue Bin (Dry Recyclable) |
+| 2 | Cardboard | 4,995 | 3,563 | 1,432 | Blue Bin (Dry Recyclable) |
+| 3 | Glass | 8,142 | 5,908 | 2,234 | Blue Bin (Dry Recyclable) |
+| 4 | Paper | 4,649 | 3,392 | 1,257 | Blue Bin (Dry Recyclable) |
+| 5 | General Trash | 2,569 | 1,926 | 643 | Black/Grey Bin (Non-Recyclable) |
 | 6 | Organic | 2,766 | 1,542 | 1,224 | Green Bin (Wet Compostable) |
-| — | **Total** | **38,308** | **27,192** | **11,116** | **3-Stream Segregation** |
+| — | **Total** | **38,308** | **27,576** | **10,732** | **3-Stream Segregation** |
 
 The consolidated dataset comprises **11,249 images** (8,242 training, 3,007 validation). To prevent false alarms on sterile municipal sorting conveyor surfaces, **800 hard-negative background images** (7.1%) containing zero refuse annotations were incorporated into the training set.
 
