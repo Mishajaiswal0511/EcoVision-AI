@@ -1,36 +1,17 @@
-import os
-from docx import Document
+import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
-from docx.oxml import OxmlElement, parse_xml
+from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml import parse_xml
 from docx.oxml.ns import nsdecls, qn
+import os
 
-def create_ieee_paper():
-    doc = Document()
+def create_ieee_2col_paper():
+    doc = docx.Document()
 
-    # Page Margins: Standard IEEE 0.75 inch (top, bottom, left, right)
-    for section in doc.sections:
-        section.top_margin = Inches(0.75)
-        section.bottom_margin = Inches(0.75)
-        section.left_margin = Inches(0.75)
-        section.right_margin = Inches(0.75)
-
-    # Base Style: Times New Roman, 10pt
-    style = doc.styles['Normal']
-    font = style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(10)
-    font.color.rgb = RGBColor(0, 0, 0)
-
-    def set_cell_margins(cell, top=100, bottom=100, left=150, right=150):
+    def set_cell_margins(cell, top=60, bottom=60, left=80, right=80):
         tcPr = cell._tc.get_or_add_tcPr()
-        tcMar = OxmlElement('w:tcMar')
-        for m, val in [('w:top', top), ('w:bottom', bottom), ('w:left', left), ('w:right', right)]:
-            node = OxmlElement(m)
-            node.set(qn('w:w'), str(val))
-            node.set(qn('w:type'), 'dxa')
-            tcMar.append(node)
+        tcMar = parse_xml(f'<w:tcMar {nsdecls("w")}><w:top w:w="{top}" w:type="dxa"/><w:bottom w:w="{bottom}" w:type="dxa"/><w:left w:w="{left}" w:type="dxa"/><w:right w:w="{right}" w:type="dxa"/></w:tcMar>')
         tcPr.append(tcMar)
 
     def set_cell_shading(cell, color_hex):
@@ -50,6 +31,31 @@ def create_ieee_paper():
         )
         table._tbl.tblPr.append(borders)
 
+    def set_section_columns(section, num_cols=2, space_pt=18):
+        sectPr = section._sectPr
+        for c in sectPr.findall(qn('w:cols')):
+            sectPr.remove(c)
+        space_dxa = int(space_pt * 20)
+        cols_xml = f'<w:cols {nsdecls("w")} w:num="{num_cols}" w:space="{space_dxa}"/>'
+        sectPr.append(parse_xml(cols_xml))
+
+    def add_continuous_section(num_cols=2, space_pt=18):
+        sec = doc.add_section(docx.enum.section.WD_SECTION.CONTINUOUS)
+        sec.top_margin = Inches(0.75)
+        sec.bottom_margin = Inches(1.0)
+        sec.left_margin = Inches(0.625)
+        sec.right_margin = Inches(0.625)
+        set_section_columns(sec, num_cols=num_cols, space_pt=space_pt)
+        return sec
+
+    # SECTION 1: Page margins (Title & Authors - 1 Column Span)
+    s1 = doc.sections[0]
+    s1.top_margin = Inches(0.75)
+    s1.bottom_margin = Inches(1.0)
+    s1.left_margin = Inches(0.625)
+    s1.right_margin = Inches(0.625)
+    set_section_columns(s1, num_cols=1)
+
     # 1. PAPER TITLE
     title_p = doc.add_paragraph()
     title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -60,18 +66,19 @@ def create_ieee_paper():
     title_run.font.size = Pt(20)
     title_run.font.bold = True
 
-    # 2. AUTHORS & AFFILIATION (Official IEEE 2-Column Author Table)
+    # 2. AUTHORS & AFFILIATION (IEEE 2-Column Author Table)
     author_table = doc.add_table(rows=1, cols=2)
     author_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     remove_table_borders(author_table)
 
     # Author 1
     cell1 = author_table.cell(0, 0)
-    cell1.width = Inches(3.2)
+    cell1.width = Inches(3.4)
     set_cell_margins(cell1, 40, 40, 40, 40)
     p1 = cell1.paragraphs[0]
     p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r1_name = p1.add_run("Misha Kumari\n")
+    r1_name.font.name = 'Times New Roman'
     r1_name.font.size = Pt(11)
     r1_name.font.bold = True
     r1_affil = p1.add_run(
@@ -80,15 +87,17 @@ def create_ieee_paper():
         "Phagwara, Punjab, India\n"
         "mishajaiswal2007@gmail.com"
     )
+    r1_affil.font.name = 'Times New Roman'
     r1_affil.font.size = Pt(9.5)
 
     # Author 2
     cell2 = author_table.cell(0, 1)
-    cell2.width = Inches(3.2)
+    cell2.width = Inches(3.4)
     set_cell_margins(cell2, 40, 40, 40, 40)
     p2 = cell2.paragraphs[0]
     p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r2_name = p2.add_run("Ashish Kumar\n")
+    r2_name.font.name = 'Times New Roman'
     r2_name.font.size = Pt(11)
     r2_name.font.bold = True
     r2_affil = p2.add_run(
@@ -97,27 +106,67 @@ def create_ieee_paper():
         "Phagwara, Punjab, India\n"
         "ashish.kumar.cse@lpu.in"
     )
+    r2_affil.font.name = 'Times New Roman'
     r2_affil.font.size = Pt(9.5)
 
     # Project Links
     meta_p = doc.add_paragraph()
     meta_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     meta_p.paragraph_format.space_before = Pt(8)
-    meta_p.paragraph_format.space_after = Pt(10)
+    meta_p.paragraph_format.space_after = Pt(12)
     meta_run = meta_p.add_run("GitHub: https://github.com/Mishajaiswal0511/EcoVision-AI | Live Deployment: https://ecovision-ai-frontend.onrender.com")
+    meta_run.font.name = 'Times New Roman'
     meta_run.font.size = Pt(9)
     meta_run.font.color.rgb = RGBColor(60, 60, 60)
 
-    # 3. ABSTRACT & KEYWORDS
+    # ========================================================
+    # SWITCH TO 2-COLUMN SECTION (IEEE STANDARD DIVIDED PAGE)
+    # ========================================================
+    add_continuous_section(num_cols=2, space_pt=18)
+
+    def add_body_p(text, space_after=5):
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p.paragraph_format.line_spacing = 1.05
+        p.paragraph_format.space_after = Pt(space_after)
+        run = p.add_run(text)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(10)
+        return p
+
+    def add_heading_1(text):
+        p = doc.add_paragraph()
+        p.paragraph_format.space_before = Pt(12)
+        p.paragraph_format.space_after = Pt(3)
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r = p.add_run(text.upper())
+        r.font.name = 'Times New Roman'
+        r.bold = True
+        r.font.size = Pt(10)
+        return p
+
+    def add_heading_2(text):
+        p = doc.add_paragraph()
+        p.paragraph_format.space_before = Pt(8)
+        p.paragraph_format.space_after = Pt(2)
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        r = p.add_run(text)
+        r.font.name = 'Times New Roman'
+        r.italic = True
+        r.bold = True
+        r.font.size = Pt(9.5)
+        return p
+
+    # ABSTRACT & KEYWORDS (Placed at top of Left Column in 2-Column layout)
     abs_p = doc.add_paragraph()
     abs_p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-    abs_p.paragraph_format.left_indent = Inches(0.4)
-    abs_p.paragraph_format.right_indent = Inches(0.4)
-    abs_p.paragraph_format.space_after = Pt(6)
-    
+    abs_p.paragraph_format.line_spacing = 1.05
+    abs_p.paragraph_format.space_after = Pt(5)
     r_abs_label = abs_p.add_run("Abstract—")
+    r_abs_label.font.name = 'Times New Roman'
     r_abs_label.bold = True
     r_abs_label.italic = True
+    r_abs_label.font.size = Pt(9.5)
     r_abs_text = abs_p.add_run(
         "Efficient municipal solid waste management (MSW) relies heavily on source-level segregation. "
         "However, manual sorting remains labor-intensive and error-prone, while existing computer vision approaches struggle "
@@ -132,49 +181,21 @@ def create_ieee_paper():
         "fully integrated into a production stack featuring a non-blocking FastAPI backend, a responsive React 19/Tailwind frontend, "
         "multimodal Gemini 3.5 fallback, and statutory Indian municipal segregation guidance aligned with MoEFCC and CPCB Solid Waste Management Rules."
     )
-    r_abs_text.font.size = Pt(9.5)
+    r_abs_text.font.name = 'Times New Roman'
+    r_abs_text.font.size = Pt(9)
 
     kw_p = doc.add_paragraph()
     kw_p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-    kw_p.paragraph_format.left_indent = Inches(0.4)
-    kw_p.paragraph_format.right_indent = Inches(0.4)
-    kw_p.paragraph_format.space_after = Pt(14)
+    kw_p.paragraph_format.line_spacing = 1.05
+    kw_p.paragraph_format.space_after = Pt(10)
     r_kw_label = kw_p.add_run("Keywords—")
+    r_kw_label.font.name = 'Times New Roman'
     r_kw_label.bold = True
     r_kw_label.italic = True
+    r_kw_label.font.size = Pt(9.5)
     r_kw_text = kw_p.add_run("Waste Segregation, Object Detection, YOLO11s, Computer Vision, Non-Maximum Suppression, Containment-Aware Inference, Municipal Solid Waste Management (MSWM), Edge ML.")
-    r_kw_text.font.size = Pt(9.5)
-
-    def add_heading_1(text):
-        p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(14)
-        p.paragraph_format.space_after = Pt(4)
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        r = p.add_run(text.upper())
-        r.bold = True
-        r.font.size = Pt(10.5)
-        return p
-
-    def add_heading_2(text):
-        p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(10)
-        p.paragraph_format.space_after = Pt(3)
-        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        r = p.add_run(text)
-        r.italic = True
-        r.bold = True
-        r.font.size = Pt(10)
-        return p
-
-    def add_body_p(text):
-        p = doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p.paragraph_format.space_before = Pt(0)
-        p.paragraph_format.space_after = Pt(6)
-        p.paragraph_format.line_spacing = 1.15
-        r = p.add_run(text)
-        r.font.size = Pt(10)
-        return p
+    r_kw_text.font.name = 'Times New Roman'
+    r_kw_text.font.size = Pt(9)
 
     # SECTION I
     add_heading_1("I. Introduction")
@@ -189,31 +210,28 @@ def create_ieee_paper():
         "Automated visual sorting offers a scalable intervention. Nevertheless, deploying deep learning models in real-world municipal "
         "environments poses severe technical challenges:"
     )
-    p = doc.add_paragraph(style='List Bullet')
-    p.paragraph_format.space_after = Pt(2)
-    p.add_run("Severe Refuse Clutter and Container Nesting: ").bold = True
-    p.add_run("Traditional Non-Maximum Suppression (NMS) relies on Intersection-over-Union (IoU). In dense garbage piles where smaller items sit entirely inside large containers (e.g., small cartons inside corrugated shipping boxes), IoU remains mathematically bounded below 0.25, allowing duplicate redundant envelopes to escape suppression.")
-
-    p = doc.add_paragraph(style='List Bullet')
-    p.paragraph_format.space_after = Pt(2)
-    p.add_run("Ghost Cross-Class Predictions: ").bold = True
-    p.add_run("Transparent and reflective refuse (such as crushed bottles or broken glass) frequently triggers overlapping multi-class proposals (e.g., simultaneously predicting glass and metal on bottle threads).")
-
-    p = doc.add_paragraph(style='List Bullet')
-    p.paragraph_format.space_after = Pt(2)
-    p.add_run("Hardware Constraints: ").bold = True
-    p.add_run("Municipal sorting facilities and consumer devices lack high-power discrete GPUs, demanding robust sub-200 ms inference on commodity multi-core CPUs.")
-
-    p = doc.add_paragraph(style='List Bullet')
-    p.paragraph_format.space_after = Pt(6)
-    p.add_run("Statutory Disconnect: ").bold = True
-    p.add_run("Standard academic models output arbitrary object labels without actionable disposal rules, omitting critical municipal steps such as mandatory dry rinsing or sanitary red-marked newspaper wrapping.")
-
+    add_body_p(
+        "1) Severe Refuse Clutter and Container Nesting: Traditional Non-Maximum Suppression (NMS) relies on Intersection-over-Union (IoU). "
+        "In dense garbage piles where smaller items sit entirely inside large containers (e.g., small cartons inside corrugated shipping boxes), "
+        "IoU remains mathematically bounded below 0.25, allowing duplicate redundant envelopes to escape suppression."
+    )
+    add_body_p(
+        "2) Ghost Cross-Class Predictions: Transparent and reflective refuse (such as crushed bottles or broken glass) frequently triggers "
+        "overlapping multi-class proposals (e.g., simultaneously predicting glass and metal on bottle threads)."
+    )
+    add_body_p(
+        "3) Hardware Constraints: Municipal sorting facilities and consumer devices lack high-power discrete GPUs, demanding robust "
+        "sub-200 ms inference on commodity multi-core CPUs."
+    )
+    add_body_p(
+        "4) Statutory Disconnect: Standard academic models output arbitrary object labels without actionable disposal rules, omitting "
+        "critical municipal steps such as mandatory dry rinsing or sanitary red-marked newspaper wrapping."
+    )
     add_body_p(
         "To solve these challenges, we present EcoVision AI, a lightweight, production-stabilized vision framework featuring a statutory "
         "7-class taxonomy trained on 11,249 scene-deduplicated images, Containment-Aware Suppression (CA-NMS) to resolve geometric containment "
-        "blind spots, ultra-fast CPU inference (171.93 ms @ 800x800, throughput of 5.82 FPS), and a full-stack cloud deployment on Render "
-        "with web camera streaming, interactive confidence tuning (5% to 95%), and municipal compliance mapping."
+        "blind spots, ultra-fast CPU inference (171.93 ms @ 800x800, throughput of 5.82 FPS), and a full-stack cloud deployment on Render with web camera "
+        "streaming, interactive confidence tuning (5% to 95%), and municipal compliance mapping."
     )
 
     # SECTION II
@@ -228,11 +246,11 @@ def create_ieee_paper():
     add_heading_2("B. Architectural Overview")
     add_body_p(
         "EcoVision AI uses an asymmetrical two-tier architecture: (1) Primary Edge Core (YOLO11s V5), a compact single-stage object detector "
-        "incorporating C3k2 building blocks, Spatial Pyramid Pooling Fast (SPPF), and decoupled prediction heads; (2) Containment-Aware "
-        "Inference Engine, eliminating redundant parent-child bounding envelopes and cross-class ghost proposals; (3) Statutory Disposal Engine, "
-        "mapping detected classes directly to Government of India SWM Rules 2026; and (4) Multimodal Fail-Safe Fallback: if out-of-distribution "
-        "(OOD) objects register zero detections below the operational confidence threshold, an asynchronous multimodal vision call "
-        "(Gemini 3.5 Flash-Lite with a strict 25-second deadline) localizes up to 8 prominent objects to prevent user-facing system failure."
+        "incorporating C3k2 building blocks, Spatial Pyramid Pooling Fast (SPPF), and decoupled prediction heads; (2) Containment-Aware Inference Engine, "
+        "eliminating redundant parent-child bounding envelopes and cross-class ghost proposals; (3) Statutory Disposal Engine, mapping detected classes "
+        "directly to Government of India SWM Rules 2026; and (4) Multimodal Fail-Safe Fallback: if out-of-distribution (OOD) objects register "
+        "zero detections below the operational confidence threshold, an asynchronous multimodal vision call (Gemini 3.5 Flash-Lite with a strict "
+        "25-second deadline) localizes up to 8 prominent objects to prevent user-facing system failure."
     )
 
     # SECTION III
@@ -253,12 +271,17 @@ def create_ieee_paper():
         "containing zero refuse annotations were incorporated into the training set to prevent false alarms on sterile sorting conveyors."
     )
 
-    # TABLE I
+    # ========================================================
+    # SPAN TABLE I ACROSS FULL PAGE (1 COLUMN SECTION)
+    # ========================================================
+    add_continuous_section(num_cols=1)
+
     t1_p = doc.add_paragraph()
     t1_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     t1_p.paragraph_format.space_before = Pt(8)
     t1_p.paragraph_format.space_after = Pt(3)
     t1_run = t1_p.add_run("TABLE I: EcoVision AI V5 Dataset Instance Distribution and Statutory Alignment")
+    t1_run.font.name = 'Times New Roman'
     t1_run.font.size = Pt(9)
     t1_run.bold = True
 
@@ -279,10 +302,11 @@ def create_ieee_paper():
     for col_idx, h in enumerate(headers):
         cell = t1.cell(0, col_idx)
         cell.text = h
+        cell.paragraphs[0].runs[0].font.name = 'Times New Roman'
         cell.paragraphs[0].runs[0].font.size = Pt(8.5)
         cell.paragraphs[0].runs[0].font.bold = True
         cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        set_cell_margins(cell, 80, 80, 100, 100)
+        set_cell_margins(cell, 60, 60, 80, 80)
         set_cell_shading(cell, "EAEAEA")
 
     for row_idx, row_data in enumerate(data_t1):
@@ -290,12 +314,18 @@ def create_ieee_paper():
             cell = t1.cell(row_idx + 1, col_idx)
             cell.text = val
             p = cell.paragraphs[0]
+            p.runs[0].font.name = 'Times New Roman'
             p.runs[0].font.size = Pt(8.5)
             if row_idx == len(data_t1) - 1:
                 p.runs[0].font.bold = True
                 set_cell_shading(cell, "F2F2F2")
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col_idx in [0, 2, 3, 4] else WD_ALIGN_PARAGRAPH.LEFT
-            set_cell_margins(cell, 60, 60, 80, 80)
+            set_cell_margins(cell, 50, 50, 70, 70)
+
+    # ========================================================
+    # RESUME 2-COLUMN SECTION
+    # ========================================================
+    add_continuous_section(num_cols=2, space_pt=18)
 
     # SECTION IV
     add_heading_1("IV. Methodology and Containment-Aware Adaptive NMS (CA-NMS)")
@@ -317,8 +347,8 @@ def create_ieee_paper():
         "CA-NMS applies a two-stage geometric filter: (1) Cross-Class Ghost Suppression: If dominant detection B_dom has high confidence "
         "(conf >= 0.70) and candidate proposal B_cand has lower confidence (conf < 0.40), with differing classes (C_cand != C_dom), "
         "B_cand is suppressed if IoC(B_dom, B_cand) >= 0.80 and Area(B_cand) / Area(B_dom) < 0.20; (2) Same-Class Aggregate Envelope "
-        "Suppression: For overlapping proposals of identical class (C_i = C_j), if a large low-confidence proposal B_i (conf < 0.45) contains "
-        "two or more distinct sub-boxes (IoC >= 0.80), B_i is suppressed as a redundant envelope, preserving granular item-level detections."
+        "Suppression: For overlapping proposals of identical class (C_i = C_j), if a large low-confidence proposal B_i (conf < 0.45) "
+        "contains two or more distinct sub-boxes (IoC >= 0.80), B_i is suppressed as a redundant envelope, preserving granular item-level detections."
     )
 
     # SECTION V
@@ -330,18 +360,23 @@ def create_ieee_paper():
         "M3 (V5 Experiment A, 7-class baseline @ 640x640), and M4 (V5 Winning Candidate, 7-class @ 800x800)."
     )
 
-    # TABLE II
+    # ========================================================
+    # SPAN TABLE II ACROSS FULL PAGE (1 COLUMN SECTION)
+    # ========================================================
+    add_continuous_section(num_cols=1)
+
     t2_p = doc.add_paragraph()
     t2_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     t2_p.paragraph_format.space_before = Pt(8)
     t2_p.paragraph_format.space_after = Pt(3)
-    t2_run = t2_p.add_run("TABLE II: Multi-Model Evaluation and Detection Metrics")
+    t2_run = t2_p.add_run("TABLE II: Multi-Model Evaluation and Detection Metrics Across Iterations")
+    t2_run.font.name = 'Times New Roman'
     t2_run.font.size = Pt(9)
     t2_run.bold = True
 
     t2 = doc.add_table(rows=5, cols=8)
     t2.alignment = WD_TABLE_ALIGNMENT.CENTER
-    headers_t2 = ["Model", "Arch", "Res", "Classes", "Precision", "Recall", "mAP@50", "CPU Latency"]
+    headers_2 = ["Model", "Arch", "Res", "Classes", "Precision", "Recall", "mAP@50", "CPU Latency"]
     data_t2 = [
         ["M1 (V4 Baseline)", "YOLO11s", "640", "6", "0.642", "0.488", "0.521", "137.02 ms"],
         ["M2 (High-Cap)", "YOLO11m", "960", "6", "0.694", "0.531", "0.589", "448.15 ms"],
@@ -349,13 +384,14 @@ def create_ieee_paper():
         ["M4 (Winning Release)", "YOLO11s", "800", "7", "0.680", "0.514", "0.573", "171.93 ms"],
     ]
 
-    for col_idx, h in enumerate(headers_t2):
+    for col_idx, h in enumerate(headers_2):
         cell = t2.cell(0, col_idx)
         cell.text = h
+        cell.paragraphs[0].runs[0].font.name = 'Times New Roman'
         cell.paragraphs[0].runs[0].font.size = Pt(8.5)
         cell.paragraphs[0].runs[0].font.bold = True
         cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        set_cell_margins(cell, 80, 80, 80, 80)
+        set_cell_margins(cell, 60, 60, 80, 80)
         set_cell_shading(cell, "EAEAEA")
 
     for row_idx, row_data in enumerate(data_t2):
@@ -363,50 +399,64 @@ def create_ieee_paper():
             cell = t2.cell(row_idx + 1, col_idx)
             cell.text = val
             p = cell.paragraphs[0]
+            p.runs[0].font.name = 'Times New Roman'
             p.runs[0].font.size = Pt(8.5)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col_idx not in [0] else WD_ALIGN_PARAGRAPH.LEFT
-            set_cell_margins(cell, 60, 60, 80, 80)
+            if row_idx == 3:
+                p.runs[0].font.bold = True
+                set_cell_shading(cell, "F2F2F2")
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            set_cell_margins(cell, 50, 50, 70, 70)
+
+    # ========================================================
+    # RESUME 2-COLUMN SECTION
+    # ========================================================
+    add_continuous_section(num_cols=2, space_pt=18)
 
     add_body_p(
-        "M4 achieved a +48.6% relative gain in mAP@50 on General Trash compared to 640px baselines, demonstrating that 800px spatial resolution "
-        "is critical for resolving crumpled multilayer packaging and small litter."
+        "M4 achieved a +48.6% relative gain in mAP@50 on General Trash compared to 640px baselines, demonstrating that 800px "
+        "spatial resolution is critical for resolving crumpled multilayer packaging and small litter."
     )
     add_heading_2("B. Multi-Model Ensemble Investigation")
     add_body_p(
-        "We implemented and benchmarked a sequential multi-model ensemble combining M1, M2, M3, and M4 using majority voting. As detailed in "
-        "our experimental audit: (1) Taxonomy Mismatch: M1 and M2 possess only 6 classes and structurally suppressed valid organic detections; "
-        "(2) Spatial Drift: Bounding box coordinate jitter across models dropped legitimate low-confidence garbage detections; and (3) Severe "
-        "Latency Penalty: Sequential forward passes consumed > 850 ms, representing a 5.3x latency penalty. Consequently, ensembling was rejected "
-        "in favor of the optimized standalone M4 model with CA-NMS."
+        "We implemented and benchmarked a sequential multi-model ensemble combining M1, M2, M3, and M4 using majority voting. "
+        "As detailed in our experimental audit: (1) Taxonomy Mismatch: M1 and M2 possess only 6 classes and structurally suppressed valid organic detections; "
+        "(2) Spatial Drift: Bounding box coordinate jitter across models dropped legitimate low-confidence garbage detections; and "
+        "(3) Severe Latency Penalty: Sequential forward passes consumed > 850 ms, representing a 5.3x latency penalty. "
+        "Consequently, ensembling was rejected in favor of the optimized standalone M4 model with CA-NMS."
     )
     add_heading_2("C. Host Hardware CPU Benchmarks")
     add_body_p(
-        "Benchmarked directly on host hardware (AMD Ryzen 7 7735U CPU @ 2.7 GHz, 8 Cores / 16 Threads, 16 GB DDR5 RAM, Float32 inference across "
-        "100 validation cycles): Operational Mode (800x800) achieved 171.93 ms mean latency (170.77 ms median, 186.22 ms P95, 5.82 FPS throughput) "
-        "with 593.96 MB peak resident RAM. Fast Mode (640x640) achieved 137.02 ms mean latency (7.30 FPS) with 518.00 MB peak RAM. The model occupies "
-        "less than 600 MB of system RAM, validating its feasibility for municipal sorting computers without discrete GPU acceleration."
+        "Benchmarked directly on host hardware (AMD Ryzen 7 7735U CPU @ 2.7 GHz, 8 Cores / 16 Threads, 16 GB DDR5 RAM, Float32 inference across 100 validation cycles): "
+        "Operational Mode (800x800) achieved 171.93 ms mean latency (170.77 ms median, 186.22 ms P95, 5.82 FPS throughput) with 593.96 MB peak resident RAM. "
+        "Fast Mode (640x640) achieved 137.02 ms mean latency (7.30 FPS) with 518.00 MB peak RAM. The model occupies less than 600 MB of system RAM, "
+        "validating its feasibility for municipal sorting computers without discrete GPU acceleration."
     )
 
     # SECTION VI
     add_heading_1("VI. Statutory Municipal Solid Waste Integration")
     add_body_p(
-        "EcoVision AI connects raw object detection with the Solid Waste Management Rules 2026 framed by the Ministry of Environment, Forest "
-        "and Climate Change (MoEFCC) and Central Pollution Control Board (CPCB):"
+        "EcoVision AI connects raw object detection with the Solid Waste Management Rules 2026 framed by the Ministry of Environment, "
+        "Forest and Climate Change (MoEFCC) and Central Pollution Control Board (CPCB):"
     )
 
-    # TABLE IV
-    t4_p = doc.add_paragraph()
-    t4_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    t4_p.paragraph_format.space_before = Pt(8)
-    t4_p.paragraph_format.space_after = Pt(3)
-    t4_run = t4_p.add_run("TABLE III: Statutory Segregation and Municipal Disposal Rules")
-    t4_run.font.size = Pt(9)
-    t4_run.bold = True
+    # ========================================================
+    # SPAN TABLE III ACROSS FULL PAGE (1 COLUMN SECTION)
+    # ========================================================
+    add_continuous_section(num_cols=1)
 
-    t4 = doc.add_table(rows=8, cols=4)
-    t4.alignment = WD_TABLE_ALIGNMENT.CENTER
-    headers_t4 = ["Category", "India Bin Color", "Stream Designation", "Statutory Pre-Disposal Requirements"]
-    data_t4 = [
+    t3_p = doc.add_paragraph()
+    t3_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    t3_p.paragraph_format.space_before = Pt(8)
+    t3_p.paragraph_format.space_after = Pt(3)
+    t3_run = t3_p.add_run("TABLE III: Statutory Segregation and Municipal Disposal Rules")
+    t3_run.font.name = 'Times New Roman'
+    t3_run.font.size = Pt(9)
+    t3_run.bold = True
+
+    t3 = doc.add_table(rows=8, cols=4)
+    t3.alignment = WD_TABLE_ALIGNMENT.CENTER
+    headers_3 = ["Category", "India Bin Color", "Stream Designation", "Statutory Pre-Disposal Requirements"]
+    data_t3 = [
         ["Plastic", "Blue", "Dry Recyclable", "Empty liquids; rinse food oils; flatten bottles to conserve volume."],
         ["Metal", "Blue", "Dry Recyclable", "Rinse food tins and beverage cans; compress clean aluminum foil."],
         ["Cardboard", "Blue", "Dry Recyclable", "Flatten cartons; remove adhesive tape; exclude grease-stained areas."],
@@ -416,23 +466,30 @@ def create_ieee_paper():
         ["Organic", "Green", "Wet Compostable", "Segregate from plastic liners; deposit directly into wet waste composting bins."],
     ]
 
-    for col_idx, h in enumerate(headers_t4):
-        cell = t4.cell(0, col_idx)
+    for col_idx, h in enumerate(headers_3):
+        cell = t3.cell(0, col_idx)
         cell.text = h
+        cell.paragraphs[0].runs[0].font.name = 'Times New Roman'
         cell.paragraphs[0].runs[0].font.size = Pt(8.5)
         cell.paragraphs[0].runs[0].font.bold = True
         cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        set_cell_margins(cell, 80, 80, 80, 80)
+        set_cell_margins(cell, 60, 60, 80, 80)
         set_cell_shading(cell, "EAEAEA")
 
-    for row_idx, row_data in enumerate(data_t4):
+    for row_idx, row_data in enumerate(data_t3):
         for col_idx, val in enumerate(row_data):
-            cell = t4.cell(row_idx + 1, col_idx)
+            cell = t3.cell(row_idx + 1, col_idx)
             cell.text = val
             p = cell.paragraphs[0]
+            p.runs[0].font.name = 'Times New Roman'
             p.runs[0].font.size = Pt(8.5)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col_idx in [1] else WD_ALIGN_PARAGRAPH.LEFT
-            set_cell_margins(cell, 60, 60, 80, 80)
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col_idx in [1, 2] else WD_ALIGN_PARAGRAPH.LEFT
+            set_cell_margins(cell, 50, 50, 70, 70)
+
+    # ========================================================
+    # RESUME 2-COLUMN SECTION (FINAL SECTIONS)
+    # ========================================================
+    add_continuous_section(num_cols=2, space_pt=18)
 
     # SECTION VII
     add_heading_1("VII. Full-Stack Cloud Deployment and Production Architecture")
@@ -443,12 +500,12 @@ def create_ieee_paper():
         "and Uvicorn; and Public Repository hosted at https://github.com/Mishajaiswal0511/EcoVision-AI."
     )
     add_body_p(
-        "Key operational enhancements include: (1) Client-Side Canvas Compression: Uploaded camera files exceeding 350 KB are downscaled in browser "
-        "memory via HTML5 Canvas to a maximum dimension of 1024px JPEG, reducing upload bandwidth from 12 MB to ~150 KB and accelerating network "
-        "transfer by 98%; (2) Direct Confidence Parameterization: Removed internal low-threshold probing overhead, allowing the CPU forward "
-        "pass to execute strictly at the user-defined threshold (conf in [0.05, 0.95]); (3) Anti-Collision Label Badge Engine: Implemented image "
-        "boundary clamping and vertical label collision avoidance to prevent overlapping text badges in dense piles; and (4) Interactive Gamification "
-        "(EcoQuest): Integrated a client-side waste sorting educational quiz module with local storage score tracking to drive consumer behavioral change."
+        "Key operational enhancements include: (1) Client-Side Canvas Compression: Uploaded camera files exceeding 350 KB are downscaled "
+        "in browser memory via HTML5 Canvas to a maximum dimension of 1024px JPEG, reducing upload bandwidth from 12 MB to ~150 KB and "
+        "accelerating network transfer by 98%; (2) Direct Confidence Parameterization: Removed internal low-threshold probing overhead, "
+        "allowing the CPU forward pass to execute strictly at the user-defined threshold (conf in [0.05, 0.95]); (3) Anti-Collision Label Badge Engine: "
+        "Implemented image boundary clamping and vertical label collision avoidance to prevent overlapping text badges in dense piles; and "
+        "(4) Interactive Gamification (EcoQuest): Integrated a client-side waste sorting educational quiz module with local storage score tracking to drive consumer behavioral change."
     )
 
     # SECTION VIII
@@ -484,21 +541,21 @@ def create_ieee_paper():
     for r in refs:
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p.paragraph_format.left_indent = Inches(0.25)
-        p.paragraph_format.first_line_indent = Inches(-0.25)
-        p.paragraph_format.space_after = Pt(3)
+        p.paragraph_format.left_indent = Inches(0.2)
+        p.paragraph_format.first_line_indent = Inches(-0.2)
+        p.paragraph_format.space_after = Pt(2)
         run = p.add_run(r)
+        run.font.name = 'Times New Roman'
         run.font.size = Pt(8.5)
 
     out_path = r'D:\Projects\ml_project\472\EcoVision_AI_Conference_Paper.docx'
+    alt_path = r'D:\Projects\ml_project\472\EcoVision_AI_Conference_Paper_IEEE_2Column.docx'
     try:
         doc.save(out_path)
         print(f"SUCCESS: Document created at {out_path} (size: {os.path.getsize(out_path)} bytes)")
     except PermissionError:
-        alt_path = r'D:\Projects\ml_project\472\EcoVision_AI_Conference_Paper_Updated.docx'
         doc.save(alt_path)
-        print(f"NOTICE: {out_path} is currently open in Word. Saved updated file to {alt_path} (size: {os.path.getsize(alt_path)} bytes)")
+        print(f"NOTICE: Saved 2-column paper to {alt_path} (size: {os.path.getsize(alt_path)} bytes)")
 
 if __name__ == "__main__":
-    create_ieee_paper()
-
+    create_ieee_2col_paper()
